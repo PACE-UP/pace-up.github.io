@@ -1,0 +1,20 @@
+.my-background-color {
+    background-color: #506285;
+}
+
+.my-text-color {
+    color: #506285;
+}
+
+.white-text-color {
+    color: white;
+}
+
+.bottom-navbar {
+    background-color: #c1c5c5;
+}
+
+.logo {
+    max-height: 50px;
+    min-height: 30px;
+}
