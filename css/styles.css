@@ -1,20 +1,27 @@
-.my-background-color {
-    background-color: #506285;
-}
-
-.my-text-color {
-    color: #506285;
-}
-
-.white-text-color {
-    color: white;
-}
-
-.bottom-navbar {
-    background-color: #c1c5c5;
+body {
+    height: 100%;
 }
 
 .logo {
     max-height: 50px;
     min-height: 30px;
 }
+
+.sticky-right {
+    position: fixed;
+    right: 0;
+    top: 20vh;
+}
+
+@media (max-width: 768) {
+    .sticky-right {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768) {
+    .sticky-right {
+        display: block;
+    }
+}
+

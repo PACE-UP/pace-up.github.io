@@ -36,6 +36,7 @@ function setDisplayPage(id) {
 		$('#navbar-bottom').addClass("d-none");
 	} else {
 		$('#navbar-bottom').removeClass("d-none");
+		$('#sticky-right').removeClass("d-none");
 	}
 	
 }
