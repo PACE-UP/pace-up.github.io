@@ -10,7 +10,7 @@ body {
 .sticky-right {
     position: fixed;
     right: 0;
-    top: 20vh;
+    top: 15vh;
 }
 
 .primary-page {
