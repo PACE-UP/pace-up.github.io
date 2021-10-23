@@ -32,3 +32,8 @@ body {
 .bg-color{
   background-color: #DCDCDC;
 }
+
+.my-img-responsive{
+  max-width: 100%;
+  height: auto;
+}
