@@ -121,6 +121,10 @@ h6 {
   height: auto;
 }
 
+.shrinkable-nav {
+    transition: all 0.4s ease-in-out;
+}
+
 #partner-carousel > .carousel-inner .carousel-item.active,
 #partner-carousel > .carousel-inner .carousel-item-next,
 #partner-carousel > .carousel-inner .carousel-item-prev {
