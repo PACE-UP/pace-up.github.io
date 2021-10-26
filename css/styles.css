@@ -1,3 +1,11 @@
+:root {
+    --dddark-blue:#506183;
+    --lynch: #7a859c;
+    --santas-gray: #a4a5b1;
+    --iron: #d5d7da;
+    --grey: #e4e2dd;
+}
+
 body {
     height: 100%;
 }
@@ -7,33 +15,336 @@ body {
     min-height: 30px;
 }
 
+#navbar-top {
+    border-bottom: 1px solid var(--dddark-blue);
+}
+
+#news {
+    border-bottom: 1px solid var(--dddark-blue);
+}
+
+#navbar-bottom {
+    background-color: var(--santas-gray);
+}
+
+.nav-link-bottom {
+    font-family: 'Calibri';
+    font-size: 12px;
+    color: white;
+}
+
 .sticky-right {
     position: fixed;
     right: 0;
     top: 15vh;
 }
 
+.border-radios-none {
+    border-radius: 0%;
+}
+
+.sticky-left {
+    position: fixed;
+    left: 0;
+    top: 15vh;
+}
+
+.ddb-background {
+    background-color: var(--dddark-blue);
+}
+
+.carousel-title {
+    font-family: 'Lucida Bright', 'Georgia', 'serif'; 
+    font-size: 22px;
+    color: white;
+}
+
+.text-color-ddb {
+    font-family: 'Calibri';
+    font-size: 11px;
+    color: var(--dddark-blue);
+}
+
+.sticky-item {
+    font-family: 'Calibri';
+    font-size: 10px;
+    color: white;
+    min-width: 36px;
+}
+
+.btn {
+    background: var(--dddark-blue);
+}
+
+.btn-more {
+    background: var(--santas-gray);
+    color: white;
+    font-size: 10px;
+    border-radius: 0;
+}
+
+h5 {
+    font-family: 'Avenir Next LT Pro';
+    font-size: 16px;
+    color: var(--dddark-blue);
+}
+
+h6 {
+    font-family: 'Avenir Next LT Pro';
+    font-size: 12px;
+    color: var(--dddark-blue);
+}
+
+.news-card {
+    background-color: var(--dddark-blue);
+    color: white;
+    font-size: 11px;
+    font-family: 'Calibri';
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.25 rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+}
+
 .primary-page {
     margin-bottom: 10vh;
-}
-
-@media (max-width: 768px) {
-    .sticky-right {
-        display: none !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .sticky-right {
-        display: block;
-    }
-}
-
-.bg-color{
-  background-color: #DCDCDC;
 }
 
 .my-img-responsive{
   max-width: 100%;
   height: auto;
+}
+
+#partner-carousel > .carousel-inner .carousel-item.active,
+#partner-carousel > .carousel-inner .carousel-item-next,
+#partner-carousel > .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#partner-carousel > .carousel-inner .carousel-item-right.active,
+#partner-carousel > .carousel-inner .carousel-item-next {
+    transform: translateX(8.33%);
+}
+
+#partner-carousel > .carousel-inner .carousel-item-left.active, 
+#partner-carousel > .carousel-inner .carousel-item-prev {
+    transform: translateX(8.33%);
+}
+
+/* .carousel-control {
+    background-color: transparent; 
+    z-index: 2;
+    width: 33.33% !important;
+} */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #partner-carousel > .carousel-inner .carousel-item-right.active,
+    #partner-carousel > .carousel-inner .carousel-item-next {
+        transform: translateX(8.33%);
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-left.active, 
+    #partner-carousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-8.33%);
+    }
+
+    /* .carousel-control {
+        background-color: transparent; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-right.active,
+    #partner-carousel > .carousel-inner .carousel-item-next {
+        transform: translateX(8.33%);
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-left.active, 
+    #partner-carousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-8.33%);
+    }
+
+    /* .carousel-control {
+        background-color: white; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+@media (min-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-right.active,
+    #partner-carousel > .carousel-inner .carousel-item-next {
+        transform: translateX(8.33%);
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-left.active, 
+    #partner-carousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-8.33%);
+    }
+
+    /* .carousel-control {
+        background-color: white; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+#partner-carousel > .carousel-inner .carousel-item-right,
+#partner-carousel > .carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+}
+
+/* This is for the carousel */
+/* The solution here is adapted from the answer @ 
+https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-carousel-on-xl-screen */
+#recipeCarousel > .carousel-inner .carousel-item.active,
+#recipeCarousel > .carousel-inner .carousel-item-next,
+#recipeCarousel > .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#recipeCarousel > .carousel-control-next {
+    justify-content: right;
+}
+
+#recipeCarousel > .carousel-control-prev {
+    justify-content: left;
+}
+
+/* .carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  background-color: transparent;
+  text-decoration: none;
+  outline: 0;
+  transition: .5s ease-out;
+  /* opacity: .9; */
+/* } */ */
+
+#recipeCarousel > .carousel-inner .carousel-item-right.active,
+#recipeCarousel > .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+}
+
+#recipeCarousel > .carousel-inner .carousel-item-left.active, 
+#recipeCarousel > .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+}
+
+/* .carousel-control {
+    background-color: transparent; 
+    z-index: 2;
+    width: 33.33% !important;
+} */
+
+@media (max-width: 768px) {
+    .sticky-right {
+        display: none !important;
+    }
+    .sticky-left {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active, 
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    /* .carousel-control {
+        background-color: transparent; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active, 
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+
+    /* .carousel-control {
+        background-color: white; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+@media (min-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active, 
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+
+    /* .carousel-control {
+        background-color: white; 
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+#recipeCarousel > .carousel-inner .carousel-item-right,
+#recipeCarousel > .carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
 }

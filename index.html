@@ -7,7 +7,8 @@
     <title>PaceUp</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -15,19 +16,24 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script> -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script> -->
-    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <!-- <script src="js/jquery-ui-1.12.1.min.js"></script> -->
 
     <!-- <script
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script> -->
     <!-- popper.js included -->
-    <script src="js/bootstrap.bundle.js"></script>
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+
 
     <script src="js/scripts.js"></script>
 </head>
@@ -35,7 +41,7 @@
 <body>
 
     <!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light mx-4">
+	<nav id="navbar-top" class="navbar navbar-expand-md navbar-light mx-4 my-4 py-0">
         <a class="navbar-brand" href="index.html">
             <img class="logo" src="images/logo.png" alt="Logo" />
         </a>
@@ -74,96 +80,103 @@
         </div>
     </nav>
 
-    <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto" style="background-color: gray;">
+    <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto">
         <div class="collapse navbar-collapse justify-content-center">
-            <a style="color: white;" class="nav-item nav-link" target="_blank" href="https://www.google.com">VC-Care</a>
-            <a style="color: white;" class="nav-item nav-link" target="_blank" href="https://www.google.com">Impressum</a>
-            <a style="color: white;" class="nav-item nav-link" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
-            <a style="color: white;" class="nav-item nav-link redirect-page-anchor" href="#contact_page">CONTACT</a>
-            <a style="color: white;" class="nav-item nav-link" target="_blank" href="https://www.facebook.com">Facebook</a>
+            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">&copy;VC-Care</a>
+            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">Impressum</a>
+            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
+            <a class="nav-item nav-link redirect-page-anchor nav-link-bottom" href="#contact_page">CONTACT</a>
+            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
         </div>
     </nav>
 
     <div id="sticky-right" class="position-fixed sticky-right d-none">
-            <a class="button redirect-page-anchor btn btn-primary my-1" style="color: white;" href="#contact_page">
-                C <br/> O <br/> N <br/> T <br/> A <br/> C <br/> T
-            </a>
-        <br>
-            <a class="button btn btn-primary my-1" target="_blank" style="color: white;" href="https://www.google.com">
-                <i class="fas fa-globe"></i>
-            </a>
-        <br>
-            <a class="button btn btn-primary my-1" target="_blank" style="color: white;" href="https://www.google.com">
-                <i class="fab fa-facebook"></i>
-            </a>
+      <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
+          <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+      </a>
+      <br>
+      <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+          <i class="fas fa-globe"></i>
+      </a>
+      <br>
+      <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+          <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+
+    <div id="sticky-left" class="position-fixed sticky-left d-none">
+      <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
+          <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+      </a>
     </div>
 
     <div id="front_page" class="page front-page">
-        <div class="mb-5" style="background-color: #506285;">
-            <p class="text-center lead pt-2 pb-2"></p>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item row no-gutters active">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item row no-gutters">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                        <img class="col-4 float-left" src="images/test.jpg" alt="First slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <p class="text-center lead pt-2 pb-2" style="color: white;"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and o<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
+      <div class="text-center pt-5 ddb-background">
+        <div class="row mx-auto">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+              <div class="front-carousel-item carousel-item active no-gutters">
+                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel1.jpg" alt="A">
+              </div>
+              <div class="front-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel2.jpg" alt="B">
+              </div>
+              <div class="front-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel3.jpg" alt="C">
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <a class="nav-item nav-link redirect-page-anchor" href="#home_page">
-                <h5 class="text-center">PACE-UP AT A GLANCE</h5>
+            <a class="carousel-control carousel-control-prev pl-4" href="#recipeCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
             </a>
+            <a class="carousel-control carousel-control-next pr-4" href="#recipeCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
+        <p class="py-3 text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
+      </div>
+      <div class="container">
+        <a class="nav-item nav-link redirect-page-anchor" href="#home_page">
+            <h5 class="text-center">PACE-UP AT A GLANCE</h5>
+        </a>
+      </div>
     </div>
 
     <div id="home_page" class="page primary-page d-none">
         <div class="container">
-            <h5 class="text-center my-4">PACE-UP AT A GLANCE</h5>
-            <div class="container my-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5 class="text-center my-5">PACE-UP AT A GLANCE</h5>
+            <div class="container my-4 w-75">
+                <p class="text-color-ddb">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
+                </p>
             </div>
             <div class="container my-4">
                 <div class="row justify-content-center">
                     <div class="col-lg-auto col-md-4 text-center">
                         <img class="img-fluid mx-auto my-1" src="images/partner1.png">
-                        <p class="mx-1 my-1">PARTNER COUNTRIES</p>
-                        <p class="mx-1 my-1">XX</p>
+                        <p class="mx-1 my-1 text-color-ddb">PARTNER COUNTRIES</p>
+                        <p class="mx-1 my-1 text-color-ddb">15</p>
                     </div>
                     <div class="col-lg-auto col-md-4 text-center">
                         <img class="img-fluid mx-auto my-1" src="images/partner2.png">
-                        <p class="mx-1 my-1">PARTNER INSTITUTIONS</p>
-                        <p class="mx-1 my-1"></p>XX</p>
+                        <p class="mx-1 my-1 text-color-ddb">PARTNER INSTITUTIONS</p>
+                        <p class="mx-1 my-1 text-color-ddb">28</p>
                     </div>
                     <div class="col-lg-auto col-md-4 text-center">
                         <img class="img-fluid mx-auto my-1" src="images/partner3.png">
-                        <p class="mx-1 my-1">FUNDED BY</p>
-                        <p class="mx-1 my-1"></p>DAAD</p>
+                        <p class="mx-1 my-1 text-color-ddb">FUNDED BY</p>
+                        <p class="mx-1 my-1 text-color-ddb">DAAD</p>
                     </div>
                     <div class="col-lg-auto col-md-6 text-center">
                         <img class="img-fluid mx-auto my-1" src="images/partner4.png">
-                        <p class="mx-1 my-1">FUNDED PERIOD</p>
-                        <p class="mx-1 my-1"></p>XX</p>
+                        <p class="mx-1 my-1 text-color-ddb">FUNDED PERIOD</p>
+                        <p class="mx-1 my-1 text-color-ddb">2021-2025</p>
                     </div>
                     <div class="col-lg-auto col-md-6 text-center">
                         <img class="img-fluid mx-auto my-1" src="images/partner5.png">
-                        <p class="mx-1 my-1">FUNDING VOLUME</p>
-                        <p class="mx-1 my-1"></p>XX</p>
+                        <p class="mx-1 my-1 text-color-ddb">FUNDING VOLUME</p>
+                        <p class="mx-1 my-1 text-color-ddb">2.788.400 &euro;</p>
                     </div>
                 </div>
             </div>
@@ -174,23 +187,66 @@
     </div>
 
     <div id="who_page" class="page primary-page d-none">
-        <div class="container">
-            <h4 class="text-center">WHO WE ARE</h4>
+        <div class="container w-75 mb-5">
+            <h5 class="text-center my-5">WHO WE ARE</h5>
             <div class="row">
-                <div class="col-xl-6 col-md-12">
+                <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center my-1">
                     <img class="my-img-responsive" src="images/who1.png">
                 </div>
-                <div class="col-xl-6 col-md-12">
-                    <p>PACE-UP at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center my-1">
+                    <p class="col-12 text-color-ddb">28 institutions from 15 partner countries work together within the PACE-UP coalition. The well-established and successful North-South and South-South collaborative networks bring into the PACE-UP a comprehensive, multidisciplinary and extensive set of expertise skills and experience covering public health expertise, capacity development, clinical trials, ethics of research in emergency situations, surveillance of emerging and re-emerging zoonosis, molecular biology, epidemiology, rapid diagnostics, rapid whole genome sequencing, phylogenetic analyses and pathogen evolutionary trends, infection control, microbiology, virology, immunology, data analyses, rapid analysis publication and dissemination of data, risk communication, management, operational logistics, patient and community engagement, advocacy, global policy issues, disease modelling, trends and prediction. The PIs and consortia partners have highlighted the need to obtain unity of purpose on emerging infections. 
+                    </p>
+                    <div class="col-12">
+                      <a class="button redirect-page-anchor btn btn-more float-right" href="#partners_page">
+                        OVERVIEW COLLIATION PARTNERS
+                      </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-9">
-                <a class="button redirect-page-anchor btn btn-primary my-1 float-right" style="color: white;" href="#partners_page">
-                    COLLIATION PARTNERS
-                </a>
+        <div>
+          <div class="row mx-auto">
+            <div id="partner-carousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="partner-carousel-item carousel-item active no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/108MCH/image.png" alt="A">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/BITS-Pilani/image.png" alt="B">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Hue-University/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/INEJ/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/IVI/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/PACEUP/PaceUp.png" alt="C">
+                </div>
+                <div class="partner-carousel-itemcarousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UKT/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UNIVERSITY-OF-TÜBINGEN/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VG-CARE/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VGU/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VMMU/image.png" alt="C">
+                </div>
+                <div class="partner-carousel-item carousel-item no-gutters">
+                  <img class="img-fluid col-4 col-md-3 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Xiamen-Innovax-Biotech/image.png" alt="C">
+                </div>
+              </div>
             </div>
+          </div>
         </div>
     </div>
 
@@ -479,56 +535,56 @@
     </div>
 
     <div id="news_page" class="page primary-page d-none">
-        <div class="container">
-            <h4 class="float-right">NEWS</h4>
-            <br/>
-            <hr style="color:blue;"/>
-            <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <img class="card-img-top pt-1" src="images/news1.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">DD.MM.2021</h5>
-                        <p class="card-text">Training on… </p>
-                        <p class="card-text">Hanoi, Vietnam</p>
-                        <a href="#" class="btn btn-primary float-right">More</a>
-                    </div>
-                    </div>
+        <div class="container w-75">
+          <div id="news" class="row mb-5">
+            <h6 class="col-12 text-right">NEWS</h6>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-12 my-1">
+              <div class="card news-card">
+                    <img class="card-img-top" src="images/news1.jpg" alt="">
+                <div class="card-body">
+                    <span class="card-title d-flex">DD.MM.2021</span>
+                    <span class="card-text d-flex">Training on… </span>
+                    <span class="card-text d-flex">Hanoi, Vietnam</span>
+                    <a href="#" class="btn btn-more float-right">More</a>
                 </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <img class="card-img-top pt-1" src="images/news1.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">DD.MM.2021</h5>
-                        <p class="card-text">Training on… </p>
-                        <p class="card-text">Hanoi, Vietnam</p>
-                        <a href="#" class="btn btn-primary float-right">More</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <img class="card-img-top pt-1" src="images/news1.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">DD.MM.2021</h5>
-                        <p class="card-text">Training on… </p>
-                        <p class="card-text">Hanoi, Vietnam</p>
-                        <a href="#" class="btn btn-primary float-right">More</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <img class="card-img-top pt-1" src="images/news1.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">DD.MM.2021</h5>
-                        <p class="card-text">Training on… </p>
-                        <p class="card-text">Hanoi, Vietnam</p>
-                        <a href="#" class="btn btn-primary float-right">More</a>
-                    </div>
-                    </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-12 my-1">
+              <div class="card news-card">
+                    <img class="card-img-top" src="images/news1.jpg" alt="">
+                <div class="card-body">
+                    <span class="card-title d-flex">DD.MM.2021</span>
+                    <span class="card-text d-flex">Training on… </span>
+                    <span class="card-text d-flex">Hanoi, Vietnam</span>
+                    <a href="#" class="btn btn-more float-right">More</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 my-1">
+              <div class="card news-card">
+                    <img class="card-img-top" src="images/news1.jpg" alt="">
+                <div class="card-body">
+                    <span class="card-title d-flex">DD.MM.2021</span>
+                    <span class="card-text d-flex">Training on… </span>
+                    <span class="card-text d-flex">Hanoi, Vietnam</span>
+                    <a href="#" class="btn btn-more float-right">More</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 my-1">
+              <div class="card news-card">
+                    <img class="card-img-top" src="images/news1.jpg" alt="">
+                <div class="card-body">
+                    <span class="card-title d-flex">DD.MM.2021</span>
+                    <span class="card-text d-flex">Training on… </span>
+                    <span class="card-text d-flex">Hanoi, Vietnam</span>
+                    <a href="#" class="btn btn-more float-right">More</a>
+                </div>
+                </div>
+            </div>
+          </div>
         </div>
     </div>
 
