@@ -13,6 +13,42 @@ $(document).ready(function() {
 		var target_page_id = $(this).attr('href');
 		setDisplayPage(target_page_id);
 	});
+
+	$('#recipeCarousel').carousel({
+		interval: 250000
+	})
+
+	$('.front-carousel-item').each(function(){
+		var minPerSlide = 2;
+		var next = $(this);
+	
+		for (var i=0;i<minPerSlide;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+	
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+	
+	$('.carousel .carousel-item').each(function(){
+		var minPerSlide = 11;
+		var next = $(this);
+	
+		for (var i=0;i<minPerSlide;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+	
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+
+	$('#partner-carousel').carousel({
+		interval: 20000
+	})
 });
 
 function highlightNav(navItem) {
@@ -37,7 +73,9 @@ function setDisplayPage(id) {
 	} else {
 		$('#navbar-bottom').removeClass("d-none");
 		$('#sticky-right').removeClass("d-none");
+		$('#sticky-left').removeClass("d-none");
 	}
 	
 }
+
 	
