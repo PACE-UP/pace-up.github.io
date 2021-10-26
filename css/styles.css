@@ -65,6 +65,16 @@ body {
     color: var(--dddark-blue);
 }
 
+.text-color-white {
+    font-family: 'Calibri';
+    font-size: 11px;
+    color: white;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
 .sticky-item {
     font-family: 'Calibri';
     font-size: 10px;
@@ -112,13 +122,33 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
+.page {
+    margin-top: 15vh;
+}
+
 .primary-page {
     margin-bottom: 10vh;
 }
 
-.my-img-responsive{
-  max-width: 100%;
-  height: auto;
+.boxed {
+    border: 1px var(--dddark-blue) solid;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.5);
+    transition: all .2s linear;
+}
+
+.shrinkable-nav {
+    transition: all 0.4s ease-in-out;
+}
+
+.img-shadow-tl {
+    box-shadow: -30px -30px var(--dddark-blue);
+}
+
+.img-shadow-bl {
+    box-shadow: -30px 30px var(--dddark-blue);
 }
 
 #partner-carousel > .carousel-inner .carousel-item.active,
