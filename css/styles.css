@@ -429,3 +429,16 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 .search-text: focus{
   outline: none;
 }
+
+#home_page h5{
+    font-size: xx-large;
+    height:10vh;
+}
+
+#home_page .home-para{
+  font-size: x-large;
+  height: 40vh;
+}
+#home_page .home-img{
+  height:50vh;
+}
