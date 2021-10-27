@@ -17,6 +17,7 @@ body {
 
 #navbar-top {
     border-bottom: 1px solid var(--dddark-blue);
+    background-color: white;
 }
 
 #news {
@@ -120,6 +121,14 @@ h6 {
 
 .card-title {
     margin-bottom: 0.5rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-border {
+    border: 1px solid var(--dddark-blue);
 }
 
 .page {
