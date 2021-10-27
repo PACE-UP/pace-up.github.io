@@ -19,7 +19,7 @@ $(document).ready(function() {
 	})
 
 	$('.front-carousel-item').each(function(){
-		var minPerSlide = 2;
+		var minPerSlide = 3;
 		var next = $(this);
 	
 		for (var i=0;i<minPerSlide;i++) {
@@ -70,12 +70,10 @@ function setDisplayPage(id) {
 	$(id).removeClass('d-none');
 	if (id === FRONTPAGE_ID) {
 		$('#navbar-bottom').addClass("d-none");
-		$('#navbar-top').addClass("my-4");
 	} else {
 		$('#navbar-bottom').removeClass("d-none");
 		$('#sticky-right').removeClass("d-none");
 		$('#sticky-left').removeClass("d-none");
-		$('#navbar-top').removeClass("my-4");
 	}
 	
 }

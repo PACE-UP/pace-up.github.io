@@ -10,14 +10,39 @@ body {
     height: 100%;
 }
 
-.logo {
-    max-height: 50px;
-    min-height: 30px;
+#navbar-top {
+    background-color: white;
+    border-left: 5%;
 }
 
-#navbar-top {
+#navbar-top > nav {
     border-bottom: 1px solid var(--dddark-blue);
+}
+
+#navbar-top > nav > a > img {
+    max-height: 50px;
+    min-height: 50px;
+}
+
+#navbar-top .nav-item-text {
+    font-size: 15px;
+    color: var(--dddark-blue);
+}
+
+.shrinkable-nav {
+    transition: all 0.4s ease-in-out;
+}
+
+#recipeCarousel > .carousel-control-prev,
+#recipeCarousel > .carousel-control-next {
     background-color: white;
+    width: 33.33%;
+}
+
+#recipeCarousel > .carousel-control-prev:hover,
+#recipeCarousel > .carousel-control-next:hover {
+    background-color: transparent;
+    width: 33.33%;
 }
 
 #news {
@@ -132,7 +157,7 @@ h6 {
 }
 
 .page {
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .primary-page {
@@ -146,10 +171,6 @@ h6 {
 .hover-zoom:hover img {
     transform: scale(1.5);
     transition: all .2s linear;
-}
-
-.shrinkable-nav {
-    transition: all 0.4s ease-in-out;
 }
 
 .img-shadow-tl {
@@ -285,12 +306,12 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 
 #recipeCarousel > .carousel-inner .carousel-item-right.active,
 #recipeCarousel > .carousel-inner .carousel-item-next {
-    transform: translateX(50%);
+    transform: translateX(33.33%);
 }
 
 #recipeCarousel > .carousel-inner .carousel-item-left.active,
 #recipeCarousel > .carousel-inner .carousel-item-prev {
-    transform: translateX(-50%);
+    transform: translateX(-33.33%);
 }
 
 /* .carousel-control {
@@ -318,12 +339,12 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 
     #recipeCarousel > .carousel-inner .carousel-item-right.active,
     #recipeCarousel > .carousel-inner .carousel-item-next {
-        transform: translateX(50%);
+        transform: translateX(33.33%);
     }
 
     #recipeCarousel > .carousel-inner .carousel-item-left.active,
     #recipeCarousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-50%);
+        transform: translateX(-33.33%);
     }
 
     /* .carousel-control {

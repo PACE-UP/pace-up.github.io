@@ -6,778 +6,763 @@
 
     <title>PaceUp</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script> -->
-    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-        crossorigin="anonymous"></script> -->
-    <!-- <script src="js/jquery-ui-1.12.1.min.js"></script> -->
-
-    <!-- <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> -->
-    <!-- popper.js included -->
-    <!-- <script src="js/bootstrap.bundle.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-
     <script src="js/scripts.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-	<nav id="navbar-top" class="shrinkable-nav navbar navbar-expand-md fixed-top navbar-light px-4 my-4 py-0">
-        <a class="navbar-brand" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Logo" />
-        </a>
+  <!-- Navigation -->
+<div id="navbar-top" class="fixed-top">
+  <nav class="shrinkable-nav navbar navbar-expand-md mx-5 mb-5">
+    <a class="navbar-brand" href="index.html">
+        <img class="img-fluid" src="images/logo.png"/>
+    </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link redirect-page-anchor" href="#home_page">Home</a>
-                <div class="dropdown">
-                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">Who we are</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#who_page">Who are we</a>
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#partners_page">Partners</a>
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#people_page">People</a>
-                    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#home_page">HOME</a>
+            <div class="dropdown">
+                <a class="nav-item-text nav-link" href="#" role="button" data-toggle="dropdown">WHO WE ARE</a>
+                <div class="dropdown-menu">
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#who_page">WHO ARE WE</a>
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#partners_page">PARTNERS</a>
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#people_page">PEOPLE</a>
                 </div>
-                <div class="dropdown">
-                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">What we do</a>
-                    <div class="dropdown-menu"">
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#objectives_page">Objectives</a>
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#activities_page">Activities</a>
-                        <a class="dropdown-item nav-item nav-link redirect-page-anchor" href="#capacitybuildings_page">Capacity buildings</a>
-                    </div>
-                </div>
-                <a class="nav-item nav-link redirect-page-anchor" href="#map_page">Map</a>
-                <a class="nav-item nav-link redirect-page-anchor" href="#publications_page">Publications</a>
-                <a class="nav-item nav-link redirect-page-anchor" href="#news_page">News</a>
-                <a class="nav-item nav-link disabled" href="#login_page">Login</a>
             </div>
+            <div class="dropdown">
+                <a class="nav-item-text nav-link" href="#" role="button" data-toggle="dropdown">WHAT WE DO</a>
+                <div class="dropdown-menu"">
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#objectives_page">OBJECTIVES</a>
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#activities_page">ACTIVITIES</a>
+                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#capacitybuildings_page">CAPICITY BUILDINGS</a>
+                </div>
+            </div>
+            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#map_page">MAP</a>
+            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#publications_page">PUBLICATIONS</a>
+            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#news_page">NEWS</a>
+            <a class="nav-item-text nav-item nav-link disabled" href="#login_page">LOGIN</a>
         </div>
-    </nav>
+    </div>
+</nav>
+</div>
 
-    <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto">
-        <div class="collapse navbar-collapse justify-content-center">
-            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">&copy;VC-Care</a>
-            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">Impressum</a>
-            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
-            <a class="nav-item nav-link redirect-page-anchor nav-link-bottom" href="#contact_page">CONTACT</a>
-            <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.facebook.com">
-              <i class="fab fa-facebook"></i>
-            </a>
+
+  <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto">
+      <div class="collapse navbar-collapse justify-content-center">
+          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">&copy;VC-Care</a>
+          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">Impressum</a>
+          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
+          <a class="nav-item nav-link redirect-page-anchor nav-link-bottom" href="#contact_page">CONTACT</a>
+          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+      </div>
+  </nav>
+
+  <div id="sticky-right" class="position-fixed sticky-right d-none">
+    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
+        <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+    </a>
+    <br>
+    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+        <i class="fas fa-globe"></i>
+    </a>
+    <br>
+    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+        <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <div id="sticky-left" class="position-fixed sticky-left d-none">
+    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
+        <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+    </a>
+  </div>
+
+  <div id="front_page" class="page front-page">
+    <div class="text-center pt-5 ddb-background">
+      <div class="row mx-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner w-100" role="listbox">
+            <div class="front-carousel-item carousel-item active no-gutters">
+              <img class="img-fluid col-4 col-md-4 col-lg-4 col-xl-4" src="images/carousel1.jpg">
+            </div>
+            <div class="front-carousel-item carousel-item no-gutters">
+              <img class="img-fluid col-4 col-md-4 col-lg-4 col-xl-4" src="images/carousel2.jpg">
+            </div>
+            <div class="front-carousel-item carousel-item no-gutters">
+              <img class="img-fluid col-4 col-md-4 col-lg-4 col-xl-4" src="images/carousel3.jpg">
+            </div>
+          </div>
+          <a class="carousel-control carousel-control-prev pl-4" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control carousel-control-next pr-4" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          </a>
         </div>
-    </nav>
-
-    <div id="sticky-right" class="position-fixed sticky-right d-none">
-      <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
-          <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
-      </a>
-      <br>
-      <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
-          <i class="fas fa-globe"></i>
-      </a>
-      <br>
-      <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
-          <i class="fab fa-facebook"></i>
+      </div>
+      <p class="py-3 text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
+    </div>
+    <div class="container mx-auto my-auto">
+      <a class="nav-item nav-link redirect-page-anchor" href="#home_page">
+          <h5 class="text-center">PACE-UP AT A GLANCE</h5>
       </a>
     </div>
+  </div>
 
-    <div id="sticky-left" class="position-fixed sticky-left d-none">
-      <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
-          <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
-      </a>
-    </div>
+  <div id="home_page" class="page primary-page d-none">
+      <div class="container">
+          <h5 class="text-center my-5">PACE-UP AT A GLANCE</h5>
+          <div class="container my-4 w-75">
+              <p class="text-color-ddb">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
+              </p>
+          </div>
+          <div class="container my-4">
+              <div class="row justify-content-center">
+                  <div class="col-lg-auto col-md-4 text-center">
+                      <img class="img-fluid mx-auto my-1" src="images/partner1.png">
+                      <p class="mx-1 my-1 text-color-ddb">PARTNER COUNTRIES</p>
+                      <p class="mx-1 my-1 text-color-ddb">15</p>
+                  </div>
+                  <div class="col-lg-auto col-md-4 text-center">
+                      <img class="img-fluid mx-auto my-1" src="images/partner2.png">
+                      <p class="mx-1 my-1 text-color-ddb">PARTNER INSTITUTIONS</p>
+                      <p class="mx-1 my-1 text-color-ddb">28</p>
+                  </div>
+                  <div class="col-lg-auto col-md-4 text-center">
+                      <img class="img-fluid mx-auto my-1" src="images/partner3.png">
+                      <p class="mx-1 my-1 text-color-ddb">FUNDED BY</p>
+                      <p class="mx-1 my-1 text-color-ddb">DAAD</p>
+                  </div>
+                  <div class="col-lg-auto col-md-6 text-center">
+                      <img class="img-fluid mx-auto my-1" src="images/partner4.png">
+                      <p class="mx-1 my-1 text-color-ddb">FUNDED PERIOD</p>
+                      <p class="mx-1 my-1 text-color-ddb">2021-2025</p>
+                  </div>
+                  <div class="col-lg-auto col-md-6 text-center">
+                      <img class="img-fluid mx-auto my-1" src="images/partner5.png">
+                      <p class="mx-1 my-1 text-color-ddb">FUNDING VOLUME</p>
+                      <p class="mx-1 my-1 text-color-ddb">2.788.400 &euro;</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <div id="front_page" class="page front-page">
-      <div class="text-center pt-5 ddb-background">
-        <div class="row mx-auto">
-          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+  <div id="who_page" class="page primary-page d-none">
+      <div class="container w-75 mb-5">
+          <h5 class="text-center my-5">WHO WE ARE</h5>
+          <div class="row">
+              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
+                  <img class="img-fluid mx-auto img-shadow-bl" src="images/who1.png">
+              </div>
+              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
+                  <p class="col-12 text-color-ddb">28 institutions from 15 partner countries work together within the PACE-UP coalition. The well-established and successful North-South and South-South collaborative networks bring into the PACE-UP a comprehensive, multidisciplinary and extensive set of expertise skills and experience covering public health expertise, capacity development, clinical trials, ethics of research in emergency situations, surveillance of emerging and re-emerging zoonosis, molecular biology, epidemiology, rapid diagnostics, rapid whole genome sequencing, phylogenetic analyses and pathogen evolutionary trends, infection control, microbiology, virology, immunology, data analyses, rapid analysis publication and dissemination of data, risk communication, management, operational logistics, patient and community engagement, advocacy, global policy issues, disease modelling, trends and prediction. The PIs and consortia partners have highlighted the need to obtain unity of purpose on emerging infections.
+                  </p>
+                  <div class="col-12">
+                    <a class="button redirect-page-anchor btn btn-more float-right" href="#partners_page">
+                      OVERVIEW COLLIATION PARTNERS
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+        <div class="row mx-auto my-auto">
+          <div id="partner-carousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
-              <div class="front-carousel-item carousel-item active no-gutters">
-                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel1.jpg" alt="A">
+              <div class="partner-carousel-item carousel-item no-gutters active">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/108MCH/image.png" alt="A">
               </div>
-              <div class="front-carousel-item carousel-item no-gutters">
-                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel2.jpg" alt="B">
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/BITS-Pilani/image.png" alt="B">
               </div>
-              <div class="front-carousel-item carousel-item no-gutters">
-                <img class="img-fluid col-6 col-md-6 col-lg-4 col-xl-4" src="images/carousel3.jpg" alt="C">
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Hue-University/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/INEJ/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/PACEUP/PaceUp.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/IVI/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UKT/image.png" alt="D">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UNIVERSITY-OF-TÜBINGEN/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VG-CARE/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VGU/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VMMU/image.png" alt="C">
+              </div>
+              <div class="partner-carousel-item carousel-item no-gutters">
+                <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Xiamen-Innovax-Biotech/image.png" alt="C">
               </div>
             </div>
-            <a class="carousel-control carousel-control-prev pl-4" href="#recipeCarousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control carousel-control-next pr-4" href="#recipeCarousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-            </a>
           </div>
         </div>
-        <p class="py-3 text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
       </div>
-      <div class="container pb-5 my-auto">
-        <a class="nav-item nav-link redirect-page-anchor" href="#home_page">
-            <h5 class="text-center">PACE-UP AT A GLANCE</h5>
-        </a>
+  </div>
+
+  <div id="partners_page" class="page primary-page d-none">
+    <div class="container w-75">
+      <div class="col-lg-12">
+        <h5 class="text-center my-5">COALITION PARTNERS</h5>
       </div>
-    </div>
+        <div class="row row-cols-lg-4 justify-content-center">
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner1.jpg" class="card-img-top mx-auto " alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">ITM-EKUT / GERMANY</p>
+              </div>
+            </div>
+          </div>
 
-    <div id="home_page" class="page primary-page d-none">
-        <div class="container">
-            <h5 class="text-center my-5">PACE-UP AT A GLANCE</h5>
-            <div class="container my-4 w-75">
-                <p class="text-color-ddb">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
-                </p>
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner2.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">VG-CARE / VIETNAM</p>
+              </div>
             </div>
-            <div class="container my-4">
-                <div class="row justify-content-center">
-                    <div class="col-lg-auto col-md-4 text-center">
-                        <img class="img-fluid mx-auto my-1" src="images/partner1.png">
-                        <p class="mx-1 my-1 text-color-ddb">PARTNER COUNTRIES</p>
-                        <p class="mx-1 my-1 text-color-ddb">15</p>
-                    </div>
-                    <div class="col-lg-auto col-md-4 text-center">
-                        <img class="img-fluid mx-auto my-1" src="images/partner2.png">
-                        <p class="mx-1 my-1 text-color-ddb">PARTNER INSTITUTIONS</p>
-                        <p class="mx-1 my-1 text-color-ddb">28</p>
-                    </div>
-                    <div class="col-lg-auto col-md-4 text-center">
-                        <img class="img-fluid mx-auto my-1" src="images/partner3.png">
-                        <p class="mx-1 my-1 text-color-ddb">FUNDED BY</p>
-                        <p class="mx-1 my-1 text-color-ddb">DAAD</p>
-                    </div>
-                    <div class="col-lg-auto col-md-6 text-center">
-                        <img class="img-fluid mx-auto my-1" src="images/partner4.png">
-                        <p class="mx-1 my-1 text-color-ddb">FUNDED PERIOD</p>
-                        <p class="mx-1 my-1 text-color-ddb">2021-2025</p>
-                    </div>
-                    <div class="col-lg-auto col-md-6 text-center">
-                        <img class="img-fluid mx-auto my-1" src="images/partner5.png">
-                        <p class="mx-1 my-1 text-color-ddb">FUNDING VOLUME</p>
-                        <p class="mx-1 my-1 text-color-ddb">2.788.400 &euro;</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          </div>
 
-    <div id="who_page" class="page primary-page d-none">
-        <div class="container w-75 mb-5">
-            <h5 class="text-center my-5">WHO WE ARE</h5>
-            <div class="row">
-                <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
-                    <img class="img-fluid mx-auto img-shadow-bl" src="images/who1.png">
-                </div>
-                <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
-                    <p class="col-12 text-color-ddb">28 institutions from 15 partner countries work together within the PACE-UP coalition. The well-established and successful North-South and South-South collaborative networks bring into the PACE-UP a comprehensive, multidisciplinary and extensive set of expertise skills and experience covering public health expertise, capacity development, clinical trials, ethics of research in emergency situations, surveillance of emerging and re-emerging zoonosis, molecular biology, epidemiology, rapid diagnostics, rapid whole genome sequencing, phylogenetic analyses and pathogen evolutionary trends, infection control, microbiology, virology, immunology, data analyses, rapid analysis publication and dissemination of data, risk communication, management, operational logistics, patient and community engagement, advocacy, global policy issues, disease modelling, trends and prediction. The PIs and consortia partners have highlighted the need to obtain unity of purpose on emerging infections.
-                    </p>
-                    <div class="col-12">
-                      <a class="button redirect-page-anchor btn btn-more float-right" href="#partners_page">
-                        OVERVIEW COLLIATION PARTNERS
-                      </a>
-                    </div>
-                </div>
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner3.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">108 MCH / VIETNAM</p>
+              </div>
             </div>
-        </div>
-        <div>
-          <div class="row mx-auto my-auto">
-            <div id="partner-carousel" class="carousel slide w-100" data-ride="carousel">
-              <div class="carousel-inner w-100" role="listbox">
-                <div class="partner-carousel-item carousel-item no-gutters active">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/108MCH/image.png" alt="A">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/BITS-Pilani/image.png" alt="B">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Hue-University/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/INEJ/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/PACEUP/PaceUp.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/IVI/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UKT/image.png" alt="D">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/UNIVERSITY-OF-TÜBINGEN/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VG-CARE/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VGU/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/VMMU/image.png" alt="C">
-                </div>
-                <div class="partner-carousel-item carousel-item no-gutters">
-                  <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/Xiamen-Innovax-Biotech/image.png" alt="C">
-                </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner4.png" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">VMMU / VIETNAM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner5.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">RKI / GERMANY</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner6.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">HUMP / VIETNAM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner7.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">BNITM / GERMANY</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/COALITION_PARTNER/partner8.png" class="card-img-top mx-auto" alt="Ole">
+              <div class="card-body">
+                <p class="text-center p-2 card-title card-border text-color-ddb">BITS PILANI / INDIA</p>
               </div>
             </div>
           </div>
         </div>
     </div>
 
-    <div id="partners_page" class="page primary-page d-none">
+  </div>
+
+  <div id="people_page" class="page primary-page d-none">
       <div class="container w-75">
+        <div class="search-box text-lg-right">
+          <input class="search-text" type="text" placeholder="Type to search">
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
         <div class="col-lg-12">
-          <h5 class="text-center my-5">COALITION PARTNERS</h5>
+          <h5 class="text-center my-5">OUR TEAM</h5>
         </div>
           <div class="row row-cols-lg-4 justify-content-center">
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner1.jpg" class="card-img-top mx-auto " alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">ITM-EKUT / GERMANY</p>
+                  <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Thirumalaisamy P. Velavan
+                    <br/>ITM-EKUT / GERMANY
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner2.jpg" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">VG-CARE / VIETNAM</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Le Huu Song
+                    <br/>VG-CARE / VIETNAM</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner3.jpg" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">108 MCH / VIETNAM</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Dr. The Trong Nguyen
+                    <br/>VG-CARE / VIETNAM</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner4.png" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">VMMU / VIETNAM</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Dr. Alexa Purgreth
+                    <br/>ITM-EKUT / GERMANY</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner5.jpg" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">RKI / GERMANY</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Manuel Clavel
+                    <br/>VGU / VIETNAM</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner6.jpg" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">HUMP / VIETNAM</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Nguyen Linh Toan
+                    <br/>VMMU / VIETNAM</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner7.jpg" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">BNITM / GERMANY</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Kuldip Singh Sangwan
+                    <br/>BITS PILANI / INDIA</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 py-2">
               <div class="card bg-color mb-3 h-100">
-                <img src="images/COALITION_PARTNER/partner8.png" class="card-img-top mx-auto" alt="Ole">
+                <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
                 <div class="card-body">
-                  <p class="text-center p-2 card-title card-border text-color-ddb">BITS PILANI / INDIA</p>
+                  <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Jonas Schmidt-Chanasit
+                    <br/>BNITM / GERMANY</p>
                 </div>
               </div>
             </div>
           </div>
       </div>
+  </div>
 
-    </div>
-
-    <div id="people_page" class="page primary-page d-none">
-        <div class="container w-75">
-          <div class="search-box text-lg-right">
-            <input class="search-text" type="text" placeholder="Type to search">
-            <a class="search-btn" href="#">
-              <i class="fas fa-search"></i>
-            </a>
-          </div>
-          <div class="col-lg-12">
-            <h5 class="text-center my-5">OUR TEAM</h5>
-          </div>
-            <div class="row row-cols-lg-4 justify-content-center">
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Thirumalaisamy P. Velavan
-                      <br/>ITM-EKUT / GERMANY
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Le Huu Song
-                      <br/>VG-CARE / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Dr. The Trong Nguyen
-                      <br/>VG-CARE / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Dr. Alexa Purgreth
-                      <br/>ITM-EKUT / GERMANY</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Manuel Clavel
-                      <br/>VGU / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Nguyen Linh Toan
-                      <br/>VMMU / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Kuldip Singh Sangwan
-                      <br/>BITS PILANI / INDIA</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p p class="text-center card-text text-color-ddb card-border">Prof. Dr. Jonas Schmidt-Chanasit
-                      <br/>BNITM / GERMANY</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="objectives_page" class="page primary-page d-none">
-        <div class="container w-75">
-            <h5 class="text-center my-5">OBJECTIVES</h5>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                    <span class="col-12 text-color-white z-index-2">CAPACITY BUILDING</span>
-                    <img class="col-12 px-0 img-shadow-tl" src="images/objectives1.jpg">
-                </div>
-                <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
-                    <p class="text-color-ddb">Our overall aim is to strengthen regional and PAN-ASEAN individual, institutional and infrastructural / organizational capacities and systems for enabling rapid and effective response during an emergency situation / epidemic situation and strengthen the capabilities to identify new capacities during the inter-epidemic period. We are taking forward our PACE-UP consortium vision to provide high quality mentorship by various educational and training programs. With North-South and South-South partnerships, we envisage to strengthen the academic sector by increasing quality access to higher education through scholarships for study in Germany and in the African regions.</p>
-                    <div class="col-12">
-                      <a class="button redirect-page-anchor btn btn-more my-1 float-right" href="#capacitybuildings_page">
-                        MORE
-                      </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-4">
-                <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                    <span class="col-12 text-color-white z-index-2">NETWORK / DATA EXCANGE</span>
-                    <img class="col-12 px-0 img-shadow-tl" src="images/objectives2.jpg">
-                </div>
-                <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
-                    <p class="text-color-ddb">PACE-UP network with other regional and global networks on emerging infections and contribute to global preparedness and response activities as well as rapid implementation of findings into optimized clinical and public health practices by maximizing synergies. Effective communication channels between participating partners are being implemented to ensure secure and fast data exchange between different partners and countries.
-                    </p>
-                </div>
-            </div>
-            <div class="row my-4">
-                <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                    <span class="col-12 text-color-white z-index-2">SUPPORTING STAKEHOLDERS</span>
-                    <img class="col-12 px-0 img-shadow-tl" src="images/objectives3.jpg">
-                </div>
-                <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
-                    <p class="text-color-ddb">Our team of recognized experts has experience in engaging the stakeholders and disseminating research findings. We fully involve politicians, policy makers and stakeholders as well as global public health agencies during all stages of our program and activities and make our expertise available to advise and support the decision-makers in the development and implementation of prevention and response strategies.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="activities_page" class="page primary-page d-none">
+  <div id="objectives_page" class="page primary-page d-none">
       <div class="container w-75">
-        <h5 class="text-center my-5">ACTIVITIES</h5>
-        <div class="row">
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                  <img class="w-100 img-fluid" src="images/act1.png">
+          <h5 class="text-center my-5">OBJECTIVES</h5>
+          <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
+                  <span class="col-12 text-color-white z-index-2">CAPACITY BUILDING</span>
+                  <img class="col-12 px-0 img-shadow-tl" src="images/objectives1.jpg">
               </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">DOCTORAL STUDIES<br/>&nbsp
-                </p>
+              <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
+                  <p class="text-color-ddb">Our overall aim is to strengthen regional and PAN-ASEAN individual, institutional and infrastructural / organizational capacities and systems for enabling rapid and effective response during an emergency situation / epidemic situation and strengthen the capabilities to identify new capacities during the inter-epidemic period. We are taking forward our PACE-UP consortium vision to provide high quality mentorship by various educational and training programs. With North-South and South-South partnerships, we envisage to strengthen the academic sector by increasing quality access to higher education through scholarships for study in Germany and in the African regions.</p>
+                  <div class="col-12">
+                    <a class="button redirect-page-anchor btn btn-more my-1 float-right" href="#capacitybuildings_page">
+                      MORE
+                    </a>
+                  </div>
               </div>
-              <ul class="text-color-ddb float-left">
-                  <li>6 fulltime PhD (4 Vietnamese and 2 African) students will conduct their studies in Experimental Medicine program at the Medical Faculty of the University of Tübingen.</li>
-                  <li>The study starts on 01.01.2022 and lusts for max. 4 years.</li>
-                  <li>PhD students will undertake research rotations between African-Asian and German institutions.
-                  </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act2.jpg">
+          </div>
+          <div class="row my-4">
+              <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
+                  <span class="col-12 text-color-white z-index-2">NETWORK / DATA EXCANGE</span>
+                  <img class="col-12 px-0 img-shadow-tl" src="images/objectives2.jpg">
               </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">MASTER’S PROJECT MODULES
-                  <br/>&nbsp
-                </p>
-              </div>
-              <ul class="text-color-ddb float-left">
-                <li>4 Master Degree project modules a year will take place at VG-CARE.
-                </li>
-                <li>Participating Master students come from different regional partners.
-                </li>
-                <li>Aim: Receiving of the Master’s degree along with the project module done in VG-CARE from the respective university of the candidate.
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act3.jpg">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">INTERNSHIPS
-                  <br/>(ASEAN-GERMANY-AFRICA)
+              <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
+                  <p class="text-color-ddb">PACE-UP network with other regional and global networks on emerging infections and contribute to global preparedness and response activities as well as rapid implementation of findings into optimized clinical and public health practices by maximizing synergies. Effective communication channels between participating partners are being implemented to ensure secure and fast data exchange between different partners and countries.
                   </p>
               </div>
-              <ul class="text-color-ddb">
-                  <li>Internships in Germany will rotate between German partner sites on distinct needs of infectious disease research capacity.
-                  </li>
-                  <li>Distinct and tailored internships are aimed for 12 MDs/MSc/PhDs from Asia and 4 MDs/MSc/PhDs from Africa.
-                  </li>
-                  <li>The Asian candidates will spend 3 months in Germany and 2 months at an African partner site, whereas the African candidates will spend 3 months in Germany and 2 months at an Asian partner site.
-                  </li>
-              </ul>
+          </div>
+          <div class="row my-4">
+              <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
+                  <span class="col-12 text-color-white z-index-2">SUPPORTING STAKEHOLDERS</span>
+                  <img class="col-12 px-0 img-shadow-tl" src="images/objectives3.jpg">
+              </div>
+              <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
+                  <p class="text-color-ddb">Our team of recognized experts has experience in engaging the stakeholders and disseminating research findings. We fully involve politicians, policy makers and stakeholders as well as global public health agencies during all stages of our program and activities and make our expertise available to advise and support the decision-makers in the development and implementation of prevention and response strategies.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="activities_page" class="page primary-page d-none">
+    <div class="container w-75">
+      <h5 class="text-center my-5">ACTIVITIES</h5>
+      <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+                <img class="w-100 img-fluid" src="images/act1.png">
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act4.jpg">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">TRAINING WORKSHOPS ON
-                  <br/> SKILLS AND COMPETENCIES
-                  </p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>One training workshop every year.
-                  </li>
-                  <li>Target group: front-line personnel from national referral centers and reference laboratories, targeting physicians, nurses and laboratory scientists, who will have to provide diagnostic services and clinical care to emerging infectious disease patients.
-                  </li>
-                  <li>Topics: practical training on how to safely collect, package, label, ship, store and process clinical specimens, practical training on how to don and doff personal protective equipment (PPE), the diagnostic technologies for outbreak settings, and how to provide clinical care.
-                  </li>
-              </ul>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">DOCTORAL STUDIES<br/>&nbsp
+              </p>
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act5.jpg">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">TRAINING WORKSHOPS ON ADVANCED
-                  <br/>RESEARCH KNOWLEDGE AND SKILLS
+            <ul class="text-color-ddb float-left">
+                <li>6 fulltime PhD (4 Vietnamese and 2 African) students will conduct their studies in Experimental Medicine program at the Medical Faculty of the University of Tübingen.</li>
+                <li>The study starts on 01.01.2022 and lusts for max. 4 years.</li>
+                <li>PhD students will undertake research rotations between African-Asian and German institutions.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act2.jpg">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">MASTER’S PROJECT MODULES
+                <br/>&nbsp
+              </p>
+            </div>
+            <ul class="text-color-ddb float-left">
+              <li>4 Master Degree project modules a year will take place at VG-CARE.
+              </li>
+              <li>Participating Master students come from different regional partners.
+              </li>
+              <li>Aim: Receiving of the Master’s degree along with the project module done in VG-CARE from the respective university of the candidate.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act3.jpg">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">INTERNSHIPS
+                <br/>(ASEAN-GERMANY-AFRICA)
                 </p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>One training workshop every year.
-                  </li>
-                  <li>Target group: research active personnel with post-graduate qualifications (MD, MSc, MPH, PhD), including physicians, veterinarians, entomologists, biomedical scientists and epidemiologists.
-                  </li>
-                  <li>Topics: surveillance models and methods, ethical considerations, regulatory concepts, clinical trial design and implementation in outbreak settings, epidemiology, innovative approaches to data collection and analysis and possible synergies with well-funded and well-established on-going infectious disease control programs and more advanced clinical care.
-                  </li>
-              </ul>
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act6.png">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">DATA MANAGEMENT<br/>&nbsp</p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>Creation of a secured web-based data management platform shared with all partners.
-                  </li>
-                  <ul>Developing of the common data management procedures and protocols across the PACE-UP coalition:
-                    <li>standardized clinical and surveillance data
-                    </li>
-                    <li>newly available web-based tools and data analysis
-                    </li>
-                    <li>development of mathematical models to monitor in real-time the impact of an emerging infection outbreak and to predict its potential evolution
-                    </li>
-                  </ul>
-                  <li>Supporting rapid data sharing during disease outbreaks in collaboration with national and supranational partners such as regional WHO and local CDCs.
-                  </li>
-              </ul>
+            <ul class="text-color-ddb">
+                <li>Internships in Germany will rotate between German partner sites on distinct needs of infectious disease research capacity.
+                </li>
+                <li>Distinct and tailored internships are aimed for 12 MDs/MSc/PhDs from Asia and 4 MDs/MSc/PhDs from Africa.
+                </li>
+                <li>The Asian candidates will spend 3 months in Germany and 2 months at an African partner site, whereas the African candidates will spend 3 months in Germany and 2 months at an Asian partner site.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act4.jpg">
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act7.png">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">EXPERT SEMINARS ON GCP/GCLP<br/>&nbsp</p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>2 days seminar each alternative year on distinct topics.
-                  </li>
-                  <li>With support of lecturers from the Institute for Tropical Medicine, University of Tübingen, Germany.
-                  </li>
-                  <li>Basic and advanced modules.
-                  </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act8.png">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">EXPERT SEMINARS ON ETHICS AND REGULATORY <br/>CONCEPRS
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">TRAINING WORKSHOPS ON
+                <br/> SKILLS AND COMPETENCIES
                 </p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>Aim: Developing capacities for ethical and regulatory aspects of research in emergency situations to cover ethics of research in emergency situations and developing ethics expertise.
-                  </li>
-                  <li>Each team will have a nominated ethics expert, with personalized continuing professional development.
-                  </li>
-              </ul>
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="text-center my-3 hover-zoom overflow-hidden">
-                <img class="w-100 img-fluid" src="images/act9.jpg">
-              </div>
-              <div class="col align-self-center">
-                <p class="text-center text-color-ddb boxed py-3">SHORT TERM EXPERT/MENTOR<br/>&nbsp
-                </p>
-              </div>
-              <ul class="text-color-ddb">
-                  <li>An infectious diseases specialist shall strengthen the individual and institutional capacities with his experience and wisdom.
-                  </li>
-                  <li>4 stays per year for 15 days in Vietnam.
-                  </li>
-              </ul>
+            <ul class="text-color-ddb">
+                <li>One training workshop every year.
+                </li>
+                <li>Target group: front-line personnel from national referral centers and reference laboratories, targeting physicians, nurses and laboratory scientists, who will have to provide diagnostic services and clinical care to emerging infectious disease patients.
+                </li>
+                <li>Topics: practical training on how to safely collect, package, label, ship, store and process clinical specimens, practical training on how to don and doff personal protective equipment (PPE), the diagnostic technologies for outbreak settings, and how to provide clinical care.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act5.jpg">
             </div>
-        </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">TRAINING WORKSHOPS ON ADVANCED
+                <br/>RESEARCH KNOWLEDGE AND SKILLS
+              </p>
+            </div>
+            <ul class="text-color-ddb">
+                <li>One training workshop every year.
+                </li>
+                <li>Target group: research active personnel with post-graduate qualifications (MD, MSc, MPH, PhD), including physicians, veterinarians, entomologists, biomedical scientists and epidemiologists.
+                </li>
+                <li>Topics: surveillance models and methods, ethical considerations, regulatory concepts, clinical trial design and implementation in outbreak settings, epidemiology, innovative approaches to data collection and analysis and possible synergies with well-funded and well-established on-going infectious disease control programs and more advanced clinical care.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act6.png">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">DATA MANAGEMENT<br/>&nbsp</p>
+            </div>
+            <ul class="text-color-ddb">
+                <li>Creation of a secured web-based data management platform shared with all partners.
+                </li>
+                <ul>Developing of the common data management procedures and protocols across the PACE-UP coalition:
+                  <li>standardized clinical and surveillance data
+                  </li>
+                  <li>newly available web-based tools and data analysis
+                  </li>
+                  <li>development of mathematical models to monitor in real-time the impact of an emerging infection outbreak and to predict its potential evolution
+                  </li>
+                </ul>
+                <li>Supporting rapid data sharing during disease outbreaks in collaboration with national and supranational partners such as regional WHO and local CDCs.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act7.png">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">EXPERT SEMINARS ON GCP/GCLP<br/>&nbsp</p>
+            </div>
+            <ul class="text-color-ddb">
+                <li>2 days seminar each alternative year on distinct topics.
+                </li>
+                <li>With support of lecturers from the Institute for Tropical Medicine, University of Tübingen, Germany.
+                </li>
+                <li>Basic and advanced modules.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act8.png">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">EXPERT SEMINARS ON ETHICS AND REGULATORY <br/>CONCEPRS
+              </p>
+            </div>
+            <ul class="text-color-ddb">
+                <li>Aim: Developing capacities for ethical and regulatory aspects of research in emergency situations to cover ethics of research in emergency situations and developing ethics expertise.
+                </li>
+                <li>Each team will have a nominated ethics expert, with personalized continuing professional development.
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="text-center my-3 hover-zoom overflow-hidden">
+              <img class="w-100 img-fluid" src="images/act9.jpg">
+            </div>
+            <div class="col align-self-center">
+              <p class="text-center text-color-ddb boxed py-3">SHORT TERM EXPERT/MENTOR<br/>&nbsp
+              </p>
+            </div>
+            <ul class="text-color-ddb">
+                <li>An infectious diseases specialist shall strengthen the individual and institutional capacities with his experience and wisdom.
+                </li>
+                <li>4 stays per year for 15 days in Vietnam.
+                </li>
+            </ul>
+          </div>
       </div>
     </div>
+  </div>
 
-    <div id="capacitybuildings_page" class="page primary-page d-none">
-        <div class="container w-75">
-            <h5 class="text-center my-5">THREE PILLARS FOR CAPACITY BUILDING</h5>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                  <div class="text-center my-3 hover-zoom overflow-hidden">
-                      <img class="w-100 img-fluid" src="images/cap1.jpg">
-                  </div>
-                  <div class="col align-self-center">
-                    <p class="text-center text-color-ddb boxed py-3">EDUCATION AND TRAINING</p>
-                  </div>
-                  <p class="float-left text-color-ddb">Strengthen the academic sector by providing access to higher education study programs through scholarships for study in Germany and in the regions and by intensifying local scientific expertise through a North-South and South-South partnership. </p>
-                  <p class="text-color-ddb">ACTIVITIES:
-                      <ul class="text-color-ddb">
-                          <li>Trans-interdisciplinary stipends</li>
-                          <li>Mentorships</li>
-                          <li>MD/PhDs</li>
-                          <li>Increasing the laboratory capacities</li>
-                          <li>Increasing of the critical mass of trainers in the region</li>
-                      </ul>
-                  </p>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                  <div class="text-center my-3 hover-zoom overflow-hidden">
-                    <img class="w-100 img-fluid" src="images/cap2.jpg">
-                  </div>
-                  <div class="col align-self-center">
-                    <p class="text-center text-color-ddb boxed py-3">RESEARCH CAPACITIES</p>
-                  </div>
-                  <p class="float-left text-color-ddb">Develop capacities for conduct of research (multidisciplinary operational, social science, basic science, translational clinical, clinical trials, implementation research).</p>
-                  <p class="text-color-ddb">RESEARCH AREAS:
-                      <ul class="text-color-ddb">
-                          <li>Epidemiological surveillance</li>
-                          <li>Diagnostics spectrum</li>
-                          <li>Clinical research</li>
-                          <li>Artificial intelligence</li>
-                          <li>Digital epidemiology</li>
-                      </ul>
-                  </p>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                  <div class="text-center my-3 hover-zoom overflow-hidden">
-                    <img class="w-100 img-fluid" src="images/cap3.jpg">
-                  </div>
-                  <div class="col align-self-center">
-                    <p class="text-center text-color-ddb boxed py-3">HEALTH CARE</p>
-                  </div>
-                  <p class="float-left text-color-ddb">Develop and setup robust ‘ready to go within 48-72 hours’ PACE-UP outbreak rapid response teams to assist when an outbreak occurs.</p>
-                  <ul class="text-color-ddb">
-                      <li>Health care workers</li>
-                      <li>Infection control</li>
-                      <li>Patient engagement</li>
-                      <li>Risk communication</li>
-                      <li>Community</li>
-                  </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="map_page" class="page primary-page d-none">
-        <div class="container">
-            <h5 class="text-center my-5">MAP (For monitoring / surveillance and prognoses)</h5>
-        </div>
-    </div>
-
-    <div id="publications_page" class="page primary-page d-none">
-        <div class="container">
-            <h5 class="text-center my-5">PUBLICATION LIST</h5>
-        </div>
-    </div>
-
-    <div id="news_page" class="page primary-page d-none">
-        <div class="container w-75">
-          <div id="news" class="row my-5">
-            <h6 class="col-12 text-right">NEWS</h6>
-          </div>
+  <div id="capacitybuildings_page" class="page primary-page d-none">
+      <div class="container w-75">
+          <h5 class="text-center my-5">THREE PILLARS FOR CAPACITY BUILDING</h5>
           <div class="row">
-            <div class="col-lg-3 col-md-12 my-1">
-              <div class="card news-card">
-                    <img class="card-img-top" src="images/news1.jpg" alt="">
-                <div class="card-body">
-                    <span class="card-title d-flex">DD.MM.2021</span>
-                    <span class="card-text d-flex">Training on… </span>
-                    <span class="card-text d-flex">Hanoi, Vietnam</span>
-                    <a href="#" class="btn btn-more float-right">More</a>
+              <div class="col-lg-4 col-md-12">
+                <div class="text-center my-3 hover-zoom overflow-hidden">
+                    <img class="w-100 img-fluid" src="images/cap1.jpg">
                 </div>
+                <div class="col align-self-center">
+                  <p class="text-center text-color-ddb boxed py-3">EDUCATION AND TRAINING</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-12 my-1">
-              <div class="card news-card">
-                    <img class="card-img-top" src="images/news1.jpg" alt="">
-                <div class="card-body">
-                    <span class="card-title d-flex">DD.MM.2021</span>
-                    <span class="card-text d-flex">Training on… </span>
-                    <span class="card-text d-flex">Hanoi, Vietnam</span>
-                    <a href="#" class="btn btn-more float-right">More</a>
+                <p class="float-left text-color-ddb">Strengthen the academic sector by providing access to higher education study programs through scholarships for study in Germany and in the regions and by intensifying local scientific expertise through a North-South and South-South partnership. </p>
+                <p class="text-color-ddb">ACTIVITIES:
+                    <ul class="text-color-ddb">
+                        <li>Trans-interdisciplinary stipends</li>
+                        <li>Mentorships</li>
+                        <li>MD/PhDs</li>
+                        <li>Increasing the laboratory capacities</li>
+                        <li>Increasing of the critical mass of trainers in the region</li>
+                    </ul>
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="text-center my-3 hover-zoom overflow-hidden">
+                  <img class="w-100 img-fluid" src="images/cap2.jpg">
                 </div>
+                <div class="col align-self-center">
+                  <p class="text-center text-color-ddb boxed py-3">RESEARCH CAPACITIES</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-12 my-1">
-              <div class="card news-card">
-                    <img class="card-img-top" src="images/news1.jpg" alt="">
-                <div class="card-body">
-                    <span class="card-title d-flex">DD.MM.2021</span>
-                    <span class="card-text d-flex">Training on… </span>
-                    <span class="card-text d-flex">Hanoi, Vietnam</span>
-                    <a href="#" class="btn btn-more float-right">More</a>
+                <p class="float-left text-color-ddb">Develop capacities for conduct of research (multidisciplinary operational, social science, basic science, translational clinical, clinical trials, implementation research).</p>
+                <p class="text-color-ddb">RESEARCH AREAS:
+                    <ul class="text-color-ddb">
+                        <li>Epidemiological surveillance</li>
+                        <li>Diagnostics spectrum</li>
+                        <li>Clinical research</li>
+                        <li>Artificial intelligence</li>
+                        <li>Digital epidemiology</li>
+                    </ul>
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="text-center my-3 hover-zoom overflow-hidden">
+                  <img class="w-100 img-fluid" src="images/cap3.jpg">
                 </div>
+                <div class="col align-self-center">
+                  <p class="text-center text-color-ddb boxed py-3">HEALTH CARE</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-12 my-1">
-              <div class="card news-card">
-                    <img class="card-img-top" src="images/news1.jpg" alt="">
-                <div class="card-body">
-                    <span class="card-title d-flex">DD.MM.2021</span>
-                    <span class="card-text d-flex">Training on… </span>
-                    <span class="card-text d-flex">Hanoi, Vietnam</span>
-                    <a href="#" class="btn btn-more float-right">More</a>
-                </div>
-                </div>
-            </div>
+                <p class="float-left text-color-ddb">Develop and setup robust ‘ready to go within 48-72 hours’ PACE-UP outbreak rapid response teams to assist when an outbreak occurs.</p>
+                <ul class="text-color-ddb">
+                    <li>Health care workers</li>
+                    <li>Infection control</li>
+                    <li>Patient engagement</li>
+                    <li>Risk communication</li>
+                    <li>Community</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="map_page" class="page primary-page d-none">
+      <div class="container">
+          <h5 class="text-center my-5">MAP (For monitoring / surveillance and prognoses)</h5>
+      </div>
+  </div>
+
+  <div id="publications_page" class="page primary-page d-none">
+      <div class="container">
+          <h5 class="text-center my-5">PUBLICATION LIST</h5>
+      </div>
+  </div>
+
+  <div id="news_page" class="page primary-page d-none">
+      <div class="container w-75">
+        <div id="news" class="row my-5">
+          <h6 class="col-12 text-right">NEWS</h6>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-12 my-1">
+            <div class="card news-card">
+                  <img class="card-img-top" src="images/news1.jpg" alt="">
+              <div class="card-body">
+                  <span class="card-title d-flex">DD.MM.2021</span>
+                  <span class="card-text d-flex">Training on… </span>
+                  <span class="card-text d-flex">Hanoi, Vietnam</span>
+                  <a href="#" class="btn btn-more float-right">More</a>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-12 my-1">
+            <div class="card news-card">
+                  <img class="card-img-top" src="images/news1.jpg" alt="">
+              <div class="card-body">
+                  <span class="card-title d-flex">DD.MM.2021</span>
+                  <span class="card-text d-flex">Training on… </span>
+                  <span class="card-text d-flex">Hanoi, Vietnam</span>
+                  <a href="#" class="btn btn-more float-right">More</a>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-12 my-1">
+            <div class="card news-card">
+                  <img class="card-img-top" src="images/news1.jpg" alt="">
+              <div class="card-body">
+                  <span class="card-title d-flex">DD.MM.2021</span>
+                  <span class="card-text d-flex">Training on… </span>
+                  <span class="card-text d-flex">Hanoi, Vietnam</span>
+                  <a href="#" class="btn btn-more float-right">More</a>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-12 my-1">
+            <div class="card news-card">
+                  <img class="card-img-top" src="images/news1.jpg" alt="">
+              <div class="card-body">
+                  <span class="card-title d-flex">DD.MM.2021</span>
+                  <span class="card-text d-flex">Training on… </span>
+                  <span class="card-text d-flex">Hanoi, Vietnam</span>
+                  <a href="#" class="btn btn-more float-right">More</a>
+              </div>
+              </div>
           </div>
         </div>
-    </div>
+      </div>
+  </div>
 
-    <div id="contact_page" class="page primary-page d-none">
-        <div class="container">
-            <h5 class="text-center my-4">CONTACT</h5>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Dr. Alexa Purgreth / Project Manager</h5>
-                    <p class="card-text">Institute of Tropical Medicine</p>
-            <p class="card-text">Eberhard Karls University Tübingen</p>
-            <p class="card-text">Wilhelmstr. 27</p>
-            <p class="card-text">72074 Tübingen</p>
-            <p class="card-text">Germany</p>
-            <br/>
-            <p class="card-text">Phone.:  +49 7071 29 82 905</p>
-            <p class="card-text">Fax.:       +49 7071 29 46 84</p>
-            <p class="card-text">Email: alexa.purgreth@klinikum.uni-tuebingen.de</p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div id="contact_page" class="page primary-page d-none">
+      <div class="container">
+          <h5 class="text-center my-4">CONTACT</h5>
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Dr. Alexa Purgreth / Project Manager</h5>
+                  <p class="card-text">Institute of Tropical Medicine</p>
+          <p class="card-text">Eberhard Karls University Tübingen</p>
+          <p class="card-text">Wilhelmstr. 27</p>
+          <p class="card-text">72074 Tübingen</p>
+          <p class="card-text">Germany</p>
+          <br/>
+          <p class="card-text">Phone.:  +49 7071 29 82 905</p>
+          <p class="card-text">Fax.:       +49 7071 29 46 84</p>
+          <p class="card-text">Email: alexa.purgreth@klinikum.uni-tuebingen.de</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <div id="login_page" class="page primary-page d-none">
-        <div class="container">
-            This is our internal LOGIN page.
-        </div>
-    </div>
+  <div id="login_page" class="page primary-page d-none">
+      <div class="container">
+          This is our internal LOGIN page.
+      </div>
+  </div>
 
 </body>
 </html>
