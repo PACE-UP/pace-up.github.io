@@ -1,9 +1,9 @@
 /**
- * 
+ *
  */
 
 const FRONTPAGE_ID = "#front_page";
- 
+
 $(document).ready(function() {
 
 	goto_frontpage();
@@ -24,27 +24,27 @@ $(document).ready(function() {
 	$('.front-carousel-item').each(function(){
 		var minPerSlide = 3;
 		var next = $(this);
-	
+
 		for (var i=0;i<minPerSlide;i++) {
 			next=next.next();
 			if (!next.length) {
 				next = $(this).siblings(':first');
 			}
-	
+
 			next.children(':first-child').clone().appendTo($(this));
 		}
 	});
-	
+
 	$('.partner-carousel-item').each(function(){
 		var minPerSlide = 12;
 		var next = $(this);
-	
+
 		for (var i=0;i<minPerSlide;i++) {
 			next=next.next();
 			if (!next.length) {
 				next = $(this).siblings(':first');
 			}
-	
+
 			next.children(':first-child').clone().appendTo($(this));
 		}
 	});
@@ -52,18 +52,29 @@ $(document).ready(function() {
 	$('#who_navbutton').click(function(event) {
 		goto_whopage();
 	});
+
+	$(".nav-link").on("click", function() {
+		highlightNav(this);//navItem
+	});
 });
 
 function highlightNav(navItem) {
-	if (navItem.classList.contains("nav-link")) {
-		$(navItem).addClass("active");
+	var currentActive = document.getElementsByClassName("active-background");
+	for (var i = 0 ; i < currentActive.length ; i++) {
+		currentActive[i].className = currentActive[i].className.replace(" active-background", "");
+		//delete the background for non-selected item
 	}
 	// The selection item is in the dropdown menu
 	// -> highlight the parent nav option.
 	// Only works now for one-level dropdown.
 	if (navItem.classList.contains("dropdown-item")) {
 		var parentNav = navItem.parentNode.parentNode;
-		$(parentNav).addClass("active");
+		$(parentNav).addClass("active-background");
+		return;
+		//does not need to consider parentNav option.
+	}
+	if (navItem.classList.contains("nav-link")) {
+		$(navItem).addClass("active-background");
 	}
 }
 
@@ -197,7 +208,7 @@ function setDisplayPage(id) {
 		$('#sticky-right').removeClass("d-none");
 		$('#sticky-left').removeClass("d-none");
 	}
-	
+
 }
 
 function shrinkNavbar() {
@@ -219,5 +230,3 @@ $(window).scroll(function() {
 	  	expandNavbar();
 	}
 });
-
-	

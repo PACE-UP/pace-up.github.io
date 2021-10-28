@@ -226,7 +226,7 @@ h6 {
     .img-shadow-tl, .img-shadow-bl {
         box-shadow: none;
     }
-    
+
     .caption-img {
         font-family: 'Open Sans', sans-serif;
         font-size: medium;
@@ -478,4 +478,8 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 }
 .search-text: focus{
   outline: none;
+}
+
+.active-background, .nav-link:hover{
+  background-color: var(--grey);
 }
