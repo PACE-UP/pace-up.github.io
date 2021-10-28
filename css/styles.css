@@ -6,10 +6,31 @@
     --grey: #e4e2dd;
 }
 
+/* GENERAL - SETTINGS */
+
 body {
     height: 100%;
 }
 
+h5 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: x-large;
+    color: var(--dddark-blue);
+}
+
+.minh-100 {
+    min-height: 100%;
+}
+
+
+.page {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+/* ------------------ */
+
+/* NAVBAR-TOP */
 #navbar-top {
     background-color: white;
     border-left: 5%;
@@ -25,13 +46,22 @@ body {
 }
 
 #navbar-top .nav-item-text {
-    font-size: 15px;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
     color: var(--dddark-blue);
 }
 
-.shrinkable-nav {
+#navbar-top .shrink {
+    padding: 0;
+}
+
+.shrinkable {
     transition: all 0.4s ease-in-out;
 }
+
+/* ------------------ */
+
+/* HOME PAGE  */
 
 #recipeCarousel > .carousel-control-prev,
 #recipeCarousel > .carousel-control-next {
@@ -42,9 +72,18 @@ body {
 
 #recipeCarousel > .carousel-control-prev:hover,
 #recipeCarousel > .carousel-control-next:hover {
-    background-color: transparent;
+    background-color: white;
+    opacity: 0.4;
     width: 33.33%;
 }
+
+.carousel-title {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+/* ----------------- */
 
 #news {
     border-bottom: 1px solid var(--dddark-blue);
@@ -80,21 +119,15 @@ body {
     background-color: var(--dddark-blue);
 }
 
-.carousel-title {
-    font-family: 'Lucida Bright', 'Georgia', 'serif';
-    font-size: 22px;
-    color: white;
-}
-
 .text-color-ddb {
-    font-family: 'Calibri';
-    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
     color: var(--dddark-blue);
 }
 
-.text-color-white {
-    font-family: 'Calibri';
-    font-size: 11px;
+.caption-img {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
     color: white;
 }
 
@@ -120,12 +153,6 @@ body {
     border-radius: 0;
 }
 
-h5 {
-    font-family: 'Avenir Next LT Pro';
-    font-size: 16px;
-    color: var(--dddark-blue);
-}
-
 h6 {
     font-family: 'Avenir Next LT Pro';
     font-size: 12px;
@@ -135,7 +162,7 @@ h6 {
 .news-card {
     background-color: var(--dddark-blue);
     color: white;
-    font-size: 11px;
+    font-size: medium;
     font-family: 'Calibri';
 }
 
@@ -155,14 +182,6 @@ h6 {
 
 .card-border {
     border: 1px solid var(--dddark-blue);
-}
-
-.page {
-    margin-top: 20vh;
-}
-
-.primary-page {
-    margin-bottom: 10vh;
 }
 
 .boxed {
@@ -203,6 +222,17 @@ h6 {
     z-index: 2;
     width: 33.33% !important;
 } */
+@media (max-width: 768px) {
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+    
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
+    }
+}
 
 @media (min-width: 768px) and (max-width: 992px) {
 
@@ -214,6 +244,16 @@ h6 {
     #partner-carousel > .carousel-inner .carousel-item-left.active,
     #partner-carousel > .carousel-inner .carousel-item-prev {
         transform: translateX(-8.33%);
+    }
+
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
     }
 
     /* .carousel-control {
@@ -239,6 +279,16 @@ h6 {
     #partner-carousel > .carousel-inner .carousel-item-left.active,
     #partner-carousel > .carousel-inner .carousel-item-prev {
         transform: translateX(-8.33%);
+    }
+
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
     }
 
     /* .carousel-control {
@@ -428,17 +478,4 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 }
 .search-text: focus{
   outline: none;
-}
-
-#home_page h5{
-    font-size: xx-large;
-    height:10vh;
-}
-
-#home_page .home-para{
-  font-size: x-large;
-  height: 40vh;
-}
-#home_page .home-img{
-  height:50vh;
 }

@@ -10,6 +10,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Nunito:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -23,82 +26,82 @@
 <body>
 
   <!-- Navigation -->
-<div id="navbar-top" class="fixed-top">
-  <nav class="shrinkable-nav navbar navbar-expand-md mx-5 mb-5">
-    <a class="navbar-brand" href="index.html">
-        <img class="img-fluid" src="images/logo.png"/>
-    </a>
+  <div id="navbar-top" class="fixed-top">
+    <nav class="shrinkable navbar navbar-expand-md mx-5 mb-4">
+      <a class="navbar-brand" href="index.html">
+          <img class="img-fluid" src="images/logo.png"/>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav ml-auto">
-            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#home_page">HOME</a>
-            <div class="dropdown">
-                <a class="nav-item-text nav-link" href="#" role="button" data-toggle="dropdown">WHO WE ARE</a>
-                <div class="dropdown-menu">
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#who_page">WHO ARE WE</a>
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#partners_page">PARTNERS</a>
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#people_page">PEOPLE</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="nav-item-text nav-link" href="#" role="button" data-toggle="dropdown">WHAT WE DO</a>
-                <div class="dropdown-menu"">
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#objectives_page">OBJECTIVES</a>
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#activities_page">ACTIVITIES</a>
-                    <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="#capacitybuildings_page">CAPICITY BUILDINGS</a>
-                </div>
-            </div>
-            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#map_page">MAP</a>
-            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#publications_page">PUBLICATIONS</a>
-            <a class="nav-item-text nav-item nav-link redirect-page-anchor" href="#news_page">NEWS</a>
-            <a class="nav-item-text nav-item nav-link disabled" href="#login_page">LOGIN</a>
-        </div>
-    </div>
-</nav>
-</div>
-
-
-  <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto">
-      <div class="collapse navbar-collapse justify-content-center">
-          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">&copy;VC-Care</a>
-          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">Impressum</a>
-          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
-          <a class="nav-item nav-link redirect-page-anchor nav-link-bottom" href="#contact_page">CONTACT</a>
-          <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.facebook.com">
-            <i class="fab fa-facebook"></i>
-          </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav ml-auto">
+              <a class="nav-item-text nav-item nav-link redirect-page-anchor px-2" href="javascript:goto_homepage()">HOME</a>
+              <div class="dropdown">
+                  <a id="who_navbutton" class="nav-item-text nav-link px-2" role="button" href="#" data-toggle="dropdown">WHO WE ARE</a>
+                  <div class="dropdown-menu">
+                      <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="javascript:goto_partnerspage()">PARTNERS</a>
+                      <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="javascript:goto_peoplepage()">PEOPLE</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <a class="nav-item-text nav-link px-2" href="#" role="button" data-toggle="dropdown">WHAT WE DO</a>
+                  <div class="dropdown-menu"">
+                      <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="javascript:goto_objectivespage()">OBJECTIVES</a>
+                      <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="javascript:goto_capspage()">CAPICITY BUILDINGS</a>
+                      <a class="nav-item-text dropdown-item nav-item nav-link redirect-page-anchor" href="javascript:goto_activitiespage()">ACTIVITIES</a>
+                  </div>
+              </div>
+              <a class="nav-item-text nav-item nav-link redirect-page-anchor px-2" href="javascript:goto_mappage()">MAP</a>
+              <a class="nav-item-text nav-item nav-link redirect-page-anchor px-2" href="javascript:goto_publicationspage()">PUBLICATIONS</a>
+              <a class="nav-item-text nav-item nav-link redirect-page-anchor px-2" href="javascript:goto_newspage()">NEWS</a>
+              <a class="nav-item-text nav-item nav-link redirect-page-anchor px-2" href="javascript:goto_loginpage()">LOGIN</a>
+          </div>
       </div>
   </nav>
+  </div>
 
   <div id="sticky-right" class="position-fixed sticky-right d-none">
-    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
-        <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="javascript:goto_contactpage()">
+        <div class="d-flex flex-row">
+          <div class="pr-1">
+            <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/>&nbsp<br/><br/>
+          </div>
+          <div>
+            <br/><br/>I<br/>N<br/>&nbsp<br/>A<br/>S<br/>I<br/>A<br/>&nbsp<br/><br/>
+          </div>
+        </div>
     </a>
     <br>
-    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="javascript:goto_homepage()">
         <i class="fas fa-globe"></i>
     </a>
     <br>
-    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.google.com">
+    <a class="button btn d-block sticky-item border-radios-none" target="_blank" style="color: white;" href="https://www.facebook.com">
         <i class="fab fa-facebook"></i>
     </a>
   </div>
 
   <div id="sticky-left" class="position-fixed sticky-left d-none">
-    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="#contact_page">
-        <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/><br/>
+    <a class="button redirect-page-anchor btn d-block sticky-item my-2 border-radios-none" href="javascript:goto_contactpage()">
+      <div class="d-flex flex-row">
+        <div class="pr-1">
+          <br/><br/>&nbsp<br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/>&nbsp<br/><br/>
+        </div>
+        <div>
+          <br/><br/>I<br/>N<br/>&nbsp<br/>E<br/>U<br/>R<br/>O<br/>P<br/>E<br/><br/>
+        </div>
+      </div>
     </a>
   </div>
 
-  <div id="front_page" class="page front-page">
-    <div class="text-center pt-5 ddb-background">
+  <div id="front_page" class="page">
+    <div class="text-center ddb-background pt-5">
       <div class="row mx-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
           <div class="carousel-inner w-100" role="listbox">
@@ -122,21 +125,16 @@
       </div>
       <p class="py-3 text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
     </div>
-    <div class="container mx-auto my-auto">
-      <a class="nav-item nav-link redirect-page-anchor" href="#home_page">
-          <h5 class="text-center">PACE-UP AT A GLANCE</h5>
-      </a>
-    </div>
+    
   </div>
 
-  <div id="home_page" class="page primary-page d-none">
-    <div class="container">
-        <h5 class="text-center">PACE-UP AT A GLANCE</h5>
-        <div class="container">
-            <p class="text-color-ddb home-para">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
-            </p>
-        </div>
-        <div class="container home-img">
+  <div id="home_page" class="page">
+    <div class="container w-75 minh-100 pb-5">
+      <div class="d-flex flex-column align-items-center">
+        <h5 class="text-center py-5">PACE-UP AT A GLANCE</h5>
+        <p class="text-color-ddb home-para">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
+        </p>
+        <div class="home-img">
             <div class="row justify-content-center">
                 <div class="col-lg-auto col-md-4 text-center">
                     <img class="img-fluid mx-auto my-1" src="images/partner1.png">
@@ -167,29 +165,87 @@
         </div>
       </div>
     </div>
+  </div>
 
-  <div id="who_page" class="page primary-page d-none">
-      <div class="container w-75 mb-5">
+  <div id="news_page" class="page">
+    
+    <div class="container w-75 minh-100 pb-5">
+      <div id="news" class="row my-5">
+        <h6 class="col-12 text-right">NEWS</h6>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-12 my-1">
+          <div class="card news-card">
+                <img class="card-img-top" src="images/news1.jpg" alt="">
+            <div class="card-body">
+                <span class="card-title d-flex">DD.MM.2021</span>
+                <span class="card-text d-flex">Training on… </span>
+                <span class="card-text d-flex">Hanoi, Vietnam</span>
+                <a href="#" class="btn btn-more float-right">More</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 my-1">
+          <div class="card news-card">
+                <img class="card-img-top" src="images/news1.jpg" alt="">
+            <div class="card-body">
+                <span class="card-title d-flex">DD.MM.2021</span>
+                <span class="card-text d-flex">Training on… </span>
+                <span class="card-text d-flex">Hanoi, Vietnam</span>
+                <a href="#" class="btn btn-more float-right">More</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 my-1">
+          <div class="card news-card">
+                <img class="card-img-top" src="images/news1.jpg" alt="">
+            <div class="card-body">
+                <span class="card-title d-flex">DD.MM.2021</span>
+                <span class="card-text d-flex">Training on… </span>
+                <span class="card-text d-flex">Hanoi, Vietnam</span>
+                <a href="#" class="btn btn-more float-right">More</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 my-1">
+          <div class="card news-card">
+                <img class="card-img-top" src="images/news1.jpg" alt="">
+            <div class="card-body">
+                <span class="card-title d-flex">DD.MM.2021</span>
+                <span class="card-text d-flex">Training on… </span>
+                <span class="card-text d-flex">Hanoi, Vietnam</span>
+                <a href="#" class="btn btn-more float-right">More</a>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="who_page" class="page d-none">
+      <div class="container w-75 mb-5 minh-100">
           <h5 class="text-center my-5">WHO WE ARE</h5>
-          <div class="row">
-              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
+          <div class="row mb-1">
+              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center pb-2">
                   <img class="img-fluid mx-auto img-shadow-bl" src="images/who1.png">
               </div>
-              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center mb-5">
+              <div class="col-xl-6 col-md-12 d-flex flex-wrap align-items-center pb-2">
                   <p class="col-12 text-color-ddb">28 institutions from 15 partner countries work together within the PACE-UP coalition. The well-established and successful North-South and South-South collaborative networks bring into the PACE-UP a comprehensive, multidisciplinary and extensive set of expertise skills and experience covering public health expertise, capacity development, clinical trials, ethics of research in emergency situations, surveillance of emerging and re-emerging zoonosis, molecular biology, epidemiology, rapid diagnostics, rapid whole genome sequencing, phylogenetic analyses and pathogen evolutionary trends, infection control, microbiology, virology, immunology, data analyses, rapid analysis publication and dissemination of data, risk communication, management, operational logistics, patient and community engagement, advocacy, global policy issues, disease modelling, trends and prediction. The PIs and consortia partners have highlighted the need to obtain unity of purpose on emerging infections.
                   </p>
-                  <div class="col-12">
-                    <a class="button redirect-page-anchor btn btn-more float-right" href="#partners_page">
-                      OVERVIEW COLLIATION PARTNERS
-                    </a>
-                  </div>
               </div>
           </div>
+          <div class="row float-right mb-1">
+            <div class="rol-12">
+              <a class="button redirect-page-anchor btn btn-more" href="javascript:goto_partnerspage()">
+                OVERVIEW COLLIATION PARTNERS
+              </a>
+            </div>
+          </div>
       </div>
-      <div>
-        <div class="row mx-auto my-auto">
-          <div id="partner-carousel" class="carousel slide w-100" data-ride="carousel">
-            <div class="carousel-inner w-100" role="listbox">
+      <div class="container mt-5">
+        <div class="row w-100">
+          <div id="partner-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
               <div class="partner-carousel-item carousel-item no-gutters active">
                 <img class="img-fluid col-2 col-md-2 col-lg-2 col-xl-1" src="images/LOGOS_PARTNER/108MCH/image.png" alt="A">
               </div>
@@ -232,78 +288,110 @@
       </div>
   </div>
 
-  <div id="partners_page" class="page primary-page d-none">
+  <div id="partners_page" class="page d-none">
     <div class="container w-75">
       <div class="col-lg-12">
         <h5 class="text-center my-5">COALITION PARTNERS</h5>
       </div>
         <div class="row row-cols-lg-4 justify-content-center">
           <div class="col-md-3 py-2">
-            <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner1.jpg" class="card-img-top mx-auto " alt="Ole">
+            <div class="card bg-color mb-3">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner1.jpg" class="card-img-top mx-auto " >
+              </div>
               <div class="card-body">
-                <p class="text-center p-2 card-title card-border text-color-ddb">ITM-EKUT / GERMANY</p>
+                <a href="https://www.google.com">
+                  <p class="text-center p-2 card-title card-border text-color-ddb">ITM-EKUT / GERMANY</p>
+                </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner2.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner2.jpg" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
-                <p class="text-center p-2 card-title card-border text-color-ddb">VG-CARE / VIETNAM</p>
+                <a href="https://www.google.com">
+                  <p class="text-center p-2 card-title card-border text-color-ddb">VG-CARE / VIETNAM</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner3.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner3.jpg" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">108 MCH / VIETNAM</p>
+              </a>
               </div>
             </div>
           </div>
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner4.png" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner4.png" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">VMMU / VIETNAM</p>
+              </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner5.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner5.jpg" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">RKI / GERMANY</p>
+              </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner6.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner6.jpg" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">HUMP / VIETNAM</p>
+              </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner7.jpg" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner7.jpg" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">BNITM / GERMANY</p>
+              </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 py-2">
             <div class="card bg-color mb-3 h-100">
-              <img src="images/COALITION_PARTNER/partner8.png" class="card-img-top mx-auto" alt="Ole">
+              <div class="text-center hover-zoom overflow-hidden">
+                <img src="images/COALITION_PARTNER/partner8.png" class="card-img-top mx-auto" >
+              </div>
               <div class="card-body">
+                <a href="https://www.google.com">
                 <p class="text-center p-2 card-title card-border text-color-ddb">BITS PILANI / INDIA</p>
+              </a>
               </div>
             </div>
           </div>
@@ -312,26 +400,142 @@
 
   </div>
 
-  <div id="objectives_page" class="page primary-page d-none">
+  <div id="people_page" class="page d-none">
+    <div class="container w-75">
+      <div class="row justify-content-end my-5">
+        <div class="col-6 col-md-12">
+          <h5 class="text-center">OUR TEAM</h5>
+        </div>
+        <div class="col-3 col-md-12 float-right">
+          <div class="search-box text-lg-right">
+            <input class="search-text" type="text" placeholder="Type to search">
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="row row-cols-lg-4 justify-content-center">
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Thirumalaisamy P. Velavan
+                    <br/>ITM-EKUT / GERMANY
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Le Huu Song
+                    <br/>VG-CARE / VIETNAM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Dr. The Trong Nguyen
+                    <br/>VG-CARE / VIETNAM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Dr. Alexa Purgreth
+                    <br/>ITM-EKUT / GERMANY</p>
+                </a>
+              </div>
+          </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Manuel Clavel
+                    <br/>VGU / VIETNAM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Nguyen Linh Toan
+                    <br/>VMMU / VIETNAM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Kuldip Singh Sangwan
+                    <br/>BITS PILANI / INDIA</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 py-2">
+            <div class="card bg-color mb-3 h-100">
+              <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" >
+              <div class="card-body">
+                <a href="https://www.google.com">
+                  <p class="text-center card-text text-color-ddb card-border px-0">Prof. Dr. Jonas Schmidt-Chanasit
+                    <br/>BNITM / GERMANY</p>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <div id="objectives_page" class="page d-none">
     <div class="container w-75">
         <h5 class="text-center my-5">OBJECTIVES</h5>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                <span class="col-12 text-color-white z-index-2">CAPACITY BUILDING</span>
+        <div class="row my-4">
+            <div class="col-lg-4 col-md-12">
+                <span class="col-12 caption-img z-index-2">CAPACITY BUILDING</span>
                 <img class="col-12 px-0 img-shadow-tl" src="images/objectives1.jpg">
             </div>
-            <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
+            <div class="col-lg-8 col-md-12">
                 <p class="text-color-ddb">Our overall aim is to strengthen regional and PAN-ASEAN individual, institutional and infrastructural / organizational capacities and systems for enabling rapid and effective response during an emergency situation / epidemic situation and strengthen the capabilities to identify new capacities during the inter-epidemic period. We are taking forward our PACE-UP consortium vision to provide high quality mentorship by various educational and training programs. With North-South and South-South partnerships, we envisage to strengthen the academic sector by increasing quality access to higher education through scholarships for study in Germany and in the African regions.</p>
                 <div class="col-12">
-                  <a class="button redirect-page-anchor btn btn-more my-1 float-right" href="#capacitybuildings_page">
+                  <a class="button redirect-page-anchor btn btn-more my-1 float-right" href="javascript:goto_capspage()">
                     MORE
                   </a>
                 </div>
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                <span class="col-12 text-color-white z-index-2">NETWORK / DATA EXCANGE</span>
+            <div class="col-lg-4 col-md-12">
+                <span class="col-12 caption-img z-index-2">NETWORK / DATA EXCANGE</span>
                 <img class="col-12 px-0 img-shadow-tl" src="images/objectives2.jpg">
             </div>
             <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
@@ -341,7 +545,7 @@
         </div>
         <div class="row my-4">
             <div class="col-lg-4 col-md-12 d-flex flex-wrap align-items-center">
-                <span class="col-12 text-color-white z-index-2">SUPPORTING STAKEHOLDERS</span>
+                <span class="col-12 caption-img z-index-2">SUPPORTING STAKEHOLDERS</span>
                 <img class="col-12 px-0 img-shadow-tl" src="images/objectives3.jpg">
             </div>
             <div class="col-lg-8 col-md-12 d-flex flex-wrap align-items-center">
@@ -350,102 +554,6 @@
         </div>
     </div>
 </div>
-
-    <div id="people_page" class="page primary-page d-none">
-        <div class="container w-75">
-          <div class="search-box text-lg-right">
-            <input class="search-text" type="text" placeholder="Type to search">
-            <a class="search-btn" href="#">
-              <i class="fas fa-search"></i>
-            </a>
-          </div>
-          <div class="col-lg-12">
-            <h5 class="text-center my-5">OUR TEAM</h5>
-          </div>
-            <div class="row row-cols-lg-4 justify-content-center">
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Thirumalaisamy P. Velavan
-                      <br/>ITM-EKUT / GERMANY
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Le Huu Song
-                      <br/>VG-CARE / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Dr. The Trong Nguyen
-                      <br/>VG-CARE / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Dr. Alexa Purgreth
-                      <br/>ITM-EKUT / GERMANY</p>
-                  </div>
-              </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Manuel Clavel
-                      <br/>VGU / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Nguyen Linh Toan
-                      <br/>VMMU / VIETNAM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Kuldip Singh Sangwan
-                      <br/>BITS PILANI / INDIA</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 py-2">
-                <div class="card bg-color mb-3 h-100">
-                  <img src="images/KEY_PEOPLE/temp.png" class="card-img-top rounded-circle mx-auto" alt="Ole">
-                  <div class="card-body">
-                    <p class="text-center card-text text-color-ddb card-border">Prof. Dr. Jonas Schmidt-Chanasit
-                      <br/>BNITM / GERMANY</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
 
   <div id="activities_page" class="page primary-page d-none">
     <div class="container w-75">
@@ -682,77 +790,47 @@
       </div>
   </div>
 
-  <div id="news_page" class="page primary-page d-none">
-      <div class="container w-75">
-        <div id="news" class="row my-5">
-          <h6 class="col-12 text-right">NEWS</h6>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-12 my-1">
-            <div class="card news-card">
-                  <img class="card-img-top" src="images/news1.jpg" alt="">
-              <div class="card-body">
-                  <span class="card-title d-flex">DD.MM.2021</span>
-                  <span class="card-text d-flex">Training on… </span>
-                  <span class="card-text d-flex">Hanoi, Vietnam</span>
-                  <a href="#" class="btn btn-more float-right">More</a>
-              </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-12 my-1">
-            <div class="card news-card">
-                  <img class="card-img-top" src="images/news1.jpg" alt="">
-              <div class="card-body">
-                  <span class="card-title d-flex">DD.MM.2021</span>
-                  <span class="card-text d-flex">Training on… </span>
-                  <span class="card-text d-flex">Hanoi, Vietnam</span>
-                  <a href="#" class="btn btn-more float-right">More</a>
-              </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-12 my-1">
-            <div class="card news-card">
-                  <img class="card-img-top" src="images/news1.jpg" alt="">
-              <div class="card-body">
-                  <span class="card-title d-flex">DD.MM.2021</span>
-                  <span class="card-text d-flex">Training on… </span>
-                  <span class="card-text d-flex">Hanoi, Vietnam</span>
-                  <a href="#" class="btn btn-more float-right">More</a>
-              </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-12 my-1">
-            <div class="card news-card">
-                  <img class="card-img-top" src="images/news1.jpg" alt="">
-              <div class="card-body">
-                  <span class="card-title d-flex">DD.MM.2021</span>
-                  <span class="card-text d-flex">Training on… </span>
-                  <span class="card-text d-flex">Hanoi, Vietnam</span>
-                  <a href="#" class="btn btn-more float-right">More</a>
-              </div>
-              </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div id="contact_page" class="page primary-page d-none">
+  <div id="contact_page" class="page d-none">
       <div class="container">
-          <h5 class="text-center my-4">CONTACT</h5>
+        <div class="col-xl-6 col-md-12 float-left">
           <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Dr. Alexa Purgreth / Project Manager</h5>
-                  <p class="card-text">Institute of Tropical Medicine</p>
-          <p class="card-text">Eberhard Karls University Tübingen</p>
-          <p class="card-text">Wilhelmstr. 27</p>
-          <p class="card-text">72074 Tübingen</p>
-          <p class="card-text">Germany</p>
-          <br/>
-          <p class="card-text">Phone.:  +49 7071 29 82 905</p>
-          <p class="card-text">Fax.:       +49 7071 29 46 84</p>
-          <p class="card-text">Email: alexa.purgreth@klinikum.uni-tuebingen.de</p>
-              </div>
+            <div class="card-body">
+              <p class="card-text text-color-ddb">
+                Dr. Alexa Purgreth / Project Manager<br/><br/>
+
+                Institute of Tropical Medicine<br/>
+                Eberhard Karls University Tübingen<br/>
+                Wilhelmstr. 27<br/>
+                72074 Tübingen<br/>
+                Germany<br/><br/>
+
+                Phone.:  +49 7071 29 82 905<br/>
+                Fax.:    +49 7071 29 46 84<br/>
+                Email: alexa.purgreth@klinikum.uni-tuebingen.de<br/>
+              </p>
+              <p class="card-title card-border news-card">CONTACT FORM</p>
+            </div>
           </div>
+        </div>
+        <div class="col-xl-6 col-md-12 float-right">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text text-color-ddb text-right">
+                Olga Hase-Bergen (Ms) / Project Manager<br/><br/>
+                
+                VG-CARE<br/>
+                108 Military Central Hospital<br/>
+                N 1, Tran Hung Dao Street<br/>
+                Hai Ba Trung District<br/>
+                Ha Noi, Vietnam<br/><br/>
+
+                Phone: +84(0)964148750<br/>
+                Email: bergen@vgcare.org<br/>
+                <br/>
+              </p>
+              <p class="card-title card-border news-card text-right">CONTACT FORM</p>
+            </div>
+        </div>
       </div>
   </div>
 
@@ -761,6 +839,18 @@
           This is our internal LOGIN page.
       </div>
   </div>
+
+  <nav id="navbar-bottom" class="navbar navbar-expand-md fixed-bottom navbar-bottom mx-auto">
+    <div class="collapse navbar-collapse justify-content-center">
+        <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">&copy;VC-Care</a>
+        <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">Impressum</a>
+        <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.google.com">DATA PROTECTION</a>
+        <a class="nav-item nav-link redirect-page-anchor nav-link-bottom" href="javascript:goto_contactpage()">CONTACT</a>
+        <a class="nav-item nav-link nav-link-bottom" target="_blank" href="https://www.facebook.com">
+          <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+  </nav>
 
 </body>
 </html>
