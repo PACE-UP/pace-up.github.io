@@ -1,9 +1,10 @@
 :root {
-    --dddark-blue:#506183;
-    --lynch: #7a859c;
-    --santas-gray: #a4a5b1;
-    --iron: #d5d7da;
+    --dddark-blue:#516284;
+    --lynch: #7b869d;
+    --santas-gray: #a3a4b0;
+    --iron: #c0c4c5;
     --grey: #e4e2dd;
+    --card-background: #f4f3f1;
 }
 
 /* GENERAL - SETTINGS */
@@ -480,6 +481,23 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
   outline: none;
 }
 
-.active-background, .nav-link:hover{
+.active-background, .nav-parent:hover{
   background-color: var(--grey);
+  font-weight: 900;
+}
+/* .active-background, .nav-child:hover{
+  background-color: var(--iron);
+  color: white;
+} */
+.dropdown:hover .dropdown-menu{
+  display: block; transition: all 0.8s ease-in-out;
+}
+
+.nav-color-text {
+  color: var(--ddark-blue);
+  font-weight: 200;
+}
+
+.bg-card{
+  background-color: var(--card-background);
 }
