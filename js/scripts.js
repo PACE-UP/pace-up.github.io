@@ -205,15 +205,13 @@ function setDisplayPage(id) {
 }
 
 function shrinkNavbar() {
+	$('#navbar-top').addClass('shrink');
 	$('#navbar-top').children().first().addClass('shrink');
-	$('#navbar-top').children().first().addClass('mb-2');
-	$('#navbar-top').children().first().removeClass('mb-4');
 }
 
 function expandNavbar() {
+	$('#navbar-top').removeClass('shrink');
 	$('#navbar-top').children().first().removeClass('shrink');
-	$('#navbar-top').children().first().addClass('mb-4');
-	$('#navbar-top').children().first().removeClass('mb-2');
 }
 
 $(window).scroll(function() {

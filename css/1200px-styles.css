@@ -25,22 +25,39 @@
     }
     
     #navbar-top > nav {
+        margin: 0 5vw 0 5vw;
         border-bottom: 1px solid var(--dddark-blue);
     }
 
-    #navbar-top .nav-item-text {
+    #navbar-top > nav .nav-item-text {
         font-size: 2vh;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding: 2vh 2vw 2vh 2vw;
+    }
+
+    #navbar-top.shrink {
+        background-color: white;
+        height: 8vh;
+        transition: all 0.4s ease-in-out;
     }
     
     #navbar-top .shrink {
-        padding: 0;
+        margin: 0 7vw 0 7vw;
+        height: 8vh;
     }
 
-    .shrinkable {
+    #navbar-top .shrink > a > img {
+        max-height: 5vh;
+        min-height: 5vh;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #navbar-top > .shrink .nav-item-text {
+        font-size: 1.5vh;
+        font-family: 'Nunito', sans-serif;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw 1vh 2vw;
         transition: all 0.4s ease-in-out;
     }
 
@@ -75,9 +92,41 @@
         margin-bottom: 15vh;
     }
 
-    .bottommost-anchor {
+    .homepage-title {
         min-height: 15vh;
         max-height: 15vh;
+    }
+
+    .homepage-content {
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+
+    .home-para {
+        min-height: 30vh;
+        font-size: 2.18vh;
+        font-family: 'Nunito', sans-serif;
+        color: var(--dddark-blue);
+    }
+
+    .home-img .img-item {
+        margin: 0vw 3vw;
+    }
+
+    .home-img img {
+        min-height: 15vh;
+        max-height: 15vh;
+    }
+
+    .home-img .image-label {
+        margin-top: 10px;
+        font-size: 2vh;
+        font-family: 'Nunito', sans-serif;
+        color: var(--dddark-blue);
+    }
+
+    #home_page {
+        margin-bottom: 20vh;
     }
 
     /* ------------ */
