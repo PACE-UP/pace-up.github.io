@@ -19,10 +19,6 @@ h5 {
     color: var(--dddark-blue);
 }
 
-.minh-100 {
-    min-height: 100%;
-}
-
 /* ------------------ */
 
 /* NAVBAR-TOP */
@@ -54,17 +50,13 @@ h5 {
 
 /* ----------------- */
 
-#news {
-    border-bottom: 1px solid var(--dddark-blue);
-}
-
 .sticky-right {
     position: fixed;
     right: 0;
     top: 15vh;
 }
 
-.border-radios-none {
+.border-radius-none {
     border-radius: 0%;
 }
 
@@ -263,4 +255,8 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 
 .bg-card{
   background-color: var(--card-background);
+}
+
+#sticky-right > .redirect-page-anchor {
+    margin-bottom: 20vh;
 }
