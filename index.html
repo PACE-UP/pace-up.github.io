@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Nunito:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/1200px-styles.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -27,7 +28,7 @@
 
   <!-- Navigation -->
   <div id="navbar-top" class="fixed-top">
-    <nav class="shrinkable navbar navbar-expand-md mx-5 mb-4 nav-color-text">
+    <nav class="shrinkable navbar navbar-expand-md mx-5 p-0 nav-color-text">
       <a class="navbar-brand" href="index.html">
           <img class="img-fluid" src="images/logo.png"/>
       </a>
@@ -39,11 +40,11 @@
           <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
           <div class="navbar-nav ml-auto">
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor px-2" href="javascript:goto_homepage()">HOME</a>
+              <a id="home_nav" class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_frontpage()">HOME</a>
               <div class="dropdown">
-                  <a id="who_navbutton" class="nav-item-text nav-link nav-parent px-2" role="button" href="#" data-toggle="dropdown">WHO WE ARE</a>
+                  <a id="who_navbutton" class="nav-item-text nav-link nav-parent" role="button" href="#" data-toggle="dropdown">WHO WE ARE</a>
                   <div class="dropdown-menu">
                       <a class="nav-item-text dropdown-item nav-item nav-link nav-child redirect-page-anchor" href="javascript:goto_partnerspage()">PARTNERS</a>
                       <a class="nav-item-text dropdown-item nav-item nav-link nav-child redirect-page-anchor" href="javascript:goto_peoplepage()">PEOPLE</a>
@@ -57,10 +58,10 @@
                       <a class="nav-item-text dropdown-item nav-item nav-link nav-child redirect-page-anchor" href="javascript:goto_activitiespage()">ACTIVITIES</a>
                   </div>
               </div>
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor px-2" href="javascript:goto_mappage()">MAP</a>
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor px-2" href="javascript:goto_publicationspage()">PUBLICATIONS</a>
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor px-2" href="javascript:goto_newspage()">NEWS</a>
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor px-2" href="javascript:goto_loginpage()">LOGIN</a>
+              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_mappage()">MAP</a>
+              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_publicationspage()">PUBLICATIONS</a>
+              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_newspage()">NEWS</a>
+              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_loginpage()">LOGIN</a>
           </div>
       </div>
   </nav>
@@ -101,9 +102,9 @@
   </div>
 
   <div id="front_page" class="page">
-    <div class="text-center ddb-background pt-5">
+    <div id="frontpage_carousel" class="text-center ddb-background">
       <div class="row mx-auto">
-        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div id="frontpageCarousel" class="carousel slide w-100" data-ride="carousel">
           <div class="carousel-inner w-100" role="listbox">
             <div class="front-carousel-item carousel-item active no-gutters">
               <img class="img-fluid col-4 col-md-4 col-lg-4 col-xl-4" src="images/carousel1.jpg">
@@ -115,23 +116,23 @@
               <img class="img-fluid col-4 col-md-4 col-lg-4 col-xl-4" src="images/carousel3.jpg">
             </div>
           </div>
-          <a class="carousel-control carousel-control-prev pl-4" href="#recipeCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          <a class="carousel-control carousel-control-prev pl-4" href="#frontpageCarousel" role="button" data-slide="prev">
           </a>
-          <a class="carousel-control carousel-control-next pr-4" href="#recipeCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          <a class="carousel-control carousel-control-next pr-4" href="#frontpageCarousel" role="button" data-slide="next">
           </a>
         </div>
       </div>
-      <p class="py-3 text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
+      <p class="text-center ddb-background carousel-title"><b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP)</p>
     </div>
 
   </div>
 
-  <div id="home_page" class="page">
-    <div class="container w-75 minh-100 pb-5">
+  <div id="home_page" class="page mt-0">
+    <div class="container w-75 pb-5">
       <div class="d-flex flex-column align-items-center">
-        <h5 class="text-center py-5">PACE-UP AT A GLANCE</h5>
+        <div class="bottommost-anchor">
+          <h5 class="bottommost-anchor text-center">PACE-UP AT A GLANCE</h5>
+        </div>
         <p class="text-color-ddb home-para">The <b>P</b>AN <b>A</b>SEAN <b>C</b>oalition for <b>E</b>pidemic and O<b>U</b>tbreak <b>P</b>reparedness (PACE-UP) is a multidisciplinary consortium of 28 institutions from North-South and South-South collaborations involving local, regional, and international stakeholders. PACE-UP bundles its activities at the Vietnamese-German Center for Medical Research (VG-CARE) in Hanoi, Vietnam. VG-CARE was selected by the German Academic Exchange Service (DAAD) with funds provided by the German Foreign Office (AA) as one of four Global Health Centres for pandemic and outbreak preparedness and response to infectious diseases. Rapid and uncontrolled spread of infectious diseases in global dimensions as currently experienced in the ongoing COVID-19 pandemic massively affects human health and other social and economic aspects. Our consortium utilizes our ethos and tracks record of equitable Asian-European-African partnerships to build effective outbreak response capacities, aligned closely to research and training across all geographical regions in ASEAN countries. The project is led by Prof. Dr. Thirumalaisamy P. Velavan and Prof. Dr. Le Huu Song, Directors of VG-CARE.
         </p>
         <div class="home-img">

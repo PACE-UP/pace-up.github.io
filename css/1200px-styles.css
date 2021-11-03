@@ -1,0 +1,101 @@
+:root {
+    --dddark-blue:#516284;
+    --lynch: #7b869d;
+    --santas-gray: #a3a4b0;
+    --iron: #c0c4c5;
+    --grey: #e4e2dd;
+    --card-background: #f4f3f1;
+}
+
+@media (min-width: 1200px) {
+    
+    .page {
+        margin-top: 12vh;
+        margin-bottom: 10vh;
+    }
+
+    #navbar-top > nav > a > img {
+        max-height: 8vh;
+        min-height: 8vh;
+    }
+
+    #navbar-top {
+        background-color: white;
+        height: 12vh;
+    }
+    
+    #navbar-top > nav {
+        border-bottom: 1px solid var(--dddark-blue);
+    }
+
+    #navbar-top .nav-item-text {
+        font-size: 2vh;
+        font-family: 'Nunito', sans-serif;
+        color: var(--dddark-blue);
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    
+    #navbar-top .shrink {
+        padding: 0;
+    }
+
+    .shrinkable {
+        transition: all 0.4s ease-in-out;
+    }
+
+    #frontpage_carousel {
+        min-height: 58vh;
+        max-height: 58vh;
+        padding-top: 8vh;
+    }
+
+    #frontpage_carousel > div {
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+
+    #frontpage_carousel > p {
+        min-height: 10vh;
+        max-height: 10vh;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+        font-size: 4vh;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .front-carousel-item {
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+
+    #front_page {
+        margin-bottom: 15vh;
+    }
+
+    .bottommost-anchor {
+        min-height: 15vh;
+        max-height: 15vh;
+    }
+
+    /* ------------ */
+
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active,
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+}

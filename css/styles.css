@@ -15,7 +15,7 @@ body {
 
 h5 {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-size: x-large;
+    font-size: 3vh;
     color: var(--dddark-blue);
 }
 
@@ -23,56 +23,24 @@ h5 {
     min-height: 100%;
 }
 
-
-.page {
-    margin-top: 20vh;
-    margin-bottom: 10vh;
-}
-
 /* ------------------ */
 
 /* NAVBAR-TOP */
-#navbar-top {
-    background-color: white;
-    border-left: 5%;
-}
 
-#navbar-top > nav {
-    border-bottom: 1px solid var(--dddark-blue);
-}
-
-#navbar-top > nav > a > img {
-    max-height: 50px;
-    min-height: 50px;
-}
-
-#navbar-top .nav-item-text {
-    font-size: medium;
-    font-family: 'Nunito', sans-serif;
-    color: var(--dddark-blue);
-}
-
-#navbar-top .shrink {
-    padding: 0;
-}
-
-.shrinkable {
-    transition: all 0.4s ease-in-out;
-}
 
 /* ------------------ */
 
 /* HOME PAGE  */
 
-#recipeCarousel > .carousel-control-prev,
-#recipeCarousel > .carousel-control-next {
+#frontpageCarousel > .carousel-control-prev,
+#frontpageCarousel > .carousel-control-next {
     background-color: white;
     opacity: 0.4;
     width: 33.33%;
 }
 
-#recipeCarousel > .carousel-control-prev:hover,
-#recipeCarousel > .carousel-control-next:hover {
+#frontpageCarousel > .carousel-control-prev:hover,
+#frontpageCarousel > .carousel-control-next:hover {
     background-color: white;
     opacity: 0.4;
     width: 33.33%;
@@ -218,87 +186,6 @@ h6 {
     transform: translateX(8.33%);
 }
 
-/* .carousel-control {
-    background-color: transparent;
-    z-index: 2;
-    width: 33.33% !important;
-} */
-@media (max-width: 768px) {
-    .img-shadow-tl, .img-shadow-bl {
-        box-shadow: none;
-    }
-
-    .caption-img {
-        font-family: 'Open Sans', sans-serif;
-        font-size: medium;
-        color: var(--dddark-blue);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-
-    #partner-carousel > .carousel-inner .carousel-item-right.active,
-    #partner-carousel > .carousel-inner .carousel-item-next {
-        transform: translateX(8.33%);
-    }
-
-    #partner-carousel > .carousel-inner .carousel-item-left.active,
-    #partner-carousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-8.33%);
-    }
-
-    .img-shadow-tl, .img-shadow-bl {
-        box-shadow: none;
-    }
-
-    .caption-img {
-        font-family: 'Open Sans', sans-serif;
-        font-size: medium;
-        color: var(--dddark-blue);
-    }
-
-    /* .carousel-control {
-        background-color: transparent;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .sticky-right {
-        display: block;
-    }
-    .sticky-left {
-        display: block;
-    }
-
-    #partner-carousel > .carousel-inner .carousel-item-right.active,
-    #partner-carousel > .carousel-inner .carousel-item-next {
-        transform: translateX(8.33%);
-    }
-
-    #partner-carousel > .carousel-inner .carousel-item-left.active,
-    #partner-carousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-8.33%);
-    }
-
-    .img-shadow-tl, .img-shadow-bl {
-        box-shadow: none;
-    }
-
-    .caption-img {
-        font-family: 'Open Sans', sans-serif;
-        font-size: medium;
-        color: var(--dddark-blue);
-    }
-
-    /* .carousel-control {
-        background-color: white;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
-}
-
 @media (min-width: 1200px) {
     .sticky-right {
         display: block;
@@ -316,12 +203,6 @@ h6 {
     #partner-carousel > .carousel-inner .carousel-item-prev {
         transform: translateX(-8.33%);
     }
-
-    /* .carousel-control {
-        background-color: white;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
 }
 
 #partner-carousel > .carousel-inner .carousel-item-right,
@@ -332,132 +213,32 @@ h6 {
 /* This is for the carousel */
 /* The solution here is adapted from the answer @
 https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-carousel-on-xl-screen */
-#recipeCarousel > .carousel-inner .carousel-item.active,
-#recipeCarousel > .carousel-inner .carousel-item-next,
-#recipeCarousel > .carousel-inner .carousel-item-prev {
+#frontpageCarousel > .carousel-inner .carousel-item.active,
+#frontpageCarousel > .carousel-inner .carousel-item-next,
+#frontpageCarousel > .carousel-inner .carousel-item-prev {
     display: flex;
 }
 
-#recipeCarousel > .carousel-control-next {
+#frontpageCarousel > .carousel-control-next {
     justify-content: right;
 }
 
-#recipeCarousel > .carousel-control-prev {
+#frontpageCarousel > .carousel-control-prev {
     justify-content: left;
 }
 
-/* .carousel-control-prev:hover, .carousel-control-prev:focus,
-.carousel-control-next:hover,
-.carousel-control-next:focus {
-  background-color: transparent;
-  text-decoration: none;
-  outline: 0;
-  transition: .5s ease-out;
-  /* opacity: .9; */
-/* } */ */
-
-#recipeCarousel > .carousel-inner .carousel-item-right.active,
-#recipeCarousel > .carousel-inner .carousel-item-next {
+#frontpageCarousel > .carousel-inner .carousel-item-right.active,
+#frontpageCarousel > .carousel-inner .carousel-item-next {
     transform: translateX(33.33%);
 }
 
-#recipeCarousel > .carousel-inner .carousel-item-left.active,
-#recipeCarousel > .carousel-inner .carousel-item-prev {
+#frontpageCarousel > .carousel-inner .carousel-item-left.active,
+#frontpageCarousel > .carousel-inner .carousel-item-prev {
     transform: translateX(-33.33%);
 }
 
-/* .carousel-control {
-    background-color: transparent;
-    z-index: 2;
-    width: 33.33% !important;
-} */
-
-@media (max-width: 768px) {
-    .sticky-right {
-        display: none !important;
-    }
-    .sticky-left {
-        display: none !important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .sticky-right {
-        display: block;
-    }
-    .sticky-left {
-        display: block;
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-right.active,
-    #recipeCarousel > .carousel-inner .carousel-item-next {
-        transform: translateX(33.33%);
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-left.active,
-    #recipeCarousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.33%);
-    }
-
-    /* .carousel-control {
-        background-color: transparent;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .sticky-right {
-        display: block;
-    }
-    .sticky-left {
-        display: block;
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-right.active,
-    #recipeCarousel > .carousel-inner .carousel-item-next {
-        transform: translateX(33.33%);
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-left.active,
-    #recipeCarousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.33%);
-    }
-
-    /* .carousel-control {
-        background-color: white;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
-}
-
-@media (min-width: 1200px) {
-    .sticky-right {
-        display: block;
-    }
-    .sticky-left {
-        display: block;
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-right.active,
-    #recipeCarousel > .carousel-inner .carousel-item-next {
-        transform: translateX(33.33%);
-    }
-
-    #recipeCarousel > .carousel-inner .carousel-item-left.active,
-    #recipeCarousel > .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.33%);
-    }
-
-    /* .carousel-control {
-        background-color: white;
-        z-index: 2;
-        width: 33.33% !important;
-    } */
-}
-
-#recipeCarousel > .carousel-inner .carousel-item-right,
-#recipeCarousel > .carousel-inner .carousel-item-left{
+#frontpageCarousel > .carousel-inner .carousel-item-right,
+#frontpageCarousel > .carousel-inner .carousel-item-left{
     transform: translateX(0);
 }
 .search-btn{
@@ -485,10 +266,7 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
   background-color: var(--grey);
   font-weight: 900;
 }
-/* .active-background, .nav-child:hover{
-  background-color: var(--iron);
-  color: white;
-} */
+
 .dropdown:hover .dropdown-menu{
   display: block; transition: all 0.8s ease-in-out;
 }

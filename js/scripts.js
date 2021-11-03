@@ -7,13 +7,15 @@ const FRONTPAGE_ID = "#front_page";
 $(document).ready(function() {
 
 	goto_frontpage();
+	let homenav = document.getElementById('home_nav');
+	highlightNav(homenav);
 
 	$('.redirect-page-anchor').click(function(event) {
 		var target_page_id = $(this).attr('href');
 		setDisplayPage(target_page_id);
 	});
 
-	$('#recipeCarousel').carousel({
+	$('#frontpageCarousel').carousel({
 		interval: 25000
 	})
 
@@ -85,15 +87,6 @@ function goto_frontpage() {
 	$('#home_page').removeClass("d-none");
 	$('#news_page').removeClass("d-none");
 	$('#navbar-bottom').removeClass("fixed-bottom");
-}
-
-function goto_homepage() {
-	shrinkNavbar();
-	$('.page').addClass("d-none");
-	$('#home_page').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
 }
 
 function goto_whopage() {

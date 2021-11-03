@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #partner-carousel > .carousel-inner .carousel-item-right.active,
+    #partner-carousel > .carousel-inner .carousel-item-next {
+        transform: translateX(8.33%);
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-left.active,
+    #partner-carousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-8.33%);
+    }
+
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
+    }
+
+    /* .carousel-control {
+        background-color: transparent;
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-right.active,
+    #partner-carousel > .carousel-inner .carousel-item-next {
+        transform: translateX(8.33%);
+    }
+
+    #partner-carousel > .carousel-inner .carousel-item-left.active,
+    #partner-carousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-8.33%);
+    }
+
+    .img-shadow-tl, .img-shadow-bl {
+        box-shadow: none;
+    }
+
+    .caption-img {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        color: var(--dddark-blue);
+    }
+
+    /* .carousel-control {
+        background-color: white;
+        z-index: 2;
+        width: 33.33% !important;
+    } */
+}
+
+
+/* .carousel-control {
+    background-color: transparent;
+    z-index: 2;
+    width: 33.33% !important;
+} */
+
+@media (max-width: 768px) {
+    .sticky-right {
+        display: none !important;
+    }
+    .sticky-left {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active,
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .sticky-right {
+        display: block;
+    }
+    .sticky-left {
+        display: block;
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-right.active,
+    #recipeCarousel > .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel > .carousel-inner .carousel-item-left.active,
+    #recipeCarousel > .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+}
