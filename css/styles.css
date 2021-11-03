@@ -58,16 +58,6 @@ h5 {
     border-bottom: 1px solid var(--dddark-blue);
 }
 
-#navbar-bottom {
-    background-color: var(--santas-gray);
-}
-
-.nav-link-bottom {
-    font-family: 'Calibri';
-    font-size: 12px;
-    color: white;
-}
-
 .sticky-right {
     position: fixed;
     right: 0;
@@ -269,11 +259,6 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 
 .dropdown:hover .dropdown-menu{
   display: block; transition: all 0.8s ease-in-out;
-}
-
-.nav-color-text {
-  color: var(--ddark-blue);
-  font-weight: 200;
 }
 
 .bg-card{

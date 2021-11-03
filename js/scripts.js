@@ -10,11 +10,6 @@ $(document).ready(function() {
 	let homenav = document.getElementById('home_nav');
 	highlightNav(homenav);
 
-	$('.redirect-page-anchor').click(function(event) {
-		var target_page_id = $(this).attr('href');
-		setDisplayPage(target_page_id);
-	});
-
 	$('#frontpageCarousel').carousel({
 		interval: 25000
 	})
@@ -86,7 +81,6 @@ function goto_frontpage() {
 	$('#front_page').removeClass("d-none");
 	$('#home_page').removeClass("d-none");
 	$('#news_page').removeClass("d-none");
-	$('#navbar-bottom').removeClass("fixed-bottom");
 }
 
 function goto_whopage() {
@@ -95,113 +89,83 @@ function goto_whopage() {
 	$('#who_page').removeClass("d-none");
 	$('#partners_page').removeClass("d-none");
 	$('#people_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_partnerspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#partners_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_peoplepage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#people_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_objectivespage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#objectives_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_activitiespage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#activities_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_capspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#capacitybuildings_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_mappage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#map_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_publicationspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#publications_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_newspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#news_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_loginpage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#login_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
 function goto_contactpage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#contact_page').removeClass("d-none");
-	$('#sticky-right').removeClass("d-none");
-	$('#sticky-left').removeClass("d-none");
-	$('#navbar-bottom').addClass("fixed-bottom");
+	displayAdditionalNavs()
 }
 
-function setDisplayPage(id) {
-	$('.page').addClass("d-none");
-	$('.front-page').addClass("d-none");
-	$(id).removeClass('d-none');
-	if (id === FRONTPAGE_ID) {
-		$('#navbar-bottom').addClass("d-none");
-	} else {
-		$('#navbar-bottom').removeClass("d-none");
-		$('#sticky-right').removeClass("d-none");
-		$('#sticky-left').removeClass("d-none");
-	}
-
+function displayAdditionalNavs() {
+	$('#sticky-right').removeClass("d-none");
+	$('#sticky-left').removeClass("d-none");
+	$('#navbar-bottom').removeClass("d-none");
 }
 
 function shrinkNavbar() {
@@ -215,9 +179,18 @@ function expandNavbar() {
 }
 
 $(window).scroll(function() {
-	if ($(document).scrollTop() > 10) {
-	  	shrinkNavbar();
-	} else {
-	  	expandNavbar();
+	let front_page = document.getElementById('front_page');
+	if (!front_page.classList.contains("d-none")) {
+		if ($(document).scrollTop() > window.innerHeight*0.5) {
+			shrinkNavbar();
+			displayAdditionalNavs()
+		} else {
+			expandNavbar();
+			$('#navbar-bottom').addClass("d-none");
+			$('#sticky-right').addClass("d-none");
+			$('#sticky-left').addClass("d-none");
+			$('#navbar-bottom').addClass("fixed-bottom");
+
+		}
 	}
 });

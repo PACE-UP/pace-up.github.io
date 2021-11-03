@@ -129,6 +129,19 @@
         margin-bottom: 20vh;
     }
 
+    #navbar-bottom {
+        min-height: 6vh;
+        max-height: 6vh;
+        background-color: var(--santas-gray);
+    }
+
+    #navbar-bottom .nav-link-bottom {
+        font-size: 1.8vh;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        padding: 0vh 3.5vw;
+    }
+
     /* ------------ */
 
     .sticky-right {
