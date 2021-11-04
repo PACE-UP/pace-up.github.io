@@ -42,7 +42,7 @@
     }
     
     #navbar-top .shrink {
-        margin: 0 7vw 0 7vw;
+        margin: 0 5vw 0 5vw;
         height: 8vh;
     }
 
@@ -53,7 +53,7 @@
     }
 
     #navbar-top > .shrink .nav-item-text {
-        font-size: 1.5vh;
+        font-size: 2vh;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
         padding: 1vh 2vw 1vh 2vw;
@@ -109,7 +109,7 @@
     }
 
     .home-img .img-item {
-        padding: 0vw 3vw;
+        padding: 0vw 2vw;
     }
 
     .home-img img {
@@ -159,29 +159,54 @@
         color: var(--dddark-blue);
     }
 
-    #news-items {
+    #news-items-content {
         background-color: white;
         min-height: 50vh;
         padding: 3vh 0vw;
     }
 
-    #news-items > .news-item {
-        margin-bottom: 3vh;
-    }
-
-    #news-items > .news-item > .card {
+    #news-items-content > .news-item {
         min-height: 40vh;
         max-height: 40vh;
     }
 
-    #news-items > .news-item > .card > .card-img-top {
-        min-height: 20vh;
-        max-height: 20vh;
+    #news-items-content > .news-item > .card {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        background-color: var(--dddark-blue);
+        color: white;
+        border: none;
+        border-radius: 0;
+        box-shadow: 1vh 1vh var(--santas-gray);
     }
 
-    #news-items img {
+    #news-items-content > .news-item > .card > .card-img-top {
         min-height: 25vh;
         max-height: 25vh;
+    }
+
+    #news-items-content > .news-item > .card > .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 2vh 1vw;
+        font-size: 2vh;
+    }
+
+    #news-items-content > .news-item > .card > .card-body > .card-title {
+        margin-bottom: 2vh;
+    }
+
+    #news-items-content > .news-item > .card > .card-body > .card-subtitle {
+        font-weight: bold;
+    }
+
+    #news-items-content > .news-item > .card > .card-body > .card-button {
+        position: absolute;
+        right: 0.5vw;
+        bottom: 1vh;
+        font-size: 1.63vh;
+        height: 4vh;
+        text-align: center;
     }
 
     /* ------------ */
