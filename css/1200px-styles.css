@@ -434,8 +434,7 @@
       justify-content: space-between;
     }
 
-    .capacitybuildings-page-container .row > .something {
-      border: 1px red solid;
+    .capacitybuildings-page-container .row .something {
       background-color: var(--grey);
     }
 
@@ -446,7 +445,6 @@
         padding: 1.5vh 2vw;
         margin: auto 3vw;
         border: 1px var(--dddark-blue) solid;
-        height: 8vh;
     }
 
     .capacitybuildings-page-container .sub-content {
