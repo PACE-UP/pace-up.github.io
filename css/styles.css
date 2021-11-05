@@ -4,7 +4,6 @@
     --santas-gray: #a3a4b0;
     --iron: #c0c4c5;
     --grey: #e4e2dd;
-    --card-background: #f4f3f1;
 }
 
 /* GENERAL - SETTINGS */
@@ -91,14 +90,11 @@ h5 {
     font-size: 10px;
     color: white;
     min-width: 36px;
-}
-
-.btn {
-    background: var(--dddark-blue);
+    background: var(--lynch);
 }
 
 .btn-more {
-    background: var(--santas-gray);
+    background: var(--iron);
     color: white;
     font-size: 10px;
     border-radius: 0;
@@ -180,9 +176,6 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
   display: block; transition: all 0.8s ease-in-out;
 }
 
-.bg-card{
-  background-color: var(--card-background);
-}
 
 #sticky-right > .redirect-page-anchor {
     margin-bottom: 20vh;

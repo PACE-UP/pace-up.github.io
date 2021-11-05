@@ -4,15 +4,13 @@
     --santas-gray: #a3a4b0;
     --iron: #c0c4c5;
     --grey: #e4e2dd;
-    --card-background: #f4f3f1;
 }
 
 @media (min-width: 992px) {
-    
+
     .page {
         margin-top: 12vh;
-        background-color: rgb(252, 252, 252);
-        /* background-color: yellow; */
+        background-color: var(--grey);
     }
 
     #navbar-top > nav > a > img {
@@ -24,7 +22,7 @@
         background-color: white;
         height: 12vh;
     }
-    
+
     #navbar-top > nav {
         margin: 0 5vw 0 5vw;
         border-bottom: 1px solid var(--dddark-blue);
@@ -42,7 +40,7 @@
         height: 8vh;
         transition: all 0.4s ease-in-out;
     }
-    
+
     #navbar-top .shrink {
         margin: 0 5vw 0 5vw;
         height: 8vh;
@@ -272,7 +270,7 @@
         min-height: 80vh;
         max-height: 80vh;
     }
-    
+
     #map_page > .container {
         min-height: 82vh;
         max-height: 82vh;
@@ -295,14 +293,14 @@
         margin: 0vh 5vw;
         overflow: hidden;
     }
-      
+
     .logo-slideshow > div {
         height: 24vh;
         width: 3260px;
         background: url(../images/LOGOS_PARTNER/slideshow.png);
         background-size: auto auto;
     }
-    
+
     .logo-slideshow .mover {
         animation: moveSlideshow 20s linear infinite;
         margin-top: 2vh;
@@ -310,8 +308,8 @@
     }
 
     @keyframes moveSlideshow {
-        100% { 
-            transform: translateX(-49%);  
+        100% {
+            transform: translateX(-49%);
         }
     }
 
@@ -351,6 +349,7 @@
         padding-top: 1vh;
         padding-bottom: 1vh;
         color: var(--dddark-blue);
+        background-color: white;
         font-size: 1.5vh;
     }
 
@@ -391,6 +390,7 @@
         padding-top: 1vh;
         padding-bottom: 1vh;
         color: var(--dddark-blue);
+        background-color: white;
         font-size: 1.5vh;
     }
 
@@ -413,7 +413,7 @@
         color: var(--dddark-blue);
     }
 
-    
+
     #capacitybuildings_page {
         padding-top: 2vh;
         padding-bottom: 2vh;
@@ -428,16 +428,22 @@
         height: 8vh;
     }
 
+
+    .capacitybuildings-page-container .content {
+      background-color: var(--grey);
+    }
+
     .capacitybuildings-page-container .title-text {
         font-size: 1.6vh;
         color: var(--dddark-blue);
+        background-color: white;
         padding: 1.5vh 2vw;
         margin: auto 3vw;
         border: 1px var(--dddark-blue) solid;
         height: 8vh;
     }
 
-    .capacitybuildings-page-container .content {
+    .capacitybuildings-page-container .sub-content {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
