@@ -75,6 +75,7 @@ function goto_whopage() {
 	$('#partners_page').addClass("mt-0");
 	$('#partners_page').removeClass("margin-nav-bottom");
 	$('#people_page').removeClass("d-none");
+	$('#people_page').addClass("mt-0");
 	displayAdditionalNavs()
 }
 
@@ -91,6 +92,7 @@ function goto_peoplepage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#people_page').removeClass("d-none");
+	$('#people_page').removeClass("mt-0");
 	displayAdditionalNavs()
 }
 

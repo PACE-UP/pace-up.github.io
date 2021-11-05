@@ -280,6 +280,10 @@
         max-height: 80vh;
     }
 
+    .logo-slideshow-container {
+        background-color: white;
+    }
+
     .logo-slideshow {
         height: 24vh;
         max-width: 100vw;
@@ -333,7 +337,7 @@
         border-radius: 0;
     }
 
-    .partners-page-content > .partners-item > .card > .card-img-top {
+    .partners-page-content > .partners-item > .card .card-img-top {
         min-height: 25vh;
         max-height: 25vh;
     }
@@ -345,6 +349,46 @@
     }
 
     .partners-page-content > .partners-item > .card > .card-body .card-title {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        color: var(--dddark-blue);
+        font-size: 1.5vh;
+    }
+
+    .people-page-container {
+        min-width: 90vw;
+        max-width: 90vw;
+        padding-bottom: 6vh;
+    }
+
+    .people-page-content {
+        background-color: white;
+        padding: 3vh 3vw;
+    }
+
+    .people-page-content > .people-item {
+        margin-bottom: 2vh;
+    }
+
+    .people-page-content > .people-item > .card {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        background-color: var(--grey);
+        border: none;
+        border-radius: 0;
+    }
+
+    .people-page-content > .people-item > .card .card-img-top {
+        padding: 2vh 2vw;
+    }
+
+    .people-page-content > .people-item > .card > .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 2vh 0.5vw;
+    }
+
+    .people-page-content > .people-item > .card > .card-body .card-title {
         padding-top: 1vh;
         padding-bottom: 1vh;
         color: var(--dddark-blue);
