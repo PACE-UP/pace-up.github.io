@@ -421,15 +421,21 @@
 
     .capacitybuildings-page-container {
         background-color: white;
-        padding: 0vh 3vw 3vh 3vw;
+        padding: 0vh 3vw 3vh 3vw;  
     }
 
     .capacitybuildings-page-container .title {
         height: 8vh;
     }
 
+    .capacitybuildings-page-container .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-    .capacitybuildings-page-container .content {
+    .capacitybuildings-page-container .row > .something {
+      border: 1px red solid;
       background-color: var(--grey);
     }
 
