@@ -6,7 +6,7 @@
     --grey: #e4e2dd;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1120px) {
 
     .page {
         margin-top: 12vh;
@@ -421,7 +421,7 @@
 
     .capacitybuildings-page-container {
         background-color: white;
-        padding: 0vh 3vw 3vh 3vw;  
+        padding: 0vh 3vw 3vh 3vw;
     }
 
     .capacitybuildings-page-container .title {
