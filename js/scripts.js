@@ -76,7 +76,7 @@ function goto_whopage() {
 	$('#partners_page').removeClass("margin-nav-bottom");
 	$('#people_page').removeClass("d-none");
 	$('#people_page').addClass("mt-0");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_partnerspage() {
@@ -85,7 +85,7 @@ function goto_partnerspage() {
 	$('#partners_page').removeClass("d-none");
 	$('#partners_page').removeClass("mt-0");
 	$('#partners_page').addClass("margin-nav-bottom");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_peoplepage() {
@@ -93,42 +93,42 @@ function goto_peoplepage() {
 	$('.page').addClass("d-none");
 	$('#people_page').removeClass("d-none");
 	$('#people_page').removeClass("mt-0");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_objectivespage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#objectives_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_activitiespage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#activities_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_capspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#capacitybuildings_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_mappage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#map_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_publicationspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#publications_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_newspage() {
@@ -138,21 +138,21 @@ function goto_newspage() {
 	// in case I forgot, this is for setting some top margin for the navbar-top
 	// since this function display only news page.
 	$('#news_page').removeClass("mt-0");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_loginpage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#login_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function goto_contactpage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#contact_page').removeClass("d-none");
-	displayAdditionalNavs()
+	displayAdditionalNavs();
 }
 
 function displayAdditionalNavs() {
@@ -182,7 +182,7 @@ $(window).scroll(function() {
 	if (!front_page.classList.contains("d-none")) {
 		if ($(document).scrollTop() > window.innerHeight*0.5) {
 			shrinkNavbar();
-			displayAdditionalNavs()
+			displayAdditionalNavs();
 		} else {
 			expandNavbar();
 			hideAdditionalNavs();

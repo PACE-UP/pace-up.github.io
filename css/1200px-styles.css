@@ -472,6 +472,12 @@
         padding: 1vh 2vw;
     }
 
+    #contact_page p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+    }
+
     /* ------------ */
 
     .sticky-right {
