@@ -114,17 +114,9 @@ h6 {
     border: 1px solid var(--dddark-blue);
 }
 
-.boxed {
-    border: 1px var(--dddark-blue) solid;
-}
-
 .hover-zoom:hover img {
     transform: scale(1.2);
     transition: all .2s linear;
-}
-
-.img-shadow-tl {
-    box-shadow: -30px -30px var(--dddark-blue);
 }
 
 #partner-carousel > .carousel-inner .carousel-item.active,

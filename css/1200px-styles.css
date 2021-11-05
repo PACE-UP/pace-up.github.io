@@ -11,8 +11,8 @@
     
     .page {
         margin-top: 12vh;
-        /* background-color: rgb(252, 252, 252); */
-        background-color: yellow;
+        background-color: rgb(252, 252, 252);
+        /* background-color: yellow; */
     }
 
     #navbar-top > nav > a > img {
@@ -213,15 +213,6 @@
         text-align: center;
     }
 
-    #who_page {
-        padding-bottom: 5vh;
-    }
-
-    .who-page-container {
-        min-width: 90vw;
-        max-width: 90vw;
-    }
-
     .who-page-content {
         margin-bottom: 2vh;
         min-height: 40vh;
@@ -242,6 +233,20 @@
         margin-left: 2vw;
         margin-bottom: 4vh;
         box-shadow: -2vw 4vh var(--dddark-blue);
+    }
+
+    .img-shadow-tl {
+        margin-left: 2vw;
+        margin-top: 4vh;
+        box-shadow: -2vw -4vh var(--dddark-blue);
+    }
+
+    .caption-img {
+        margin-top: 1.2vh;
+        margin-left: 2vw;
+        color: white;
+        font-size: 1.6vh;
+        position: absolute;
     }
 
     #login_page > .container {
@@ -314,12 +319,6 @@
         margin-bottom: 6vh;
     }
 
-    .partners-page-container {
-        min-width: 90vw;
-        max-width: 90vw;
-        padding-bottom: 6vh;
-    }
-
     .partners-page-content {
         background-color: white;
         padding: 3vh 3vw;
@@ -355,7 +354,7 @@
         font-size: 1.5vh;
     }
 
-    .people-page-container {
+    .page-container {
         min-width: 90vw;
         max-width: 90vw;
         padding-bottom: 6vh;
@@ -393,6 +392,84 @@
         padding-bottom: 1vh;
         color: var(--dddark-blue);
         font-size: 1.5vh;
+    }
+
+    #objectives_page {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .objectives-page-container {
+        background-color: white;
+        padding: 0vh 3vw 3vh 3vw;
+    }
+
+    .objectives-page-content {
+        margin-bottom: 2vh;
+    }
+
+    .objectives-page-content p {
+        font-size: 2vh;
+        color: var(--dddark-blue);
+    }
+
+    
+    #capacitybuildings_page {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .capacitybuildings-page-container {
+        background-color: white;
+        padding: 0vh 3vw 3vh 3vw;
+    }
+
+    .capacitybuildings-page-container .title {
+        height: 8vh;
+    }
+
+    .capacitybuildings-page-container .title-text {
+        font-size: 1.6vh;
+        color: var(--dddark-blue);
+        padding: 1.5vh 2vw;
+        margin: auto 3vw;
+        border: 1px var(--dddark-blue) solid;
+        height: 8vh;
+    }
+
+    .capacitybuildings-page-container .content {
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw;
+    }
+
+    #activities_page {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .activities-page-container {
+        background-color: white;
+        padding: 0vh 3vw 3vh 3vw;
+    }
+
+    .activities-page-container .title {
+        height: 8vh;
+    }
+
+    .activities-page-container .title-text {
+        font-size: 1.6vh;
+        color: var(--dddark-blue);
+        padding: 1.5vh 2vw;
+        margin: auto 3vw;
+        border: 1px var(--dddark-blue) solid;
+        height: 8vh;
+    }
+
+    .activities-page-container .content {
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw;
     }
 
     /* ------------ */
