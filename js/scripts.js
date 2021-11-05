@@ -14,26 +14,8 @@ $(document).ready(function() {
 		interval: 25000
 	})
 
-	$('#partner-carousel').carousel({
-		interval: 2000
-	})
-
 	$('.front-carousel-item').each(function(){
 		var minPerSlide = 3;
-		var next = $(this);
-
-		for (var i=0;i<minPerSlide;i++) {
-			next=next.next();
-			if (!next.length) {
-				next = $(this).siblings(':first');
-			}
-
-			next.children(':first-child').clone().appendTo($(this));
-		}
-	});
-
-	$('.partner-carousel-item').each(function(){
-		var minPerSlide = 12;
 		var next = $(this);
 
 		for (var i=0;i<minPerSlide;i++) {
@@ -82,6 +64,7 @@ function goto_frontpage() {
 	$('#front_page').removeClass("d-none");
 	$('#home_page').removeClass("d-none");
 	$('#news_page').removeClass("d-none");
+	$('#news_page').addClass("mt-0");
 }
 
 function goto_whopage() {
@@ -89,6 +72,8 @@ function goto_whopage() {
 	$('.page').addClass("d-none");
 	$('#who_page').removeClass("d-none");
 	$('#partners_page').removeClass("d-none");
+	$('#partners_page').addClass("mt-0");
+	$('#partners_page').removeClass("margin-nav-bottom");
 	$('#people_page').removeClass("d-none");
 	displayAdditionalNavs()
 }
@@ -97,6 +82,8 @@ function goto_partnerspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#partners_page').removeClass("d-none");
+	$('#partners_page').removeClass("mt-0");
+	$('#partners_page').addClass("margin-nav-bottom");
 	displayAdditionalNavs()
 }
 
@@ -146,6 +133,9 @@ function goto_newspage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#news_page').removeClass("d-none");
+	// in case I forgot, this is for setting some top margin for the navbar-top
+	// since this function display only news page.
+	$('#news_page').removeClass("mt-0");
 	displayAdditionalNavs()
 }
 

@@ -119,16 +119,12 @@ h6 {
 }
 
 .hover-zoom:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: all .2s linear;
 }
 
 .img-shadow-tl {
     box-shadow: -30px -30px var(--dddark-blue);
-}
-
-.img-shadow-bl {
-    box-shadow: -30px 30px var(--dddark-blue);
 }
 
 #partner-carousel > .carousel-inner .carousel-item.active,
