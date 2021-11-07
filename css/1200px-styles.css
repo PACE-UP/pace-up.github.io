@@ -447,20 +447,38 @@
       justify-content: space-between;
     }
 
-    .capacitybuildings-page-container .row .something {
-      background-color: var(--grey);
+    .capacitybuildings-page-container .row > .card-item {
+        padding-left: 1vh;
+        padding-right: 1vh;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        background-color: var(--grey);
+        background-clip: content-box;
     }
 
-    .capacitybuildings-page-container .title-text {
-        font-size: 1.6vh;
+    .capacitybuildings-page-container .row .capacity-card {
+        background-color: var(--grey);
+        border: none;
+    }
+
+    .capacitybuildings-page-container .row .capacity-card > .card-body > a {
         color: var(--dddark-blue);
-        background-color: var(--white);
-        padding: 1.5vh 2vw;
-        margin: auto 3vw;
-        border: 1px var(--dddark-blue) solid;
+        font-size: 1.6vh;
     }
 
-    .capacitybuildings-page-container .sub-content {
+    .capacitybuildings-page-container .row .capacity-card > .card-body > a > p {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        background-color: var(--white);
+    }
+
+    .capacitybuildings-page-container .row .capacity-card > .card-body > p {
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw;
+    }
+
+    .capacitybuildings-page-container .row .capacity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
@@ -476,20 +494,38 @@
         padding: 0vh 3vw 3vh 3vw;
     }
 
-    .activities-page-container .title {
-        height: 8vh;
+    .activities-page-container .row > .card-item {
+        padding-left: 1vh;
+        padding-right: 1vh;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        background-color: var(--grey);
+        background-clip: content-box;
     }
 
-    .activities-page-container .title-text {
-        font-size: 1.6vh;
+    .activities-page-container .row .activity-card {
+        background-color: var(--grey);
+        border: none;
+    }
+
+    .activities-page-container .row .activity-card > .card-body > a {
         color: var(--dddark-blue);
-        padding: 1.5vh 2vw;
-        margin: auto 3vw;
-        border: 1px var(--dddark-blue) solid;
-        height: 8vh;
+        font-size: 1.6vh;
     }
 
-    .activities-page-container .content {
+    .activities-page-container .row .activity-card > .card-body > a > p {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        background-color: var(--white);
+    }
+
+    .activities-page-container .row .activity-card > .card-body > p {
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw;
+    }
+
+    .activities-page-container .row .activity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
