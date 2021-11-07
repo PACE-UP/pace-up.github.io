@@ -14,7 +14,7 @@ $(document).ready(function() {
 		interval: 25000
 	})
 
-	$('.front-carousel-item').each(function(){
+	$('.carousel-item').each(function(){
 		var minPerSlide = 3;
 		var next = $(this);
 
@@ -40,17 +40,12 @@ $(document).ready(function() {
 function highlightNav(navItem) {
 	var currentActive = document.getElementsByClassName("active-background");
 	for (var i = 0 ; i < currentActive.length ; i++) {
-		currentActive[i].className = currentActive[i].className.replace(" active-background", "");
-		//delete the background for non-selected item
+		currentActive[i].classList.remove("active-background");
 	}
-	// The selection item is in the dropdown menu
-	// -> highlight the parent nav option.
-	// Only works now for one-level dropdown.
 	if (navItem.classList.contains("dropdown-item")) {
 		var parentNav = navItem.parentNode.parentNode;
 		$(parentNav).addClass("active-background");
 		return;
-		//does not need to consider parentNav option.
 	}
 	if (navItem.classList.contains("nav-link")) {
 		$(navItem).addClass("active-background");

@@ -41,12 +41,6 @@ h5 {
     width: 33.33%;
 }
 
-.carousel-title {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-size: 22px;
-    color: white;
-}
-
 /* ----------------- */
 
 .sticky-right {
@@ -63,10 +57,6 @@ h5 {
     position: fixed;
     left: 0;
     top: 15vh;
-}
-
-.ddb-background {
-    background-color: var(--dddark-blue);
 }
 
 .text-color-ddb {
@@ -96,7 +86,7 @@ h5 {
 .btn-more {
     background: var(--iron);
     color: white;
-    font-size: 10px;
+    font-size: 1.7vh;
     border-radius: 0;
 }
 
@@ -122,14 +112,6 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 #frontpageCarousel > .carousel-inner .carousel-item-next,
 #frontpageCarousel > .carousel-inner .carousel-item-prev {
     display: flex;
-}
-
-#frontpageCarousel > .carousel-control-next {
-    justify-content: right;
-}
-
-#frontpageCarousel > .carousel-control-prev {
-    justify-content: left;
 }
 
 #frontpageCarousel > .carousel-inner .carousel-item-right.active,
