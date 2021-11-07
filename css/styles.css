@@ -81,6 +81,7 @@ h5 {
     color: white;
     min-width: 36px;
     background: var(--lynch);
+    box-shadow: -0.5vh 0.5vh var(--santas-gray);
 }
 
 .btn-more {
@@ -149,7 +150,7 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
   outline: none;
 }
 
-.active-background, .nav-parent:hover{
+#navbar-top .active-background, .nav-parent:hover{
   background-color: var(--grey);
   font-weight: 900;
 }

@@ -249,7 +249,7 @@
     .img-shadow-tl {
         margin-left: 2vw;
         margin-top: 4vh;
-        box-shadow: -2vw -4vh var(--dddark-blue);
+        box-shadow: -2vw -3.5vh var(--dddark-blue), -1.8vw -3vh var(--santas-gray);
     }
 
     .caption-img {
@@ -544,6 +544,7 @@
     }
     .sticky-left {
         display: block;
+        box-shadow: 0.5vh 0.5vh var(--santas-gray);
     }
 
     #recipeCarousel > .carousel-inner .carousel-item-right.active,

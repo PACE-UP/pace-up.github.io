@@ -143,10 +143,30 @@ function goto_loginpage() {
 	displayAdditionalNavs();
 }
 
-function goto_contactpage() {
+function goto_contactpage_both() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#contact_page').removeClass("d-none");
+	$('#contact_page_europe').removeClass("d-none");
+	$('#contact_page_asia').removeClass("d-none");
+	displayAdditionalNavs();
+}
+
+function goto_contactpage_asia() {
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	$('#contact_page').removeClass("d-none");
+	$('#contact_page_europe').addClass("d-none");
+	$('#contact_page_asia').removeClass("d-none");
+	displayAdditionalNavs();
+}
+
+function goto_contactpage_europe() {
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	$('#contact_page').removeClass("d-none");
+	$('#contact_page_europe').removeClass("d-none");
+	$('#contact_page_asia').addClass("d-none");
 	displayAdditionalNavs();
 }
 
