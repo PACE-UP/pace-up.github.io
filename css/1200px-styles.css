@@ -533,6 +533,8 @@
     
     #about_this_site_page .container {
     	min-height: 82vh;
+        min-width: 50vw;
+        max-width: 50vw;
     	background-color: var(--grey);
     }
     
@@ -545,10 +547,9 @@
      	
     } 
     
-    #about_this_site-page p {
+    #about_this_site_page p {
      	font-size: 1.7vh;
       	color: var(--dddark-blue);
-
     }
     
     .about_this_site-page-content {
@@ -556,8 +557,6 @@
     	margin: 3vh 2vw;
         padding: 3vh 2vw;
     }
-    
-    
 
     #contact_page p {
         font-family: 'Open Sans', sans-serif;
