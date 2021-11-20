@@ -8,8 +8,7 @@ $(document).ready(function() {
 
 	goto_frontpage();
 	let homenav = document.getElementById('home_nav');
-	highlightNav(homenav);
-
+	
 	$('#frontpageCarousel').carousel({
 		interval: 25000
 	})
@@ -66,11 +65,11 @@ function goto_whopage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#who_page').removeClass("d-none");
-	$('#partners_page').removeClass("d-none");
-	$('#partners_page').addClass("mt-0");
-	$('#partners_page').removeClass("margin-nav-bottom");
-	$('#people_page').removeClass("d-none");
-	$('#people_page').addClass("mt-0");
+	// $('#partners_page').removeClass("d-none");
+	// $('#partners_page').addClass("mt-0");
+	// $('#partners_page').removeClass("margin-nav-bottom");
+	// $('#people_page').removeClass("d-none");
+	// $('#people_page').addClass("mt-0");
 	displayAdditionalNavs();
 }
 
@@ -278,9 +277,11 @@ function expandNavbar() {
 $(window).scroll(function() {
 	let front_page = document.getElementById('front_page');
 	if (!front_page.classList.contains("d-none")) {
-		if ($(document).scrollTop() > window.innerHeight*0.5) {
+		if ($(document).scrollTop() > 0) {
+			if ($(document).scrollTop() > window.innerHeight*0.5) {
+				displayAdditionalNavs();
+			}
 			shrinkNavbar();
-			displayAdditionalNavs();
 		} else {
 			expandNavbar();
 			hideAdditionalNavs();

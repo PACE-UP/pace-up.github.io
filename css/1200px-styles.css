@@ -42,21 +42,17 @@
         background-color: var(--iron);
     }
 
-    #navbar-top.shrink {
+    #navbar-top .shrink {
         background-color: var(--white);
         height: 8vh;
-        transition: all 0.4s ease-in-out;
-    }
-
-    #navbar-top .shrink {
-        margin: 0 5vw 0 5vw;
-        height: 8vh;
+        transition: all ease-in-out;
+        padding-bottom: 2vh;
     }
 
     #navbar-top .shrink > a > img {
         max-height: 5vh;
         min-height: 5vh;
-        transition: all 0.4s ease-in-out;
+        transition: all ease-in-out;
     }
 
     #navbar-top > .shrink .nav-item-text {
@@ -64,7 +60,7 @@
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
         padding: 1vh 2vw 1vh 2vw;
-        transition: all 0.4s ease-in-out;
+        transition: all ease-in-out;
     }
 
     #frontpage_carousel {
@@ -72,11 +68,6 @@
         max-height: 58vh;
         padding-top: 8vh;
         background-color: var(--dddark-blue);
-    }
-
-    #frontpage_carousel > div {
-        min-height: 40vh;
-        max-height: 40vh;
     }
 
     #frontpage_carousel > p {
@@ -90,7 +81,7 @@
         margin-bottom: 0;
     }
 
-    .front-carousel-item {
+    .carousel-inner {
         min-height: 40vh;
         max-height: 40vh;
     }
@@ -109,6 +100,10 @@
         min-height: 20vh;
         max-height: 20vh;
         padding-top: 5vh;
+    }
+
+    #home_page {
+        margin-bottom: 10vh;
     }
 
     .homepage-content {
@@ -220,6 +215,10 @@
         text-align: center;
     }
 
+    #who_page {
+        margin-bottom: 10vh;
+    }
+
     .who-page-content {
         margin-bottom: 2vh;
         min-height: 40vh;
@@ -297,13 +296,16 @@
     }
 
     .logo-slideshow-container {
+        padding-top: 6vh;
         background-color: var(--white);
     }
 
     .logo-slideshow {
+        border-top: var(--grey) 1px solid;
+        border-bottom: var(--grey) 1px solid;
         height: 160px;
         max-width: 100vw;
-        margin: 0vh 5vw;
+        margin: 0vh 0vw;
         overflow: hidden;
     }
 
@@ -369,7 +371,6 @@
     .page-container {
         min-width: 90vw;
         max-width: 90vw;
-        padding-bottom: 6vh;
     }
 
     .people-page-content {
