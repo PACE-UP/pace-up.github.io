@@ -588,6 +588,30 @@
         padding: 1vh 2vw;
     }
 
+    #detailed_partner_page > .container {
+        min-width: 50vw;
+        max-width: 50vw;
+        min-height: 82vh;
+        background-color: var(--grey);
+    }
+    
+    #detailed_partner_page > .container > .content {
+        margin: 3vh 0vw;
+        background-color: var(--white);
+    }
+    
+    #detailed_partner_page > .container > .content > .row {
+        margin: 3vh 2vw;
+        padding: 3vh 2vw;
+        background-color: var(--grey);
+    }
+    
+    #detailed_partner_page > .container > .content > .row p {
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+        padding: 1vh 2vw;
+    }
+
     /* ------------ */
 
     .sticky-right {

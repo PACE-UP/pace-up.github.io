@@ -22,7 +22,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="data/people.js"></script>
+    <script src="data/people.js"></script>
+    <script src="data/partners.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -266,7 +267,7 @@
                 <img src="images/COALITION_PARTNER/partner1.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(1)">
                   <p class="text-center card-title card-border">ITM-EKUT / GERMANY</p>
                 </a>
               </div>
@@ -279,7 +280,7 @@
                 <img src="images/COALITION_PARTNER/partner2.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(2)">
                   <p class="text-center card-title card-border">VG-CARE / VIETNAM</p>
                 </a>
               </div>
@@ -292,7 +293,7 @@
                 <img src="images/COALITION_PARTNER/partner3.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(3)">
                   <p class="text-center card-title card-border">108 MCH / VIETNAM</p>
                 </a>
               </div>
@@ -305,7 +306,7 @@
                 <img src="images/COALITION_PARTNER/partner4.png" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(4)">
                   <p class="text-center card-title card-border">VMMU / VIETNAM</p>
                 </a>
               </div>
@@ -318,7 +319,7 @@
                 <img src="images/COALITION_PARTNER/partner5.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(5)">
                   <p class="text-center card-title card-border">RKI / GERMANY</p>
                 </a>
               </div>
@@ -331,7 +332,7 @@
                 <img src="images/COALITION_PARTNER/partner6.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(6)">
                   <p class="text-center card-title card-border">HUMP / VIETNAM</p>
                 </a>
               </div>
@@ -344,7 +345,7 @@
                 <img src="images/COALITION_PARTNER/partner7.jpg" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(7)">
                   <p class="text-center card-title card-border">BNITM / GERMANY</p>
                 </a>
               </div>
@@ -355,7 +356,7 @@
                 <img src="images/COALITION_PARTNER/partner8.png" class="card-img-top" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpartnerpage(8)">
                   <p class="text-center card-title card-border">BITS PILANI / INDIA</p>
                 </a>
               </div>
@@ -929,6 +930,25 @@
             <p id="detailed_contact_page_fst_paragraph" class="py-0 my-0"></p>
           </div>
           <p id="detailed_contact_page_snd_paragraph" class="col-12 pl-0"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="detailed_partner_page" class="page d-none">
+    <div class="container d-flex flex-column">
+      <div class="content">
+        <div class="row">
+          <div class="img col-4 d-flex align-items-center">
+            <div class="text-center">
+              <img id="detailed_partner_page_img" class="img-fluid" >
+              <p id="detailed_partner_page_title" class="p-0 my-0 text-center"></p>
+            </div>
+          </div>
+          <div class="col-8">
+            <p id="detailed_partner_page_fst_paragraph" class="py-0 my-0"></p>
+          </div>
+          <p id="detailed_partner_page_snd_paragraph" class="col-12 pl-0"></p>
         </div>
       </div>
     </div>

@@ -177,6 +177,15 @@ function goto_about_this_site(){
 	displayAdditionalNavs();	
 }
 
+function goto_detailedpartnerpage(id) {
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	build_detailed_partner_page(id);
+	$('#detailed_partner_page').removeClass("d-none");
+	displayAdditionalNavs();
+	hideSideNavs();
+}
+
 function goto_detailedpeoplepage(id) {
 	shrinkNavbar();
 	$('.page').addClass("d-none");
@@ -192,19 +201,43 @@ function clear_detailed_people_page() {
 	$('#detailed_contact_page_snd_paragraph').empty();
 }
 
+function clear_detailed_partner_page() {
+	$('#detailed_partner_page_title').empty();
+	$('#detailed_partner_page_fst_paragraph').empty();
+	$('#detailed_partner_page_snd_paragraph').empty();
+}
+
+function build_detailed_partner_page(id) {
+	clear_detailed_partner_page();
+	var mypartner;
+	for(var i = 0; i < partners.length; i++) {
+		if (partners[i].id == id) {
+			mypartner = partners[i];
+			break;
+		}
+	}
+	if (typeof mypartner !== "undefined") {
+		var imgPath = mypartner.imgPath;
+		var imgTitle = mypartner.imgTitle;
+		var fstParagraph = mypartner.fstPar;
+		var sndParagraph = mypartner.sndPar;
+		$('#detailed_partner_page_img').attr("src",imgPath);
+		$('#detailed_partner_page_title').append(imgTitle);
+		$('#detailed_partner_page_fst_paragraph').append(fstParagraph);
+		$('#detailed_partner_page_snd_paragraph').append(sndParagraph);
+	}
+}
+
 function build_detailed_people_page(id) {
 	clear_detailed_people_page();
 	var myperson;
-	console.log(id);
 	for(var i = 0; i < people.length; i++) {
-		console.log(people[i].id);
 		if (people[i].id == id) {
 			myperson = people[i];
 			break;
 		}
 	}
 	if (typeof myperson !== "undefined") {
-		console.log(myperson);
 		var imgPath = myperson.imgPath;
 		var imgTitle = myperson.imgTitle;
 		var fstParagraph = myperson.fstPar;
