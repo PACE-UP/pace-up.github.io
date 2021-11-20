@@ -170,6 +170,14 @@ function goto_contactpage_europe() {
 	displayAdditionalNavs();
 }
 
+function goto_about_this_site(){
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	$('#about_this_site_page').removeClass("d-none");
+	displayAdditionalNavs();
+	
+}
+
 function displayAdditionalNavs() {
 	$('#sticky-right').removeClass("d-none");
 	$('#sticky-left').removeClass("d-none");
