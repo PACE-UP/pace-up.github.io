@@ -174,8 +174,46 @@ function goto_about_this_site(){
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#about_this_site_page').removeClass("d-none");
+	displayAdditionalNavs();	
+}
+
+function goto_detailedpeoplepage(id) {
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	build_detailed_people_page(id);
+	$('#detailed_contact_page').removeClass("d-none");
 	displayAdditionalNavs();
-	
+	hideSideNavs();
+}
+
+function clear_detailed_people_page() {
+	$('#detailed_contact_page_title').empty();
+	$('#detailed_contact_page_fst_paragraph').empty();
+	$('#detailed_contact_page_snd_paragraph').empty();
+}
+
+function build_detailed_people_page(id) {
+	clear_detailed_people_page();
+	var myperson;
+	console.log(id);
+	for(var i = 0; i < people.length; i++) {
+		console.log(people[i].id);
+		if (people[i].id == id) {
+			myperson = people[i];
+			break;
+		}
+	}
+	if (typeof myperson !== "undefined") {
+		console.log(myperson);
+		var imgPath = myperson.imgPath;
+		var imgTitle = myperson.imgTitle;
+		var fstParagraph = myperson.fstPar;
+		var sndParagraph = myperson.sndPar;
+		$('#detailed_contact_page_img').attr("src",imgPath);
+		$('#detailed_contact_page_title').append(imgTitle);
+		$('#detailed_contact_page_fst_paragraph').append(fstParagraph);
+		$('#detailed_contact_page_snd_paragraph').append(sndParagraph);
+	}
 }
 
 function displayAdditionalNavs() {
@@ -184,9 +222,13 @@ function displayAdditionalNavs() {
 	$('#navbar-bottom').removeClass("d-none");
 }
 
-function hideAdditionalNavs() {
+function hideSideNavs() {
 	$('#sticky-right').addClass("d-none");
 	$('#sticky-left').addClass("d-none");
+}
+
+function hideAdditionalNavs() {
+	hideSideNavs();
 	$('#navbar-bottom').addClass("d-none");
 }
 

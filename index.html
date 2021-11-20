@@ -22,6 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="data/people.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -378,7 +379,7 @@
                 <img src="images/KEY_PEOPLE/person1.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(1)">
                   <p class="text-center card-title card-border">Prof. Dr. Nguyen Vu Quoc Huy
                     <br/>Hue UMP
                   </p>
@@ -392,7 +393,7 @@
                 <img src="images/KEY_PEOPLE/person2.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(2)">
                   <p class="text-center card-title card-border">Prof. Dr. Le Huu Song
                     <br/>VG-CARE / VIETNAM
                   </p>
@@ -406,7 +407,7 @@
                 <img src="images/KEY_PEOPLE/person3.png" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(3)">
                   <p class="text-center card-title card-border">Dr. The Trong Nguyen
                     <br/>VG-CARE / VIETNAM
                   </p>
@@ -420,7 +421,7 @@
                 <img src="images/KEY_PEOPLE/person4.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(4)">
                   <p class="text-center card-title card-border">Dr. Alexa Purgreth
                     <br/>ITM-EKUT / GERMANY
                   </p>
@@ -434,7 +435,7 @@
                 <img src="images/KEY_PEOPLE/person5.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(5)">
                   <p class="text-center card-title card-border">Prof. Dr. Manuel Clavel
                     <br/>VGU / VIETNAM
                   </p>
@@ -448,7 +449,7 @@
                 <img src="images/KEY_PEOPLE/person6.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(6)">
                   <p class="text-center card-title card-border">Prof. Dr. Nguyen Linh Toan
                     <br/>VMMU / VIETNAM
                   </p>
@@ -462,7 +463,7 @@
                 <img src="images/KEY_PEOPLE/person7.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(7)">
                   <p class="text-center card-title card-border">Prof. Dr. Kuldip Singh Sangwan
                     <br/>BITS PILANI / INDIA
                   </p>
@@ -476,7 +477,7 @@
                 <img src="images/KEY_PEOPLE/person8.jpg" class="card-img-top rounded-circle" >
               </div>
               <div class="card-body">
-                <a href="https://www.google.com">
+                <a href="javascript:goto_detailedpeoplepage(8)">
                   <p class="text-center card-title card-border">DR. JAMES W. SHIH
                     <br/>XIAMEN INNOVAX
                   </p>
@@ -910,6 +911,27 @@
           </div>
         </div>
       </div>
+  </div>
+
+  <div id="detailed_contact_page" class="page d-none">
+    <div class="container d-flex flex-column">
+      <div class="content">
+        <div class="row">
+          <div class="img col-4">
+            <div class="text-center">
+              <img id="detailed_contact_page_img" class="rounded-circle img-fluid" >
+            </div>
+            <div class="pt-2">
+              <p id="detailed_contact_page_title" class="p-0 text-center"></p>
+            </div>
+          </div>
+          <div class="col-8">
+            <p id="detailed_contact_page_fst_paragraph" class="py-0 my-0"></p>
+          </div>
+          <p id="detailed_contact_page_snd_paragraph" class="col-12 pl-0"></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <nav id="navbar-bottom" class="navbar navbar-expand-md navbar-bottom mx-auto fixed-bottom d-none">
