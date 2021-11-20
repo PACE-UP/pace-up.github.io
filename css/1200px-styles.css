@@ -531,20 +531,30 @@
         padding: 1vh 2vw;
     }
     
-    .about_this_site-page {
-     	min-height: 82vh;
-     	background-color: var(--grey);
+    #about_this_site_page .container {
+    	min-height: 82vh;
+    	background-color: var(--grey);
     }
     
-    .about_this_site-page .card-body {
+    #about_this_site_page  .card-body {
      	background-color: var(--grey);
-     
+     	
+    } 
+    #about_this_site_page  .page-title {
+     	background-color: var(--grey);
+     	
     } 
     
-    .about_this_site-page p {
+    #about_this_site-page p {
      	font-size: 1.7vh;
       	color: var(--dddark-blue);
 
+    }
+    
+    .about_this_site-page-content {
+    	background-color: var(--white);
+    	margin: 3vh 2vw;
+        padding: 3vh 2vw;
     }
     
     
