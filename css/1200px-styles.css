@@ -422,9 +422,11 @@
         padding-top: 6vh;
     }
 
-    .objectives-page-container {
+    #objectives_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 3vh 3vw;
+        min-width: 70vw;
+        max-width: 70vw;
     }
 
     .objectives-page-content {
@@ -441,22 +443,22 @@
         padding-top: 6vh;
     }
 
-    .capacitybuildings-page-container {
+    #capacitybuildings_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 3vh 3vw;
     }
 
-    .capacitybuildings-page-container .title {
+    #capacitybuildings_page > .container .title {
         height: 8vh;
     }
 
-    .capacitybuildings-page-container .row {
+    #capacitybuildings_page > .container .row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
 
-    .capacitybuildings-page-container .row > .card-item {
+    #capacitybuildings_page > .container .row > .card-item {
         padding-left: 1vh;
         padding-right: 1vh;
         margin-top: 2vw;
@@ -465,29 +467,29 @@
         background-clip: content-box;
     }
 
-    .capacitybuildings-page-container .row .capacity-card {
+    #capacitybuildings_page > .container .row .capacity-card {
         background-color: var(--grey);
         border: none;
     }
 
-    .capacitybuildings-page-container .row .capacity-card > .card-body > a {
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > a {
         color: var(--dddark-blue);
         font-size: 1.6vh;
     }
 
-    .capacitybuildings-page-container .row .capacity-card > .card-body > a > p {
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > a > p {
         padding-top: 1vh;
         padding-bottom: 1vh;
         background-color: var(--white);
     }
 
-    .capacitybuildings-page-container .row .capacity-card > .card-body > p {
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
     }
 
-    .capacitybuildings-page-container .row .capacity-card > .card-body > ul {
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
@@ -497,12 +499,14 @@
         padding-top: 6vh;
     }
 
-    .activities-page-container {
+    #activities_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 3vh 3vw;
+        min-width: 70vw;
+        max-width: 70vw;
     }
 
-    .activities-page-container .row > .card-item {
+    #activities_page > .container .row > .card-item {
         padding-left: 1vh;
         padding-right: 1vh;
         margin-top: 2vw;
@@ -511,29 +515,29 @@
         background-clip: content-box;
     }
 
-    .activities-page-container .row .activity-card {
+    #activities_page > .container .row .activity-card {
         background-color: var(--grey);
         border: none;
     }
 
-    .activities-page-container .row .activity-card > .card-body > a {
+    #activities_page > .container .row .activity-card > .card-body > a {
         color: var(--dddark-blue);
         font-size: 1.6vh;
     }
 
-    .activities-page-container .row .activity-card > .card-body > a > p {
+    #activities_page > .container .row .activity-card > .card-body > a > p {
         padding-top: 1vh;
         padding-bottom: 1vh;
         background-color: var(--white);
     }
 
-    .activities-page-container .row .activity-card > .card-body > p {
+    #activities_page > .container .row .activity-card > .card-body > p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
     }
 
-    .activities-page-container .row .activity-card > .card-body > ul {
+    #activities_page > .container .row .activity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
