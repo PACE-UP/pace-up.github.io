@@ -173,7 +173,6 @@
 
     #news-items-content > .news-item {
         min-height: 40vh;
-        max-height: 40vh;
     }
 
     #news-items-content > .news-item > .card {
@@ -446,6 +445,8 @@
     #capacitybuildings_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 3vh 3vw;
+        min-width: 70vw;
+        max-width: 70vw;
     }
 
     #capacitybuildings_page > .container .title {
