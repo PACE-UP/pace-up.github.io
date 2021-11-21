@@ -262,7 +262,7 @@
     #login_page > .container {
         min-height: 82vh;
         max-height: 82vh;
-        padding-top: 2vh;
+        padding-top: 6vh;
     }
 
     #login_page > .container > .login-page {
@@ -274,7 +274,7 @@
     #publications_page > .container {
         min-height: 82vh;
         max-height: 82vh;
-        padding-top: 2vh;
+        padding-top: 6vh;
     }
 
     #publications_page > .container > .publications-page {
@@ -286,7 +286,7 @@
     #map_page > .container {
         min-height: 82vh;
         max-height: 82vh;
-        padding-top: 2vh;
+        padding-top: 6vh;
     }
 
     #map_page > .container > .map-page {
@@ -328,8 +328,13 @@
         }
     }
 
-    .margin-nav-bottom {
-        margin-bottom: 6vh;
+    .padding-nav-bottom {
+        padding-bottom: 16vh;
+    }
+
+    #partners_page .container {
+        min-width: 70vw;
+        max-width: 70vw;
     }
 
     .partners-page-content {
@@ -373,6 +378,11 @@
         max-width: 90vw;
     }
 
+    #people_page > .container {
+        min-width: 70vw;
+        max-width: 70vw;
+    }
+
     .people-page-content {
         background-color: var(--white);
         padding: 3vh 3vw;
@@ -409,8 +419,7 @@
     }
 
     #objectives_page {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+        padding-top: 6vh;
     }
 
     .objectives-page-container {
@@ -429,8 +438,7 @@
 
 
     #capacitybuildings_page {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+        padding-top: 6vh;
     }
 
     .capacitybuildings-page-container {
@@ -486,8 +494,7 @@
     }
 
     #activities_page {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+        padding-top: 6vh;
     }
 
     .activities-page-container {
