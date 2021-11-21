@@ -219,14 +219,14 @@
         margin-bottom: 10vh;
     }
 
+    #who_page > .container {
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+
     .who-page-content {
         margin-bottom: 2vh;
         min-height: 40vh;
-    }
-
-    .who-page-content img {
-        min-height: 36vh;
-        text-align: right;
     }
 
     .who-page-content p {
