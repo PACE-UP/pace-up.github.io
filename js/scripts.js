@@ -10,7 +10,7 @@ $(document).ready(function() {
 	let homenav = document.getElementById('home_nav');
 	
 	$('#frontpageCarousel').carousel({
-		interval: 25000
+		interval: 10000
 	})
 
 	$('.carousel-item').each(function(){
@@ -152,21 +152,23 @@ function goto_contactpage_both() {
 }
 
 function goto_contactpage_asia() {
-	shrinkNavbar();
-	$('.page').addClass("d-none");
-	$('#contact_page').removeClass("d-none");
-	$('#contact_page_europe').addClass("d-none");
-	$('#contact_page_asia').removeClass("d-none");
-	displayAdditionalNavs();
+	var contactEU = document.getElementsByClassName("contact-in-asia");
+	if(contactEU[0].classList.contains("d-none")) {
+		contactEU[0].classList.remove("d-none");
+		$('#sticky-right-link').addClass("d-none");
+	} else {
+		contactEU[0].classList.add("d-none");
+		$('#sticky-right-link').removeClass("d-none");
+	}
 }
 
 function goto_contactpage_europe() {
-	shrinkNavbar();
-	$('.page').addClass("d-none");
-	$('#contact_page').removeClass("d-none");
-	$('#contact_page_europe').removeClass("d-none");
-	$('#contact_page_asia').addClass("d-none");
-	displayAdditionalNavs();
+	var contactEU = document.getElementsByClassName("contact-in-eu");
+	if(contactEU[0].classList.contains("d-none")) {
+		contactEU[0].classList.remove("d-none");
+	} else {
+		contactEU[0].classList.add("d-none");
+	}
 }
 
 function goto_about_this_site(){
@@ -249,13 +251,15 @@ function build_detailed_people_page(id) {
 }
 
 function displayAdditionalNavs() {
-	$('#sticky-right').removeClass("d-none");
+	$('#sticky-right-contact').removeClass("d-none");
+	$('#sticky-right-link').removeClass("d-none");
 	$('#sticky-left').removeClass("d-none");
 	$('#navbar-bottom').removeClass("d-none");
 }
 
 function hideSideNavs() {
-	$('#sticky-right').addClass("d-none");
+	$('#sticky-right-contact').addClass("d-none");
+	$('#sticky-right-link').addClass("d-none");
 	$('#sticky-left').addClass("d-none");
 }
 

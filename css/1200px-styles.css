@@ -21,7 +21,7 @@
 
     #navbar-top {
         background-color: var(--white);
-        height: 12vh;
+        height: 10vh;
     }
 
     #navbar-top > nav {
@@ -46,7 +46,7 @@
         background-color: var(--white);
         height: 8vh;
         transition: all ease-in-out;
-        padding-bottom: 2vh;
+        padding-bottom: 1vh;
     }
 
     #navbar-top .shrink > a > img {
@@ -186,7 +186,6 @@
     }
 
     #news-items-content > .news-item > .card > .card-img-top {
-        min-height: 25vh;
         max-height: 25vh;
     }
 
@@ -195,6 +194,7 @@
         flex: 1 1 auto;
         padding: 2vh 1vw;
         font-size: 2vh;
+        margin-bottom: 4vh;
     }
 
     #news-items-content > .news-item > .card > .card-body > .card-title {
@@ -354,8 +354,7 @@
     }
 
     .partners-page-content > .partners-item > .card .card-img-top {
-        min-height: 25vh;
-        max-height: 25vh;
+        height: 20vh;
     }
 
     .partners-page-content > .partners-item > .card > .card-body {
@@ -397,6 +396,7 @@
         background-color: var(--grey);
         border: none;
         border-radius: 0;
+        min-height: 100%;
     }
 
     .people-page-content > .people-item > .card .card-img-top {
@@ -546,8 +546,7 @@
     
     #about_this_site_page .container {
     	min-height: 82vh;
-        min-width: 50vw;
-        max-width: 50vw;
+        width: 60vw;
     	background-color: var(--grey);
     }
     
@@ -567,8 +566,8 @@
     
     .about_this_site-page-content {
     	background-color: var(--white);
-    	margin: 3vh 2vw;
-        padding: 3vh 2vw;
+    	margin: 3vh 5vw;
+        padding: 3vh 3vw;
     }
 
     #contact_page p {
@@ -625,14 +624,52 @@
         padding: 1vh 2vw;
     }
 
+    .contact-in-asia img {
+        max-width: 10vw;
+    }
+
+    .contact-in-asia p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+    }
+
+    .contact-in-asia button {
+        background-color: var(--dddark-blue);
+        font-family: 'Open Sans', sans-serif;
+        color: var(--white);
+        font-size: 1.5vh;
+        width: 100%;
+    }
+
+    .contact-in-eu img {
+        max-width: 10vw;
+    }
+
+    .contact-in-eu p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.7vh;
+        color: var(--dddark-blue);
+    }
+
+    .contact-in-eu button {
+        background-color: var(--dddark-blue);
+        font-family: 'Open Sans', sans-serif;
+        color: var(--white);
+        font-size: 1.5vh;
+        width: 100%;
+    }
+
     /* ------------ */
 
     .sticky-right {
         display: block;
+        z-index: 1026;
     }
+
     .sticky-left {
         display: block;
-        box-shadow: 0.5vh 0.5vh var(--santas-gray);
+        z-index: 1026;
     }
 
     #recipeCarousel > .carousel-inner .carousel-item-right.active,
