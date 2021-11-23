@@ -7,7 +7,7 @@
     --white: #ffffff;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
 
     .page {
         margin-top: 12vh;
@@ -543,27 +543,27 @@
         color: var(--dddark-blue);
         padding: 1vh 2vw;
     }
-    
+
     #about_this_site_page .container {
     	min-height: 82vh;
         width: 60vw;
     	background-color: var(--grey);
     }
-    
+
     #about_this_site_page  .card-body {
      	background-color: var(--grey);
-     	
-    } 
+
+    }
     #about_this_site_page  .page-title {
      	background-color: var(--grey);
-     	
-    } 
-    
+
+    }
+
     #about_this_site_page p {
      	font-size: 1.7vh;
       	color: var(--dddark-blue);
     }
-    
+
     .about_this_site-page-content {
     	background-color: var(--white);
     	margin: 3vh 5vw;
@@ -582,18 +582,18 @@
         min-height: 82vh;
         background-color: var(--grey);
     }
-    
+
     #detailed_contact_page > .container > .content {
         margin: 3vh 0vw;
         background-color: var(--white);
     }
-    
+
     #detailed_contact_page > .container > .content > .row {
         margin: 3vh 2vw;
         padding: 3vh 2vw;
         background-color: var(--grey);
     }
-    
+
     #detailed_contact_page > .container > .content > .row p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
@@ -606,18 +606,18 @@
         min-height: 82vh;
         background-color: var(--grey);
     }
-    
+
     #detailed_partner_page > .container > .content {
         margin: 3vh 0vw;
         background-color: var(--white);
     }
-    
+
     #detailed_partner_page > .container > .content > .row {
         margin: 3vh 2vw;
         padding: 3vh 2vw;
         background-color: var(--grey);
     }
-    
+
     #detailed_partner_page > .container > .content > .row p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
