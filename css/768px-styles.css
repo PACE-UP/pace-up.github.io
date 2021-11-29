@@ -6,7 +6,7 @@
     --grey: #e4e2dd;
 }
 
-@media (min-width: 780px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .page {
       margin-top: 12vh;
       background-color: var(--grey);
@@ -32,6 +32,12 @@
       font-family: 'Nunito', sans-serif;
       color: var(--dddark-blue);
       padding: 1vh 1vw 1vh 1vw;
+  }
+
+  #navbar-top > nav .dropdown-menu > .nav-item:hover {
+      font-weight: bold;
+      color: var(--white);
+      background-color: var(--iron);
   }
 
   #navbar-top .shrink {
@@ -239,14 +245,14 @@
   .img-shadow-tl {
       margin-left: 4vw;
       margin-top: 4vh;
-      box-shadow: -2vw -4vh var(--dddark-blue);
+      box-shadow: -2vw -5vh var(--dddark-blue);
   }
 
   .caption-img {
-      margin-top: 1.2vh;
-      margin-left: 2vw;
+      margin-top: 0.2vh;
+      margin-left: 3vw;
       color: white;
-      font-size: 1.6vh;
+      font-size: 1.5vh;
       position: absolute;
   }
 
@@ -419,68 +425,106 @@
 
 
   #capacitybuildings_page {
-      padding-top: 2vh;
-      padding-bottom: 2vh;
+      padding-top: 6vh;
   }
 
-  .capacitybuildings-page-container {
-      background-color: white;
+  #capacitybuildings_page > .container {
+      background-color: var(--white);
       padding: 0vh 3vw 3vh 3vw;
+      min-width: 70vw;
+      max-width: 70vw;
   }
 
-  .capacitybuildings-page-container .title {
+  #capacitybuildings_page > .container .title {
       height: 8vh;
   }
 
-  .capacitybuildings-page-container .row {
+  #capacitybuildings_page > .container .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .capacitybuildings-page-container .row .something {
-    background-color: var(--grey);
+  #capacitybuildings_page > .container .row > .card-item {
+      padding-left: 2vh;
+      padding-right: 2vh;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+      background-color: var(--grey);
+      background-clip: content-box;
   }
 
-  .capacitybuildings-page-container .title-text {
-      font-size: 1.6vh;
+  #capacitybuildings_page > .container .row .capacity-card {
+      background-color: var(--grey);
+      border: none;
+  }
+
+  #capacitybuildings_page > .container .row .capacity-card > .card-body > a {
       color: var(--dddark-blue);
-      background-color: white;
-      padding: 1.5vh 2vw;
-      margin: auto 3vw;
-      border: 1px var(--dddark-blue) solid;
+      font-size: 1.6vh;
   }
 
-  .capacitybuildings-page-container .sub-content {
+  #capacitybuildings_page > .container .row .capacity-card > .card-body > a > p {
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      background-color: var(--white);
+  }
+
+  #capacitybuildings_page > .container .row .capacity-card > .card-body > p {
+      font-size: 1.7vh;
+      color: var(--dddark-blue);
+      padding: 1vh 2vw;
+  }
+
+  #capacitybuildings_page > .container .row .capacity-card > .card-body > ul {
       font-size: 1.7vh;
       color: var(--dddark-blue);
       padding: 1vh 2vw;
   }
 
   #activities_page {
-      padding-top: 2vh;
-      padding-bottom: 2vh;
+      padding-top: 6vh;
   }
 
-  .activities-page-container {
-      background-color: white;
+  #activities_page > .container {
+      background-color: var(--white);
       padding: 0vh 3vw 3vh 3vw;
+      min-width: 70vw;
+      max-width: 70vw;
   }
 
-  .activities-page-container .title {
-      height: 8vh;
+  #activities_page > .container .row > .card-item {
+      padding-left: 1vh;
+      padding-right: 1vh;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+      background-color: var(--grey);
+      background-clip: content-box;
   }
 
-  .activities-page-container .title-text {
-      font-size: 1.6vh;
+  #activities_page > .container .row .activity-card {
+      background-color: var(--grey);
+      border: none;
+  }
+
+  #activities_page > .container .row .activity-card > .card-body > a {
       color: var(--dddark-blue);
-      padding: 1.5vh 2vw;
-      margin: auto 3vw;
-      border: 1px var(--dddark-blue) solid;
-      height: 8vh;
+      font-size: 1.6vh;
   }
 
-  .activities-page-container .content {
+  #activities_page > .container .row .activity-card > .card-body > a > p {
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      background-color: var(--white);
+  }
+
+  #activities_page > .container .row .activity-card > .card-body > p {
+      font-size: 1.7vh;
+      color: var(--dddark-blue);
+      padding: 1vh 2vw;
+  }
+
+  #activities_page > .container .row .activity-card > .card-body > ul {
       font-size: 1.7vh;
       color: var(--dddark-blue);
       padding: 1vh 2vw;
@@ -509,11 +553,5 @@
   #recipeCarousel > .carousel-inner .carousel-item-left.active,
   #recipeCarousel > .carousel-inner .carousel-item-prev {
       transform: translateX(-33.33%);
-  }
-
-  /* SOME CLASS OF BOOTSTRAP */
-  .tablet-col-lg-3 {
-    flex: 0 0 50%;
-    max-width: 50%;
   }
 }
