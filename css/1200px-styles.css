@@ -64,7 +64,6 @@
     }
 
     #frontpage_carousel {
-        min-height: 58vh;
         max-height: 58vh;
         padding-top: 8vh;
         background-color: var(--dddark-blue);
@@ -82,7 +81,6 @@
     }
 
     .carousel-inner {
-        min-height: 40vh;
         max-height: 40vh;
     }
 
