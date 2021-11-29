@@ -23,15 +23,15 @@
   }
 
   #navbar-top>nav {
-    margin: 0 5vw 0 5vw;
+    margin: 0 1vw 0 0vw;
     border-bottom: 1px solid var(--dddark-blue);
   }
 
   #navbar-top>nav .nav-item-text {
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-family: 'Nunito', sans-serif;
     color: var(--dddark-blue);
-    padding: 1vh 1vw 1vh 1vw;
+    padding: 1vh 1vw 1vh 2vw;
   }
 
   #navbar-top>nav .dropdown-menu>.nav-item:hover {
@@ -54,10 +54,10 @@
   }
 
   #navbar-top>.shrink .nav-item-text {
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-family: 'Nunito', sans-serif;
     color: var(--dddark-blue);
-    padding: 1vh 2vw 1vh 1vw;
+    padding: 0vh 2vw 1vh 1vw;
     transition: all ease-in-out;
   }
 
@@ -71,8 +71,7 @@
   #frontpage_carousel>p {
     min-height: 10vh;
     max-height: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 3vh;
+    padding: 2vh 1vw 3vh 1vw;
     font-size: 4vh;
     font-family: 'Nunito', sans-serif;
     color: var(--white);
@@ -80,8 +79,8 @@
   }
 
   .carousel-inner {
-    min-height: 22vh;
-    max-height: 22vh;
+    min-height: 18vh;
+    max-height: 26vh;
   }
 
   #front_page {
@@ -250,7 +249,7 @@
 
   .caption-img {
     margin-top: 0vh;
-    margin-left: 1.2vw;
+    margin-left: 0vw;
     color: var(--white);
     font-size: 1.4vh;
     position: absolute;
@@ -336,7 +335,7 @@
 
   .partners-page-content {
     background-color: var(--white);
-    padding: 3vh 3vw;
+    padding: 3vh 1vw;
   }
 
   .partners-page-content>.partners-item {
@@ -358,7 +357,7 @@
   .partners-page-content>.partners-item>.card>.card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 2vh 1vw;
+    padding: 2vh 0vw;
   }
 
   .partners-page-content>.partners-item>.card>.card-body .card-title {
@@ -381,7 +380,7 @@
 
   .people-page-content {
     background-color: var(--white);
-    padding: 3vh 3vw;
+    padding: 3vh 1vw;
   }
 
   .people-page-content>.people-item {

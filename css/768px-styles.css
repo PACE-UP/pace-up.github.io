@@ -23,7 +23,7 @@
   }
 
   #navbar-top > nav {
-      margin: 0 2.5vw 0 2.5vw;
+      margin: 0 3.5vw 0 2.5vw;
       border-bottom: 1px solid var(--dddark-blue);
   }
 
@@ -43,7 +43,7 @@
   #navbar-top .shrink {
       background-color: white;
       height: 7vh;
-      margin: 0 2.5vw 0 2.5vw;
+      margin: 1vh 3.5vw 0 1.5vw;
       transition: all 0.4s ease-in-out;
   }
 
@@ -62,8 +62,8 @@
   }
 
   #frontpage_carousel {
-      min-height: 30vh;
-      max-height: 30vh;
+      min-height: 32vh;
+      max-height: 40vh;
       padding-top: 4vh;
       background-color: var(--dddark-blue);
   }
@@ -76,8 +76,7 @@
   #frontpage_carousel > p {
       min-height: 10vh;
       max-height: 10vh;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
+      padding: 2vh 3vw 3vh 3vw;
       font-size: 2.5vh;
       font-family: 'Nunito', sans-serif;
       color: var(--white);

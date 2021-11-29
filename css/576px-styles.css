@@ -224,7 +224,7 @@
   }
 
   .who-page-content p {
-      font-size: 2.18vh;
+      font-size: 2vh;
   }
 
   .who-page-content .img-shadow-bl {
@@ -356,7 +356,8 @@
   .page-container {
       min-width: 90vw;
       max-width: 90vw;
-      padding-bottom: 40vh;
+      min-height: 120vh;
+      max-height: 120vh;
   }
 
   .people-page-content {
