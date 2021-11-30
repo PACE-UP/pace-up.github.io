@@ -95,9 +95,8 @@
     }
 
     .front-page-title {
-        min-height: 20vh;
-        max-height: 20vh;
-        padding-top: 5vh;
+        padding: 5vh 0vw;
+        
     }
 
     #home_page {
@@ -109,10 +108,10 @@
     }
 
     .homepage-content > .homepage-intro {
-        min-height: 30vh;
         font-size: 2.18vh;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
+        padding-bottom: 5vh;
     }
 
     .homepage-content > .home-img > .img-item {
@@ -166,7 +165,7 @@
     #news-items-content {
         background-color: var(--white);
         min-height: 50vh;
-        padding: 3vh 0vw;
+        padding: 3vh 1vw;
     }
 
     #news-items-content > .news-item {
@@ -184,7 +183,11 @@
     }
 
     #news-items-content > .news-item > .card > .card-img-top {
-        max-height: 25vh;
+        height: 20vh;
+    }
+
+    #news-items-content > .news-item > .card > .card-img-top > img {
+        height: 20vh;
     }
 
     #news-items-content > .news-item > .card > .card-body {
