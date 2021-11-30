@@ -34,7 +34,7 @@
         font-size: 2vh;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
-        padding: 2vh 2vw 2vh 2vw;
+        padding: 2vh 1vw;
     }
 
     #navbar-top > nav .dropdown-menu > .nav-item:hover {
@@ -65,7 +65,7 @@
     }
 
     #frontpage_carousel {
-        max-height: 58vh;
+        min-height: 58vh;
         padding-top: 8vh;
         background-color: var(--dddark-blue);
     }
@@ -95,7 +95,7 @@
 
     .front-page-title {
         padding: 5vh 0vw;
-        
+
     }
 
     .homepage-content {
@@ -151,13 +151,13 @@
 
     #news-items-content {
         background-color: var(--white);
-        min-height: 50vh;
+        /* min-height: 50vh; */
         padding: 3vh 1vw;
     }
 
-    #news-items-content > .news-item {
+    /* #news-items-content > .news-item {
         min-height: 40vh;
-    }
+    } */
 
     #news-items-content > .news-item > .card {
         margin-left: 1.5vw;
@@ -169,9 +169,9 @@
         box-shadow: 1vh 1vh var(--santas-gray);
     }
 
-    #news-items-content > .news-item > .card > .card-img-top {
+    /* #news-items-content > .news-item > .card > .card-img-top {
         height: 20vh;
-    }
+    } */
 
     #news-items-content > .news-item > .card > .card-img-top > img {
         max-height: 20vh;
@@ -335,9 +335,9 @@
         margin: 0vh 1vw;
     }
 
-    .partners-page-content > .partners-item > .card > .partners-card-img {
+    /* .partners-page-content > .partners-item > .card > .partners-card-img {
         height: 25vh;
-    }
+    } */
 
     .partners-page-content > .partners-item > .card .card-img-top {
         padding: 0vh 0vw;
