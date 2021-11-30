@@ -61,6 +61,16 @@ function goto_frontpage() {
 	$('#news_page').addClass("mt-0");
 }
 
+function goto_homepage() {
+	shrinkNavbar();
+	hideAdditionalNavs();
+	$('.page').addClass("d-none");
+	$('#front_page').removeClass("d-none");
+	$('#home_page').removeClass("d-none");
+	$('#news_page').removeClass("d-none");
+	$('#news_page').addClass("mt-0");
+}
+
 function goto_whopage() {
 	shrinkNavbar();
 	$('.page').addClass("d-none");

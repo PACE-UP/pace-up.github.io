@@ -170,3 +170,18 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 #sticky-right > .redirect-page-anchor {
     margin-bottom: 20vh;
 }
+
+/* This is for making unorder list style to dash */
+ul {
+    margin: 0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+}

@@ -11,6 +11,7 @@
 
     .page {
         margin-top: 12vh;
+        margin-bottom: 6vh;
         background-color: var(--grey);
     }
 
@@ -89,18 +90,12 @@
     }
 
     .page-title {
-        min-height: 10vh;
-        max-height: 10vh;
-        padding-top: 2vh;
+        padding: 2vh 0vw;
     }
 
     .front-page-title {
         padding: 5vh 0vw;
         
-    }
-
-    #home_page {
-        margin-bottom: 10vh;
     }
 
     .homepage-content {
@@ -114,13 +109,8 @@
         padding-bottom: 5vh;
     }
 
-    .homepage-content > .home-img > .img-item {
-        padding: 0vw 2vw;
-    }
-
     .homepage-content > .home-img > .img-item > img {
-        min-height: 15vh;
-        max-height: 15vh;
+        height: 15vh;
     }
 
     .homepage-content > .home-img > .img-item > p {
@@ -132,8 +122,7 @@
     }
 
     #navbar-bottom {
-        min-height: 6vh;
-        max-height: 6vh;
+        height: 6vh;
         background-color: var(--santas-gray);
     }
 
@@ -145,9 +134,7 @@
     }
 
     #news_page {
-        padding-bottom: 10vh;
         min-height: 82vh;
-        max-height: 82vh;
     }
 
     #news-page-title {
@@ -187,7 +174,7 @@
     }
 
     #news-items-content > .news-item > .card > .card-img-top > img {
-        height: 20vh;
+        max-height: 20vh;
     }
 
     #news-items-content > .news-item > .card > .card-body {
@@ -216,12 +203,7 @@
     }
 
     #who_page {
-        margin-bottom: 10vh;
-    }
-
-    #who_page > .container {
-        min-width: 85vw;
-        max-width: 85vw;
+        min-height: 82vh;
     }
 
     .who-page-content {
@@ -296,8 +278,8 @@
     }
 
     .logo-slideshow-container {
-        padding-top: 6vh;
         background-color: var(--white);
+        padding: 2vh 0vw;
     }
 
     .logo-slideshow {
@@ -318,8 +300,6 @@
 
     .logo-slideshow .mover {
         animation: moveSlideshow 20s linear infinite;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     @keyframes moveSlideshow {
@@ -328,48 +308,54 @@
         }
     }
 
-    .padding-nav-bottom {
-        padding-bottom: 16vh;
+    #partners_page {
+        min-height: 82vh;
     }
 
     #partners_page .container {
         min-width: 70vw;
         max-width: 70vw;
+        padding-bottom: 2vh;
     }
 
     .partners-page-content {
         background-color: var(--white);
-        padding: 3vh 3vw;
+        padding: 1vh 3vw;
     }
 
     .partners-page-content > .partners-item {
-        margin-bottom: 2vh;
+        margin: 1vh 0vw;
     }
 
     .partners-page-content > .partners-item > .card {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
         background-color: var(--grey);
         border: none;
         border-radius: 0;
+        min-height: 100%;
+        margin: 0vh 1vw;
+    }
+
+    .partners-page-content > .partners-item > .card > .partners-card-img {
+        height: 25vh;
     }
 
     .partners-page-content > .partners-item > .card .card-img-top {
-        height: 20vh;
+        padding: 0vh 0vw;
+        border-radius: 0;
+        height: 100%;
     }
 
     .partners-page-content > .partners-item > .card > .card-body {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-        padding: 2vh 1vw;
+        padding: 2vh 0.5vw 2vh 0.5vw;
     }
 
     .partners-page-content > .partners-item > .card > .card-body .card-title {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         color: var(--dddark-blue);
         background-color: var(--white);
         font-size: 1.5vh;
+        padding: 0.5vh 0.5vw;
     }
 
     .page-container {
@@ -377,27 +363,31 @@
         max-width: 90vw;
     }
 
+    #people_page {
+        min-height: 82vh;
+    }
+
     #people_page > .container {
         min-width: 70vw;
         max-width: 70vw;
+        padding-bottom: 2vh;
     }
 
     .people-page-content {
         background-color: var(--white);
-        padding: 3vh 3vw;
+        padding: 1vh 3vw;
     }
 
     .people-page-content > .people-item {
-        margin-bottom: 2vh;
+        margin: 1vh 0vw;
     }
 
     .people-page-content > .people-item > .card {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
         background-color: var(--grey);
         border: none;
         border-radius: 0;
         min-height: 100%;
+        margin: 0vh 1vw;
     }
 
     .people-page-content > .people-item > .card .card-img-top {
@@ -407,24 +397,23 @@
     .people-page-content > .people-item > .card > .card-body {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-        padding: 2vh 0.5vw;
+        padding: 0vh 0.5vw 2vh 0.5vw;
     }
 
     .people-page-content > .people-item > .card > .card-body .card-title {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         color: var(--dddark-blue);
         background-color: var(--white);
         font-size: 1.5vh;
     }
 
     #objectives_page {
-        padding-top: 6vh;
+        min-height: 82vh;
+        padding: 1vh 0vw;
     }
 
     #objectives_page > .container {
         background-color: var(--white);
-        padding: 0vh 3vw 3vh 3vw;
+        padding: 0vh 4vw 2vh 4vw;
         min-width: 70vw;
         max-width: 70vw;
     }
@@ -434,39 +423,32 @@
     }
 
     .objectives-page-content p {
-        font-size: 2vh;
+        font-size: 1.7vh;
         color: var(--dddark-blue);
     }
 
-
     #capacitybuildings_page {
-        padding-top: 6vh;
+        min-height: 82vh;
+        padding: 2vh 0vw;
     }
 
     #capacitybuildings_page > .container {
         background-color: var(--white);
-        padding: 0vh 3vw 3vh 3vw;
+        padding: 0vh 3vw 2vh 3vw;
         min-width: 70vw;
         max-width: 70vw;
-    }
-
-    #capacitybuildings_page > .container .title {
-        height: 8vh;
     }
 
     #capacitybuildings_page > .container .row {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
     }
 
     #capacitybuildings_page > .container .row > .card-item {
-        padding-left: 1vh;
-        padding-right: 1vh;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        padding: 0vh 1vw;
         background-color: var(--grey);
         background-clip: content-box;
+        margin-bottom: 2vh;
     }
 
     #capacitybuildings_page > .container .row .capacity-card {
@@ -480,41 +462,46 @@
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > a > p {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        margin: 0vh 2vw;
+        padding: 2vh 0vw;
         background-color: var(--white);
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+        padding-top: 1vh;
+        margin-bottom: 0vh;
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+        padding: 1vh 0vw;
     }
 
     #activities_page {
-        padding-top: 6vh;
+        min-height: 82vh;
+        padding: 2vh 0vw;
     }
 
     #activities_page > .container {
         background-color: var(--white);
-        padding: 0vh 3vw 3vh 3vw;
+        padding: 0vh 3vw 2vh 3vw;
         min-width: 70vw;
         max-width: 70vw;
     }
 
+    #activities_page > .container .row {
+        display: flex;
+        flex-direction: row;
+      }
+
     #activities_page > .container .row > .card-item {
-        padding-left: 1vh;
-        padding-right: 1vh;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        padding: 0vh 1vw;
         background-color: var(--grey);
         background-clip: content-box;
+        margin-bottom: 2vh;
     }
 
     #activities_page > .container .row .activity-card {
@@ -528,21 +515,22 @@
     }
 
     #activities_page > .container .row .activity-card > .card-body > a > p {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        margin: 0vh 2vw;
+        padding: 2vh 0vw;
         background-color: var(--white);
     }
 
     #activities_page > .container .row .activity-card > .card-body > p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+        padding-top: 1vh;
+        margin-bottom: 0vh;
     }
 
     #activities_page > .container .row .activity-card > .card-body > ul {
         font-size: 1.7vh;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+        padding: 1vh 0vw;
     }
 
     #about_this_site_page .container {
@@ -578,20 +566,19 @@
     }
 
     #detailed_contact_page > .container {
-        min-width: 50vw;
-        max-width: 50vw;
+        width: 50vw;
         min-height: 82vh;
         background-color: var(--grey);
     }
 
     #detailed_contact_page > .container > .content {
-        margin: 3vh 0vw;
+        margin: 2vh 0vw;
         background-color: var(--white);
     }
 
     #detailed_contact_page > .container > .content > .row {
         margin: 3vh 2vw;
-        padding: 3vh 2vw;
+        padding: 5vh 2vw;
         background-color: var(--grey);
     }
 
@@ -602,8 +589,7 @@
     }
 
     #detailed_partner_page > .container {
-        min-width: 50vw;
-        max-width: 50vw;
+        width: 60vw;
         min-height: 82vh;
         background-color: var(--grey);
     }
@@ -614,15 +600,30 @@
     }
 
     #detailed_partner_page > .container > .content > .row {
-        margin: 3vh 2vw;
+        margin: 3vh 4vw;
         padding: 3vh 2vw;
         background-color: var(--grey);
+    }
+
+    #detailed_partner_page > .container > .content > .row > .img {
+        max-height: 30vh;
     }
 
     #detailed_partner_page > .container > .content > .row p {
         font-size: 1.7vh;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+    }
+
+    #detailed_partner_page_title {
+        padding: 2vh 0vw;
+    }
+
+    #detailed_partner_page_fst_paragraph {
+        padding-left: 2vw;
+    }
+
+    .contact-in-asia > div {
+        padding: 1vh 0.5vw;
     }
 
     .contact-in-asia img {
@@ -641,6 +642,10 @@
         color: var(--white);
         font-size: 1.5vh;
         width: 100%;
+    }
+
+    .contact-in-eu > div {
+        padding: 1vh 0.5vw;
     }
 
     .contact-in-eu img {
