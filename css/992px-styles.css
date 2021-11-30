@@ -9,6 +9,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .page {
     margin-top: 12vh;
+    margin-bottom: 6vh;
     background-color: var(--grey);
   }
 
@@ -20,6 +21,7 @@
   #navbar-top {
     background-color: var(--white);
     height: 10vh;
+    padding: 0vh 2vw;
   }
 
   #navbar-top>nav {
@@ -42,7 +44,7 @@
 
   #navbar-top .shrink {
     background-color: var(--white);
-    height: 10vh;
+    height: 8vh;
     transition: all ease-in-out;
     padding-bottom: 1vh;
   }
@@ -57,7 +59,7 @@
     font-size: 1.8vh;
     font-family: 'Nunito', sans-serif;
     color: var(--dddark-blue);
-    padding: 0vh 2vw 1vh 1vw;
+    padding: 1vh 1vw 1vh 1vw;
     transition: all ease-in-out;
   }
 
@@ -70,7 +72,6 @@
 
   #frontpage_carousel>p {
     min-height: 10vh;
-    max-height: 10vh;
     padding: 2vh 1vw 3vh 1vw;
     font-size: 4vh;
     font-family: 'Nunito', sans-serif;
@@ -88,14 +89,12 @@
   }
 
   .page-title {
-    min-height: 10vh;
-    max-height: 10vh;
     padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
   .front-page-title {
-    min-height: 20vh;
-    max-height: 20vh;
+    padding-bottom: 5vh;
     padding-top: 5vh;
   }
 
@@ -114,14 +113,19 @@
     color: var(--dddark-blue);
   }
 
+  .homepage-content>.home-img {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
   .homepage-content>.home-img>.img-item {
     padding: 0vw 2vw;
   }
 
-  .homepage-content>.home-img>.img-item>img {
+  /* .homepage-content>.home-img>.img-item>img {
     min-height: 15vh;
     max-height: 15vh;
-  }
+  } */
 
   .homepage-content>.home-img>.img-item>p {
     margin-top: 2vh;
@@ -147,7 +151,6 @@
   #news_page {
     padding-bottom: 10vh;
     min-height: 82vh;
-    max-height: 82vh;
   }
 
   #news-page-title {
@@ -228,10 +231,12 @@
   .who-page-content p {
     font-size: 2.18vh;
     color: var(--dddark-blue);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 
   .who-page-content a {
-    max-height: 5vh;
+    margin-bottom: 5vh;
   }
 
   .who-page-content .img-shadow-bl {
@@ -331,6 +336,7 @@
   #partners_page .container {
     min-width: 70vw;
     max-width: 70vw;
+    padding-bottom: 2vh;
   }
 
   .partners-page-content {
@@ -376,6 +382,7 @@
   #people_page>.container {
     min-width: 70vw;
     max-width: 70vw;
+    padding-bottom: 2vh;
   }
 
   .people-page-content {
@@ -506,7 +513,6 @@
   #activities_page>.container .row>.card-item {
     padding-left: 1vh;
     padding-right: 1vh;
-    margin-top: 2vw;
     margin-bottom: 2vw;
     background-color: var(--grey);
     background-clip: content-box;
