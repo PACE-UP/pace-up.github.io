@@ -31,10 +31,10 @@
     }
 
     #navbar-top > nav .nav-item-text {
-        font-size: 2vh;
+        font-size: 11px;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
-        padding: 2vh 1vw;
+        padding: 2vh 1.5vw;
     }
 
     #navbar-top > nav .dropdown-menu > .nav-item:hover {
@@ -57,10 +57,10 @@
     }
 
     #navbar-top > .shrink .nav-item-text {
-        font-size: 2vh;
+        font-size: 11px;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
-        padding: 1vh 2vw 1vh 2vw;
+        padding: 1vh 1.5vw;
         transition: all ease-in-out;
     }
 
@@ -71,11 +71,11 @@
     }
 
     #frontpage_carousel > p {
-        min-height: 10vh;
-        max-height: 10vh;
+        /* min-height: 10vh;
+        max-height: 10vh; */
         padding-top: 2vh;
         padding-bottom: 3vh;
-        font-size: 4vh;
+        font-size: 22px;
         font-family: 'Nunito', sans-serif;
         color: var(--white);
         margin-bottom: 0;
@@ -103,7 +103,7 @@
     }
 
     .homepage-content > .homepage-intro {
-        font-size: 2.18vh;
+        font-size: 12px;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
         padding-bottom: 5vh;
@@ -116,7 +116,7 @@
     .homepage-content > .home-img > .img-item > p {
         margin-top: 2vh;
         margin-bottom: 2vh;
-        font-size: 2vh;
+        font-size: 11px;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
     }
@@ -127,7 +127,7 @@
     }
 
     #navbar-bottom .nav-link-bottom {
-        font-size: 1.8vh;
+        font-size: 10px;
         font-family: 'Nunito', sans-serif;
         color: var(--white);
         padding: 0vh 3.5vw;
@@ -144,7 +144,7 @@
     }
 
     #news-page-title > h6 {
-        font-size: 1.5vh;
+        font-size: 9px;
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
     }
@@ -181,7 +181,7 @@
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
         padding: 2vh 1vw;
-        font-size: 2vh;
+        font-size: 11px;
         margin-bottom: 4vh;
     }
 
@@ -197,8 +197,7 @@
         position: absolute;
         right: 0.5vw;
         bottom: 1vh;
-        font-size: 1.63vh;
-        height: 4vh;
+        font-size: 9px;
         text-align: center;
     }
 
@@ -212,7 +211,7 @@
     }
 
     .who-page-content p {
-        font-size: 2.18vh;
+        font-size: 12px;
         color: var(--dddark-blue);
     }
 
@@ -237,8 +236,12 @@
         margin-top: 1.2vh;
         margin-left: 2vw;
         color: var(--white);
-        font-size: 1.6vh;
+        font-size: 9px;
         position: absolute;
+    }
+
+    #login_page h5 {
+        font-size: 12px;
     }
 
     #login_page > .container {
@@ -253,6 +256,10 @@
         max-height: 80vh;
     }
 
+    #publications_page h5 {
+        font-size: 12px;
+    }
+
     #publications_page > .container {
         min-height: 82vh;
         max-height: 82vh;
@@ -263,6 +270,10 @@
         background-color: var(--white);
         min-height: 80vh;
         max-height: 80vh;
+    }
+
+    #map_page h5 {
+        font-size: 12px;
     }
 
     #map_page > .container {
@@ -312,6 +323,10 @@
         min-height: 82vh;
     }
 
+    #partners_page h5 {
+        font-size: 12px;
+    }
+
     #partners_page .container {
         min-width: 70vw;
         max-width: 70vw;
@@ -354,7 +369,7 @@
     .partners-page-content > .partners-item > .card > .card-body .card-title {
         color: var(--dddark-blue);
         background-color: var(--white);
-        font-size: 1.5vh;
+        font-size: 9px;
         padding: 0.5vh 0.5vw;
     }
 
@@ -365,6 +380,10 @@
 
     #people_page {
         min-height: 82vh;
+    }
+
+    #people_page h5 {
+        font-size: 12px;
     }
 
     #people_page > .container {
@@ -403,12 +422,16 @@
     .people-page-content > .people-item > .card > .card-body .card-title {
         color: var(--dddark-blue);
         background-color: var(--white);
-        font-size: 1.5vh;
+        font-size: 9px;
     }
 
     #objectives_page {
         min-height: 82vh;
         padding: 1vh 0vw;
+    }
+
+    #objectives_page h5 {
+        font-size: 12px;
     }
 
     #objectives_page > .container {
@@ -423,13 +446,17 @@
     }
 
     .objectives-page-content p {
-        font-size: 1.7vh;
+        font-size: 11px;
         color: var(--dddark-blue);
     }
 
     #capacitybuildings_page {
         min-height: 82vh;
         padding: 2vh 0vw;
+    }
+
+    #capacitybuildings_page h5 {
+        font-size: 12px;
     }
 
     #capacitybuildings_page > .container {
@@ -458,7 +485,7 @@
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > a {
         color: var(--dddark-blue);
-        font-size: 1.6vh;
+        font-size: 9px;
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > a > p {
@@ -468,14 +495,14 @@
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > p {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
         padding-top: 1vh;
         margin-bottom: 0vh;
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > ul {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
         padding: 1vh 0vw;
     }
@@ -483,6 +510,10 @@
     #activities_page {
         min-height: 82vh;
         padding: 2vh 0vw;
+    }
+
+    #activities_page h5 {
+        font-size: 12px;
     }
 
     #activities_page > .container {
@@ -511,7 +542,7 @@
 
     #activities_page > .container .row .activity-card > .card-body > a {
         color: var(--dddark-blue);
-        font-size: 1.6vh;
+        font-size: 9px;
     }
 
     #activities_page > .container .row .activity-card > .card-body > a > p {
@@ -521,16 +552,20 @@
     }
 
     #activities_page > .container .row .activity-card > .card-body > p {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
         padding-top: 1vh;
         margin-bottom: 0vh;
     }
 
     #activities_page > .container .row .activity-card > .card-body > ul {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
         padding: 1vh 0vw;
+    }
+
+    #about_this_site_page h5 {
+        font-size: 12px;
     }
 
     #about_this_site_page .container {
@@ -549,7 +584,7 @@
     }
 
     #about_this_site_page p {
-     	font-size: 1.7vh;
+     	font-size: 10px;
       	color: var(--dddark-blue);
     }
 
@@ -583,13 +618,13 @@
     }
 
     #detailed_contact_page > .container > .content > .row p {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
         padding: 1vh 2vw;
     }
 
     #detailed_partner_page > .container {
-        width: 60vw;
+        width: 50vw;
         min-height: 82vh;
         background-color: var(--grey);
     }
@@ -610,7 +645,7 @@
     }
 
     #detailed_partner_page > .container > .content > .row p {
-        font-size: 1.7vh;
+        font-size: 10px;
         color: var(--dddark-blue);
     }
 
@@ -632,7 +667,7 @@
 
     .contact-in-asia p {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.7vh;
+        font-size: 9px;
         color: var(--dddark-blue);
     }
 
@@ -640,7 +675,7 @@
         background-color: var(--dddark-blue);
         font-family: 'Open Sans', sans-serif;
         color: var(--white);
-        font-size: 1.5vh;
+        font-size: 8px;
         width: 100%;
     }
 
@@ -654,7 +689,7 @@
 
     .contact-in-eu p {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.7vh;
+        font-size: 9px;
         color: var(--dddark-blue);
     }
 
@@ -662,7 +697,7 @@
         background-color: var(--dddark-blue);
         font-family: 'Open Sans', sans-serif;
         color: var(--white);
-        font-size: 1.5vh;
+        font-size: 8px;
         width: 100%;
     }
 
@@ -673,9 +708,17 @@
         z-index: 1026;
     }
 
+    .sticky-right .sticky-right-text {
+        font-size: 7px;
+    }
+
     .sticky-left {
         display: block;
         z-index: 1026;
+    }
+
+    .sticky-left .sticky-left-text {
+        font-size: 7px;
     }
 
     #recipeCarousel > .carousel-inner .carousel-item-right.active,
