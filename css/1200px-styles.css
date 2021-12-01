@@ -98,6 +98,10 @@
 
     }
 
+    #home_page > .container {
+        width: 1000px;
+    } 
+
     .homepage-content {
         min-height: 60vh;
     }
@@ -107,10 +111,6 @@
         font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
         padding-bottom: 5vh;
-    }
-
-    .homepage-content > .home-img > .img-item > img {
-        height: 15vh;
     }
 
     .homepage-content > .home-img > .img-item > p {
@@ -135,6 +135,10 @@
 
     #news_page {
         min-height: 82vh;
+    }
+
+    #news_page > .container {
+        width: 1000px;
     }
 
     #news-page-title {
@@ -182,7 +186,7 @@
         flex: 1 1 auto;
         padding: 2vh 1vw;
         font-size: 11px;
-        margin-bottom: 4vh;
+        /* margin-bottom: 4vh; */
     }
 
     #news-items-content > .news-item > .card > .card-body > .card-title {
@@ -205,9 +209,13 @@
         min-height: 82vh;
     }
 
+    #who_page > .container {
+        width: 90vw;
+        margin-bottom: 100px;
+    }
+
     .who-page-content {
         margin-bottom: 2vh;
-        min-height: 40vh;
     }
 
     .who-page-content p {
@@ -220,21 +228,21 @@
     }
 
     .who-page-content .img-shadow-bl {
-        margin-left: 2vw;
-        margin-bottom: 4vh;
+        /* margin-left: 2vw; */
+        /* margin-bottom: 4vh; */
         /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
-        box-shadow: -2vw 3.5vh var(--dddark-blue), -1.8vw 4vh var(--santas-gray);
+        box-shadow: -30px 30px var(--dddark-blue), -20px 40px var(--santas-gray);
     }
 
     .img-shadow-tl {
-        margin-left: 2vw;
-        margin-top: 4vh;
-        box-shadow: -2vw -3.5vh var(--dddark-blue), -1.8vw -3vh var(--santas-gray);
+        /* margin-left: 2vw; */
+        /* margin-top: 4vh; */
+        box-shadow: -30px -22px var(--dddark-blue), -26px -18px var(--santas-gray);
     }
 
     .caption-img {
-        margin-top: 1.2vh;
-        margin-left: 2vw;
+        margin-top: 10px;
+        /* margin-left: 2vw; */
         color: var(--white);
         font-size: 9px;
         position: absolute;
@@ -328,8 +336,7 @@
     }
 
     #partners_page .container {
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 1000px;
         padding-bottom: 2vh;
     }
 
@@ -387,8 +394,7 @@
     }
 
     #people_page > .container {
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 1000px;
         padding-bottom: 2vh;
     }
 
@@ -437,15 +443,14 @@
     #objectives_page > .container {
         background-color: var(--white);
         padding: 0vh 4vw 2vh 4vw;
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 1000px;
     }
 
     .objectives-page-content {
         margin-bottom: 2vh;
     }
 
-    .objectives-page-content p {
+    .objectives-page-content .objectives-page-text {
         font-size: 11px;
         color: var(--dddark-blue);
     }
@@ -462,8 +467,7 @@
     #capacitybuildings_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 2vh 3vw;
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 1000px;
     }
 
     #capacitybuildings_page > .container .row {
@@ -519,8 +523,7 @@
     #activities_page > .container {
         background-color: var(--white);
         padding: 0vh 3vw 2vh 3vw;
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 1000px;
     }
 
     #activities_page > .container .row {
@@ -570,7 +573,7 @@
 
     #about_this_site_page .container {
     	min-height: 82vh;
-        width: 60vw;
+        width: 800px;
     	background-color: var(--grey);
     }
 
@@ -601,7 +604,7 @@
     }
 
     #detailed_contact_page > .container {
-        width: 50vw;
+        width: 700px;
         min-height: 82vh;
         background-color: var(--grey);
     }
@@ -624,7 +627,7 @@
     }
 
     #detailed_partner_page > .container {
-        width: 50vw;
+        width: 700px;
         min-height: 82vh;
         background-color: var(--grey);
     }
