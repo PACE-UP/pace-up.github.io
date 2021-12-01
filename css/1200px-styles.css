@@ -65,7 +65,7 @@
     }
 
     #frontpage_carousel {
-        min-height: 58vh;
+        /* min-height: 58vh; */
         padding-top: 8vh;
         background-color: var(--dddark-blue);
     }
@@ -102,9 +102,9 @@
         width: 1000px;
     } 
 
-    .homepage-content {
+    /* .homepage-content {
         min-height: 60vh;
-    }
+    } */
 
     .homepage-content > .homepage-intro {
         font-size: 12px;
@@ -487,15 +487,25 @@
         border: none;
     }
 
-    #capacitybuildings_page > .container .row .capacity-card > .card-body > a {
-        color: var(--dddark-blue);
-        font-size: 9px;
+    #capacitybuildings_page > .container .row .capacity-card > .card-body {
+        padding: 10px 15px 20px 15px;
     }
 
-    #capacitybuildings_page > .container .row .capacity-card > .card-body > a > p {
-        margin: 0vh 2vw;
-        padding: 2vh 0vw;
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > a {
+        color: var(--dddark-blue);
+    }
+
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > a > .card-title {
+        display: flex;
+        height: 40px;
+        margin: 5px 40px;
         background-color: var(--white);
+    }
+
+    #capacitybuildings_page > .container .row .capacity-card > .card-body > a > .card-title > div {
+        font-size: 9px;
+        text-align: center;
+        margin: auto;
     }
 
     #capacitybuildings_page > .container .row .capacity-card > .card-body > p {
@@ -543,16 +553,26 @@
         border: none;
     }
 
-    #activities_page > .container .row .activity-card > .card-body > a {
-        color: var(--dddark-blue);
-        font-size: 9px;
+    #activities_page > .container .row .capacity-card > .card-body {
+        padding: 10px 15px 20px 15px;
     }
 
-    #activities_page > .container .row .activity-card > .card-body > a > p {
-        margin: 0vh 2vw;
-        padding: 2vh 0vw;
+    #activities_page > .container .row .activity-card > .card-body > a {
+        color: var(--dddark-blue);
+    }
+
+    #activities_page > .container .row .activity-card > .card-body > a > .card-title {
+        display: flex;
+        height: 40px;
+        margin: 5px 40px;
         background-color: var(--white);
     }
+
+    #activities_page > .container .row .activity-card > .card-body > a > .card-title > div {
+        font-size: 9px;
+        text-align: center;
+        margin: auto;
+    }    
 
     #activities_page > .container .row .activity-card > .card-body > p {
         font-size: 10px;
@@ -623,7 +643,7 @@
     #detailed_contact_page > .container > .content > .row p {
         font-size: 10px;
         color: var(--dddark-blue);
-        padding: 1vh 2vw;
+        padding: 1vh 4vw;
     }
 
     #detailed_partner_page > .container {
