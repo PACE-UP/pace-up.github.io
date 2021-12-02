@@ -317,7 +317,7 @@
 
     .logo-slideshow > div {
         height: 200px;
-        width: 14994px;
+        width: 14000px;
         background: url(../images/LOGOS_PARTNER/slideshow.png);
         background-size: auto auto;
     }
@@ -328,7 +328,7 @@
 
     @keyframes moveSlideshow {
         100% {
-            transform: translateX(-73.4960%);
+            transform: translateX(-78.571428571%);
         }
     }
 
