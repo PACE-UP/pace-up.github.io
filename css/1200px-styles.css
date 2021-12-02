@@ -17,16 +17,16 @@
 
     #navbar-top > nav > a > img {
         max-height: 8vh;
-        min-height: 8vh;
+        /* min-height: 8vh; */
     }
 
     #navbar-top {
         background-color: var(--white);
-        height: 10vh;
+        max-height: 10vh;
     }
 
     #navbar-top > nav {
-        margin: 0 5vw 0 5vw;
+        margin: 0 5vw;
         border-bottom: 1px solid var(--dddark-blue);
     }
 
@@ -52,16 +52,16 @@
         min-width: inherit;
     }
 
-    #navbar-top .shrink {
-        background-color: var(--white);
-        height: 8vh;
-        transition: all ease-in-out;
-        padding-bottom: 1vh;
-    }
-
     #navbar-top > nav .nav-child {
         text-align: left;
         padding: 5px;
+    }
+
+    #navbar-top .shrink {
+        background-color: var(--white);
+        transition: all ease-in-out;
+        padding-bottom: 1vh;
+        margin-bottom: 10px;
     }
 
     #navbar-top > .shrink  {
@@ -70,7 +70,6 @@
 
     #navbar-top .shrink > a > img {
         max-height: 5vh;
-        min-height: 5vh;
         transition: all ease-in-out;
     }
 
