@@ -32,15 +32,24 @@
 
     #navbar-top > nav .nav-item-text {
         font-size: 11px;
-        font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
-        padding: 2vh 1.5vw;
+        padding: 10px 20px;
+        width: 120px;
+        text-align: center;
+    }
+
+    #navbar-top > nav .dropdown {
+        width: 120px;
     }
 
     #navbar-top > nav .dropdown-menu > .nav-item:hover {
-        font-weight: bold;
         color: var(--white);
         background-color: var(--iron);
+    }
+
+    #navbar-top > nav .my-custom-dropdown-menu {
+        margin-top: 0;
+        min-width: inherit;
     }
 
     #navbar-top .shrink {
@@ -48,6 +57,15 @@
         height: 8vh;
         transition: all ease-in-out;
         padding-bottom: 1vh;
+    }
+
+    #navbar-top > nav .nav-child {
+        text-align: left;
+        padding: 5px;
+    }
+
+    #navbar-top > .shrink  {
+        align-items: end;
     }
 
     #navbar-top .shrink > a > img {
@@ -58,10 +76,16 @@
 
     #navbar-top > .shrink .nav-item-text {
         font-size: 11px;
-        font-family: 'Nunito', sans-serif;
+        width: 120px;
         color: var(--dddark-blue);
-        padding: 1vh 1.5vw;
+        padding: 10px 20px;
         transition: all ease-in-out;
+        text-align: center;
+    }
+
+    #navbar-top > .shrink .nav-child {
+        text-align: left;
+        padding: 5px;
     }
 
     #frontpage_carousel {
@@ -76,7 +100,6 @@
         padding-top: 2vh;
         padding-bottom: 3vh;
         font-size: 22px;
-        font-family: 'Nunito', sans-serif;
         color: var(--white);
         margin-bottom: 0;
     }
@@ -108,7 +131,6 @@
 
     .homepage-content > .homepage-intro {
         font-size: 12px;
-        font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
         padding-bottom: 5vh;
     }
@@ -117,7 +139,6 @@
         margin-top: 2vh;
         margin-bottom: 2vh;
         font-size: 11px;
-        font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
     }
 
@@ -128,7 +149,6 @@
 
     #navbar-bottom .nav-link-bottom {
         font-size: 10px;
-        font-family: 'Nunito', sans-serif;
         color: var(--white);
         padding: 0vh 3.5vw;
     }
@@ -149,7 +169,6 @@
 
     #news-page-title > h6 {
         font-size: 9px;
-        font-family: 'Nunito', sans-serif;
         color: var(--dddark-blue);
     }
 
@@ -621,7 +640,6 @@
     }
 
     #contact_page p {
-        font-family: 'Open Sans', sans-serif;
         font-size: 1.7vh;
         color: var(--dddark-blue);
     }
@@ -692,14 +710,12 @@
     }
 
     .contact-in-asia p {
-        font-family: 'Open Sans', sans-serif;
         font-size: 9px;
         color: var(--dddark-blue);
     }
 
     .contact-in-asia button {
         background-color: var(--dddark-blue);
-        font-family: 'Open Sans', sans-serif;
         color: var(--white);
         font-size: 8px;
         width: 100%;
@@ -714,14 +730,12 @@
     }
 
     .contact-in-eu p {
-        font-family: 'Open Sans', sans-serif;
         font-size: 9px;
         color: var(--dddark-blue);
     }
 
     .contact-in-eu button {
         background-color: var(--dddark-blue);
-        font-family: 'Open Sans', sans-serif;
         color: var(--white);
         font-size: 8px;
         width: 100%;

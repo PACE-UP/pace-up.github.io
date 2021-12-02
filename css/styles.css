@@ -158,8 +158,7 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 }
 
 #navbar-top .active-background, .nav-parent:hover{
-  background-color: var(--grey);
-  font-weight: 900;
+  background-color: var(--iron);
 }
 
 .dropdown:hover .dropdown-menu{
