@@ -100,7 +100,7 @@
 
     #home_page > .container {
         width: 1000px;
-    } 
+    }
 
     /* .homepage-content {
         min-height: 60vh;
@@ -385,11 +385,6 @@
         padding: 0.5vh 0.5vw;
     }
 
-    .page-container {
-        min-width: 90vw;
-        max-width: 90vw;
-    }
-
     #people_page {
         min-height: 82vh;
     }
@@ -577,7 +572,7 @@
         font-size: 9px;
         text-align: center;
         margin: auto;
-    }    
+    }
 
     #activities_page > .container .row .activity-card > .card-body > p {
         font-size: 10px;

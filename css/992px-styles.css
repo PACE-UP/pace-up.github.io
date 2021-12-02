@@ -110,15 +110,6 @@
     color: var(--dddark-blue);
   }
 
-  .homepage-content > .home-img {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-
-  .homepage-content > .home-img > .img-item {
-    padding: 0vw 2vw;
-  }
-
   /* .homepage-content>.home-img>.img-item>img {
     min-height: 15vh;
     max-height: 15vh;
@@ -212,7 +203,7 @@
   }
 
   #who_page {
-    height: 82vh;
+    padding-bottom: 6vh;
   }
 
   #who_page>.container {
@@ -305,7 +296,7 @@
 
   .logo-slideshow > div {
       height: 200px;
-      width: 14994px;
+      width: 10000px;
       background: url(../images/LOGOS_PARTNER/slideshow.png);
       background-size: auto auto;
   }
@@ -321,7 +312,7 @@
   }
 
   #partners_page {
-      min-height: 82vh;
+      padding-bottom: 6vh;
   }
 
   #partners_page h5 {
@@ -368,12 +359,11 @@
     font-size: 9px;
   }
 
-  .page-container {
-    min-width: 90vw;
-    max-width: 90vw;
+  #people_page {
+      padding-bottom: 6vh;
   }
 
-  #people_page>.container {
+  #people_page > .container {
     min-width: 70vw;
     max-width: 70vw;
     padding-bottom: 2vh;
@@ -461,8 +451,6 @@
   }
 
   #capacitybuildings_page>.container .row>.card-item {
-    padding-left: 1vh;
-    padding-right: 1vh;
     margin-top: 2vw;
     margin-bottom: 2vw;
     background-color: var(--grey);
