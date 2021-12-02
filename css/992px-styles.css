@@ -288,15 +288,18 @@
   .logo-slideshow {
       border-top: var(--grey) 1px solid;
       border-bottom: var(--grey) 1px solid;
-      height: 200px;
-      max-width: 100vw;
-      margin: 0vh 0vw;
-      overflow: hidden;
-  }
+       /* height: 200px; */
+       height: 100px;
+       max-width: 100vw;
+       margin: 0vh 0vw;
+       overflow: hidden;
+   }
 
-  .logo-slideshow > div {
-      height: 200px;
-      width: 10000px;
+   .logo-slideshow > div {
+       /* height: 200px;
+       width: 14000px; */
+       height: 100px;
+       width: 7000px;
       background: url(../images/LOGOS_PARTNER/slideshow.png);
       background-size: auto auto;
   }
