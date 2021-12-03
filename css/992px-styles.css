@@ -229,7 +229,6 @@
 
   .who-page-content {
     margin-bottom: 2vh;
-    min-height: 40vh;
   }
 
   .who-page-content p {
@@ -322,7 +321,7 @@
   }
 
   .logo-slideshow .mover {
-      animation: moveSlideshow 100s linear infinite;
+      animation: moveSlideshow 80s linear infinite;
   }
 
   @keyframes moveSlideshow {

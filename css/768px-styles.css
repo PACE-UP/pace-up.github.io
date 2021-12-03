@@ -8,7 +8,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
   .page {
       margin-top: 10vh;
       margin-bottom: 4vh;
@@ -20,7 +20,7 @@
   }
 
   #navbar-top {
-      background-color: white;
+      background-color: var(--white);
       max-height: 10vh;
   }
 
@@ -31,7 +31,7 @@
 
   #navbar-top > nav .nav-item-text {
       font-size: 11px;
-      
+
       color: var(--dddark-blue);
       padding: 10px 20px;
         max-width: 120px;
@@ -58,7 +58,7 @@
     }
 
   #navbar-top .shrink {
-      background-color: white;
+      background-color: var(--white);
       transition: all 0.4s ease-in-out;
       padding-bottom: 1vh;
       margin-bottom: 10px;
@@ -95,7 +95,7 @@
   #frontpage_carousel > p {
       padding: 2vh 2vw;
       font-size: 22px;
-      
+
       color: var(--white);
       margin-bottom: 0;
   }
@@ -128,15 +128,15 @@
   .homepage-content > .homepage-intro {
       /* min-height: 15vh; */
       font-size: 12px;
-      
+
       color: var(--dddark-blue);
   }
 
-  ..homepage-content > .home-img > .img-item > p {
+  .homepage-content > .home-img > .img-item > p {
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: 11px;
-    
+
     color: var(--dddark-blue);
   }
 
@@ -148,8 +148,8 @@
 
   #navbar-bottom .nav-link-bottom {
       font-size: 10px;
-      
-      color: white;
+
+      color: var(--white);
       padding: 0vh 3.5vw;
   }
 
@@ -165,12 +165,12 @@
 
   #news-page-title > h6 {
       font-size: 9px;
-      
+
       color: var(--dddark-blue);
   }
 
   #news-items-content {
-      background-color: white;
+      background-color: var(--white);
       min-height: 50vh;
       padding: 3vh 0vw;
   }
@@ -183,7 +183,7 @@
       margin-left: 1.5vw;
       margin-right: 1.5vw;
       background-color: var(--dddark-blue);
-      color: white;
+      color: var(--white);
       border: none;
       border-radius: 0;
       box-shadow: 1vh 1vh var(--santas-gray);
@@ -228,7 +228,6 @@
 
   .who-page-content {
       margin-bottom: 2vh;
-      min-height: 30vh;
   }
 
   .who-page-content p {
@@ -255,7 +254,7 @@
   .caption-img {
       margin-top: 0.2vh;
       margin-left: 3vw;
-      color: white;
+      color: var(--white);
       font-size: 9px;
       position: absolute;
   }
@@ -267,7 +266,7 @@
   }
 
   #login_page > .container > .login-page {
-      background-color: white;
+      background-color: var(--white);
       min-height: 80vh;
       max-height: 80vh;
   }
@@ -279,7 +278,7 @@
   }
 
   #publications_page > .container > .publications-page {
-      background-color: white;
+      background-color: var(--white);
       min-height: 80vh;
       max-height: 80vh;
   }
@@ -291,13 +290,13 @@
   }
 
   #map_page > .container > .map-page {
-      background-color: white;
+      background-color: var(--white);
       min-height: 80vh;
       max-height: 80vh;
   }
 
   .logo-slideshow-container {
-      background-color: white;
+      background-color: var(--white);
       padding: 3vh 0vw;
   }
 
@@ -321,7 +320,7 @@
   }
 
   .logo-slideshow .mover {
-      animation: moveSlideshow 100s linear infinite;
+      animation: moveSlideshow 60s linear infinite;
   }
 
   @keyframes moveSlideshow {
@@ -344,7 +343,7 @@
   }
 
   .partners-page-content {
-      background-color: white;
+      background-color: var(--white);
       padding: 2vh 2vw;
   }
 
@@ -375,7 +374,7 @@
       padding-top: 1vh;
       padding-bottom: 1vh;
       color: var(--dddark-blue);
-      background-color: white;
+      background-color: var(--white);
       font-size: 9px;
   }
 
@@ -384,7 +383,7 @@
   }
 
   .people-page-content {
-      background-color: white;
+      background-color: var(--white);
       padding: 3vh 3vw;
   }
 
@@ -414,7 +413,7 @@
       padding-top: 1vh;
       padding-bottom: 1vh;
       color: var(--dddark-blue);
-      background-color: white;
+      background-color: var(--white);
       font-size: 9px;
   }
 
@@ -426,7 +425,7 @@
   #objectives_page > .container {
       width: 700px;
       background-color: var(--white);
-      padding: 0vh 2vw;
+      padding: 0vh 6vw;
   }
 
   .objectives-page-content {
@@ -596,7 +595,7 @@
   }
 
   #contact_page p {
-      
+
       font-size: 1.7vh;
       color: var(--dddark-blue);
   }
@@ -656,14 +655,14 @@
   }
 
   .contact-in-asia p {
-    
+
     font-size: 9px;
     color: var(--dddark-blue);
   }
 
   .contact-in-asia button {
     background-color: var(--dddark-blue);
-    
+
     color: var(--white);
     font-size: 8px;
     width: 100%;
@@ -674,14 +673,14 @@
   }
 
   .contact-in-eu p {
-    
+
     font-size: 9px;
     color: var(--dddark-blue);
   }
 
   .contact-in-eu button {
     background-color: var(--dddark-blue);
-    
+
     color: var(--white);
     font-size: 8px;
     width: 100%;
