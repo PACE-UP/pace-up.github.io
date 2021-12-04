@@ -16,7 +16,6 @@
 
   #navbar-top > nav > a > img {
       max-height: 4vh;
-      min-height: 4vh;s
   }
 
   #navbar-top {
@@ -64,7 +63,6 @@
   }
 
   #frontpage_carousel {
-      max-height: 48vh;
       padding-top: 4vh;
       background-color: var(--dddark-blue);
   }
@@ -76,11 +74,6 @@
       font-family: 'Nunito', sans-serif;
       color: var(--white);
       margin-bottom: 0;
-  }
-
-  .front-carousel-item {
-      min-height: 20vh;
-      max-height: 20vh;
   }
 
   #front_page {
@@ -201,12 +194,12 @@
       right: 0.5vw;
       bottom: 1vh;
       font-size: 9px;
-      height: 4vh;
       text-align: center;
   }
 
   #who_page {
     padding-bottom: 6vh;
+    min-height: 82vh;
   }
 
   #who_page>.container {
@@ -329,6 +322,7 @@
 
   #partners_page {
       padding-bottom: 6vh;
+      min-height: 82vh;
   }
 
   #partners_page h5 {
@@ -378,6 +372,7 @@
 
   #people_page {
       padding-bottom: 6vh;
+      min-height: 82vh;
   }
 
   #people_page > .container {
@@ -420,7 +415,8 @@
   }
 
   #objectives_page {
-      padding: 2vh 5vw;
+      padding: 5vh 6vw;
+      min-height: 82vh;
   }
 
   #objectives_page > .container {
@@ -440,7 +436,8 @@
 
 
   #capacitybuildings_page {
-      padding: 2vh 6vw;
+      padding: 5vh 6vw;
+      min-height: 82vh;
   }
 
   #capacitybuildings_page h5 {
@@ -503,7 +500,8 @@
   }
 
   #activities_page {
-      padding: 2vh 6vw;
+      padding: 5vh 6vw;
+      min-height: 82vh;
   }
 
   #activities_page h5 {

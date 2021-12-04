@@ -87,7 +87,7 @@
   }
 
   #frontpage_carousel {
-    padding-top: 8vh;
+    padding-top: 5vh;
     background-color: var(--dddark-blue);
   }
 
@@ -96,10 +96,6 @@
     font-size: 22px;
     color: var(--white);
     margin-bottom: 0;
-  }
-
-  .carousel-inner {
-    max-height: 26vh;
   }
 
   #front_page {
@@ -154,6 +150,7 @@
   }
 
   #news_page {
+    min-height: 82vh;
     padding-bottom: 6vh;
   }
 
@@ -220,6 +217,7 @@
   }
 
   #who_page {
+    min-height: 82vh;
     padding-bottom: 6vh;
   }
 
@@ -331,6 +329,7 @@
   }
 
   #partners_page {
+    padding-bottom: 82vh;
       padding-bottom: 6vh;
   }
 
@@ -379,6 +378,7 @@
   }
 
   #people_page {
+      min-height: 82vh;
       padding-bottom: 6vh;
   }
 
@@ -426,7 +426,7 @@
 
   #objectives_page {
     padding-top: 6vh;
-    height: 82vh;
+    min-height: 82vh;
   }
 
   #objectives_page>.container {
@@ -445,7 +445,7 @@
   }
 
   #capacitybuildings_page {
-    height: 82vh;
+    min-height: 82vh;
     padding-top: 6vh;
   }
 
@@ -511,6 +511,7 @@
   }
 
   #activities_page {
+    min-height: 82vh;
     padding-top: 6vh;
     padding-bottom: 6vh;
   }

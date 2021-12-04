@@ -89,7 +89,7 @@
 
     #frontpage_carousel {
         /* min-height: 58vh; */
-        padding-top: 8vh;
+        padding-top: 6vh;
         background-color: var(--dddark-blue);
     }
 
@@ -103,9 +103,9 @@
         margin-bottom: 0;
     }
 
-    .carousel-inner {
+    /* .carousel-inner {
         max-height: 40vh;
-    }
+    } */
 
     #front_page {
         margin-bottom: 10vh;
