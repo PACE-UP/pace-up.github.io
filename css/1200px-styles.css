@@ -23,6 +23,12 @@
     #navbar-top {
         background-color: var(--white);
         max-height: 10vh;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 
     #navbar-top > nav {

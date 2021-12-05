@@ -9,7 +9,7 @@
 
 @media (max-width: 767px) {
   .page {
-      margin-top: 12vh;
+      /* margin-top: 12vh; */
       margin-bottom: 6vh;
       background-color: var(--grey);
   }
@@ -20,7 +20,7 @@
 
   #navbar-top {
       background-color: var(--white);
-      height: 10vh;
+      /* max-height: 10vh; */
   }
 
   #navbar-top > nav {
@@ -39,27 +39,6 @@
       font-weight: bold;
       color: var(--white);
       background-color: var(--iron);
-  }
-
-  #navbar-top .shrink {
-      background-color: var(--white);
-      height: 8vh;
-      margin: 0 2.5vw 0 2.5vw;
-      transition: all 0.4s ease-in-out;
-  }
-
-  #navbar-top .shrink > a > img {
-      max-height: 4vh;
-      min-height: 3.5vh;
-      transition: all 0.4s ease-in-out;
-  }
-
-  #navbar-top > .shrink .nav-item-text {
-      font-size: 11px;
-      font-family: 'Nunito', sans-serif;
-      color: var(--dddark-blue);
-      padding: 0.5vh 1vw 0.5vh 1vw;
-      transition: all 0.4s ease-in-out;
   }
 
   #frontpage_carousel {
