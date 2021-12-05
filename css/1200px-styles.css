@@ -33,6 +33,7 @@
 
     #navbar-top > nav {
         margin: 0 5vw;
+        align-items: end;
         border-bottom: 1px solid var(--dddark-blue);
     }
 
