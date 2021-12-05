@@ -32,8 +32,9 @@ $(document).ready(function() {
 	});
 
 	$(".nav-link").on("click", function() {
-		highlightNav(this);//navItem
+		highlightNav(this);
 	});
+
 });
 
 function highlightNav(navItem) {
@@ -59,6 +60,7 @@ function goto_frontpage() {
 	$('#home_page').removeClass("d-none");
 	$('#news_page').removeClass("d-none");
 	$('#news_page').addClass("mt-0");
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_homepage() {
@@ -69,6 +71,7 @@ function goto_homepage() {
 	$('#home_page').removeClass("d-none");
 	$('#news_page').removeClass("d-none");
 	$('#news_page').addClass("mt-0");
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_whopage() {
@@ -81,6 +84,7 @@ function goto_whopage() {
 	// $('#people_page').removeClass("d-none");
 	// $('#people_page').addClass("mt-0");
 	displayAdditionalNavs();
+	// $('.navbar-collapse').collapse('hide');
 }
 
 function goto_partnerspage() {
@@ -90,6 +94,7 @@ function goto_partnerspage() {
 	$('#partners_page').removeClass("mt-0");
 	$('#partners_page').addClass("margin-nav-bottom");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_peoplepage() {
@@ -98,6 +103,7 @@ function goto_peoplepage() {
 	$('#people_page').removeClass("d-none");
 	$('#people_page').removeClass("mt-0");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_objectivespage() {
@@ -105,6 +111,7 @@ function goto_objectivespage() {
 	$('.page').addClass("d-none");
 	$('#objectives_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_activitiespage() {
@@ -112,6 +119,7 @@ function goto_activitiespage() {
 	$('.page').addClass("d-none");
 	$('#activities_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_capspage() {
@@ -119,6 +127,7 @@ function goto_capspage() {
 	$('.page').addClass("d-none");
 	$('#capacitybuildings_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_mappage() {
@@ -126,6 +135,7 @@ function goto_mappage() {
 	$('.page').addClass("d-none");
 	$('#map_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_publicationspage() {
@@ -133,6 +143,7 @@ function goto_publicationspage() {
 	$('.page').addClass("d-none");
 	$('#publications_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_newspage() {
@@ -143,6 +154,7 @@ function goto_newspage() {
 	// since this function display only news page.
 	$('#news_page').removeClass("mt-0");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_loginpage() {
@@ -150,6 +162,7 @@ function goto_loginpage() {
 	$('.page').addClass("d-none");
 	$('#login_page').removeClass("d-none");
 	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
 }
 
 function goto_contactpage_both() {
