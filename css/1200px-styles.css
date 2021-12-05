@@ -1,11 +1,11 @@
-:root {
+/* :root {
     --dddark-blue:#516284;
     --lynch: #7b869d;
-    --santas-gray: #a3a4b0;
-    --iron: #c0c4c5;
+    --santas-gray: #c0c4c5;
+    --iron: #d7dade;
     --grey: #e4e2dd;
     --white: #ffffff;
-}
+} */
 
 @media (min-width: 1200px) {
 
@@ -61,6 +61,7 @@
     #navbar-top > nav .nav-child {
         text-align: left;
         padding: 5px;
+        background-color: var(--grey);
     }
 
     #navbar-top .shrink {
@@ -91,6 +92,7 @@
     #navbar-top > .shrink .nav-child {
         text-align: left;
         padding: 5px;
+        background-color: var(--grey);
     }
 
     #frontpage_carousel {
@@ -149,7 +151,7 @@
 
     #navbar-bottom {
         height: 6vh;
-        background-color: var(--santas-gray);
+        background-color: var(--iron);
     }
 
     #navbar-bottom .nav-link-bottom {
@@ -331,8 +333,8 @@
     }
 
     .logo-slideshow {
-        border-top: var(--grey) 1px solid;
-        border-bottom: var(--grey) 1px solid;
+        /* border-top: var(--grey) 1px solid;
+        border-bottom: var(--grey) 1px solid; */
         /* height: 200px; */
         height: 100px;
         max-width: 100vw;
@@ -402,7 +404,7 @@
     .partners-page-content > .partners-item > .card > .card-body {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-        padding: 2vh 0.5vw 2vh 0.5vw;
+        padding: 2vh 0.5vw;
     }
 
     .partners-page-content > .partners-item > .card > .card-body .card-title {
@@ -711,7 +713,7 @@
     }
 
     .contact-in-asia img {
-        max-width: 10vw;
+        max-width: 100px;
     }
 
     .contact-in-asia p {
@@ -731,7 +733,7 @@
     }
 
     .contact-in-eu img {
-        max-width: 10vw;
+        max-width: 100px;
     }
 
     .contact-in-eu p {

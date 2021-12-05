@@ -1,8 +1,8 @@
 :root {
-    --dddark-blue:rgba(51,52,84,0.5);
+    --dddark-blue: #516284;
     --lynch: #7b869d;
-    --santas-gray: #a3a4b0;
-    --iron: #c0c4c5;
+    --santas-gray: #c0c4c5;
+    --iron: #d7dade;
     --grey: #e4e2dd;
 }
 
@@ -88,7 +88,7 @@ h5 {
     color: white;
     min-width: 36px;
     background: var(--lynch);
-    box-shadow: -0.5vh 0.5vh var(--santas-gray);
+    box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
 }
 
 .btn-more {
@@ -105,7 +105,7 @@ h6 {
 }
 
 .card-border {
-    border: 1px solid var(--dddark-blue);
+    border: 2px solid var(--santas-gray);
 }
 
 .hover-zoom:hover img {
@@ -158,7 +158,7 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
 }
 
 #navbar-top .active-background, .nav-parent:hover{
-  background-color: var(--iron);
+  background-color: var(--grey);
 }
 
 .dropdown:hover .dropdown-menu{
