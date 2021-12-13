@@ -10,6 +10,7 @@
 @media (max-width: 767px) {
   .page {
       /* margin-top: 12vh; */
+      margin-top: 2vh;
       margin-bottom: 6vh;
       background-color: var(--grey);
   }
@@ -28,7 +29,12 @@
       border-bottom: 1px solid var(--dddark-blue);
   }
 
+  #navbar-top .navbar-nav {
+      width: 200px;
+  }
+
   #navbar-top > nav .nav-item-text {
+      text-align: right;
       font-size: 11px;
       font-family: 'Nunito', sans-serif;
       color: var(--dddark-blue);
@@ -86,9 +92,14 @@
       color: var(--dddark-blue);
   }
 
+  .homepage-content > .home-img > .img-item {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
   .homepage-content > .home-img > .img-item > p {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
     font-size: 11px;
     color: var(--dddark-blue);
   }
@@ -149,8 +160,8 @@
   }
 
   #news-items-content > .news-item > .card > .card-img-top {
-      min-height: 25vh;
-      max-height: 25vh;
+      /* min-height: 25vh; */
+      /* max-height: 25vh; */
   }
 
   #news-items-content > .news-item > .card > .card-body {
@@ -169,9 +180,9 @@
   }
 
   #news-items-content > .news-item > .card > .card-body > .card-button {
-      position: absolute;
-      right: 0.5vw;
-      bottom: 1vh;
+      /* position: absolute; */
+      /* right: 5px;
+      bottom: 5px; */
       font-size: 9px;
       text-align: center;
   }
@@ -469,13 +480,13 @@
   #capacitybuildings_page>.container .row .capacity-card>.card-body>p {
     font-size: 10px;
     color: var(--dddark-blue);
-    padding: 1vh 0vw;
+    padding: 0vh 0vw;
   }
 
   #capacitybuildings_page > .container .row .capacity-card > .card-body > ul {
       font-size: 10px;
       color: var(--dddark-blue);
-      padding: 1vh 2vw;
+      padding: 0vh 2vw;
   }
 
   #activities_page {
@@ -532,13 +543,13 @@
   #activities_page > .container .row .activity-card > .card-body > p {
       font-size: 10px;
       color: var(--dddark-blue);
-      padding: 1vh 2vw;
+      padding: 0vh 2vw;
   }
 
   #activities_page > .container .row .activity-card > .card-body > ul {
-      font-size: 1.7vh;
+      font-size: 10px;
       color: var(--dddark-blue);
-      padding: 1vh 2vw;
+      padding: 0vh 2vw;
   }
 
   #about_this_site_page h5 {

@@ -206,7 +206,7 @@
     flex: 1 1 auto;
     padding: 2vh 1vw;
     font-size: 11px;
-    margin-bottom: 4vh;
+    /* margin-bottom: 4vh; */
   }
 
   #news-items-content>.news-item>.card>.card-body>.card-title {
@@ -218,9 +218,9 @@
   }
 
   #news-items-content>.news-item>.card>.card-body>.card-button {
-    position: absolute;
-    right: 0.5vw;
-    bottom: 1vh;
+    /* position: absolute; */
+    /* right: 5px;
+    bottom: 5px; */
     font-size: 9px;
     text-align: center;
   }
