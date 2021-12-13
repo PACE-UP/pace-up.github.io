@@ -97,6 +97,11 @@
     margin-bottom: 1vh;
   }
 
+  .homepage-content > .home-img > .img-item > img {
+    width: 70%;
+    margin-bottom: 1vh;
+  }
+
   .homepage-content > .home-img > .img-item > p {
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
@@ -127,8 +132,8 @@
   }
 
   #news-page-title {
-      padding-top: 15vh;
-      margin-bottom: 1vh;
+    padding-top: 10vh;
+    margin-bottom: 5vh;
       border-bottom: 1px solid var(--dddark-blue);
   }
 
@@ -216,13 +221,13 @@
   .who-page-content .img-shadow-bl {
       margin-left: 2vw;
       margin-bottom: 4vh;
-      box-shadow: -2vw 1vh var(--dddark-blue), -3vw 2vh var(--santas-gray);
+      box-shadow: -30px 30px var(--dddark-blue), -35px 35px var(--santas-gray);
   }
 
   .img-shadow-tl {
       margin-left: 4vw;
       margin-top: 4vh;
-      box-shadow: -4vw -4vh var(--dddark-blue), -5vw -4vh var(--santas-gray);
+      box-shadow: -13px -23px var(--dddark-blue), -16px -18px var(--santas-gray);
   }
 
   .caption-img {

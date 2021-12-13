@@ -57,8 +57,10 @@
     }
 
     #navbar-top > nav .my-custom-dropdown-menu {
-        margin-top: 0;
+        margin: 0;
         min-width: inherit;
+        border-left-width: 0;
+        border-right-width: 0;
     }
 
     #navbar-top > nav .nav-child {
@@ -149,10 +151,15 @@
         padding-bottom: 5vh;
     }
 
+    .homepage-content > .home-img > .img-item > img {
+        width: 70%;
+        margin-bottom: 1vh;
+    }
+
     .homepage-content > .home-img > .img-item > p {
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        font-size: 11px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        font-size: 14px;
         color: var(--dddark-blue);
 
         font-family: 'AvenirNextLTPro';
@@ -180,8 +187,8 @@
     }
 
     #news-page-title {
-        padding-top: 15vh;
-        margin-bottom: 1vh;
+        padding-top: 10vh;
+        margin-bottom: 5vh;
         border-bottom: 1px solid var(--dddark-blue);
     }
 
@@ -277,7 +284,7 @@
         /* margin-left: 2vw; */
         /* margin-bottom: 4vh; */
         /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
-        box-shadow: -30px 30px var(--dddark-blue), -25px 35px var(--santas-gray);
+        box-shadow: -30px 30px var(--dddark-blue), -35px 35px var(--santas-gray);
     }
 
     .img-shadow-tl {
