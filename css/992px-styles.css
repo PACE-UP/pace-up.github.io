@@ -498,7 +498,7 @@
   #capacitybuildings_page > .container .row .capacity-card > .card-body > a > .card-title {
       display: flex;
       height: 40px;
-      margin: 5px 40px;
+      margin: 5px 0px;
       background-color: var(--white);
   }
 
@@ -564,7 +564,7 @@
   #activities_page > .container .row .activity-card > .card-body > a > .card-title {
       display: flex;
       height: 40px;
-      margin: 5px 40px;
+      margin: 5px 0px;
       background-color: var(--white);
   }
 
