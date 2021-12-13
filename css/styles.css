@@ -13,7 +13,7 @@ body {
 }
 
 h5 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'AvenirNextLTPro';
     font-size: 16px;
     color: var(--dddark-blue);
 }
@@ -83,12 +83,14 @@ h5 {
 }
 
 .sticky-item {
-    font-family: 'Calibri';
+    /* font-family: 'Calibri'; */
     font-size: 10px;
     color: white;
     min-width: 36px;
     background: var(--lynch);
     box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
+
+    font-family: 'Corbel';
 }
 
 .btn-more {
@@ -96,12 +98,16 @@ h5 {
     color: white;
     font-size: 9px;
     border-radius: 0;
+
+    font-family: 'AvenirNextLTPro';
 }
 
 h6 {
-    font-family: 'Avenir Next LT Pro';
+    /* font-family: 'Avenir Next LT Pro'; */
     font-size: 12px;
     color: var(--dddark-blue);
+
+    font-family: 'AvenirNextLTPro';
 }
 
 .card-border {

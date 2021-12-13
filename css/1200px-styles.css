@@ -43,6 +43,8 @@
         padding: 10px 20px;
         width: 120px;
         text-align: center;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #navbar-top > nav .dropdown {
@@ -88,6 +90,8 @@
         padding: 10px 20px;
         transition: all ease-in-out;
         text-align: center;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #navbar-top > .shrink .nav-child {
@@ -110,6 +114,8 @@
         font-size: 22px;
         color: var(--white);
         margin-bottom: 0;
+        
+        font-family: 'LucidaBright';
     }
 
     /* .carousel-inner {
@@ -148,6 +154,8 @@
         margin-bottom: 2vh;
         font-size: 11px;
         color: var(--dddark-blue);
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #navbar-bottom {
@@ -159,6 +167,8 @@
         font-size: 10px;
         color: var(--white);
         padding: 0vh 3.5vw;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #news_page {
@@ -178,6 +188,8 @@
     #news-page-title > h6 {
         font-size: 9px;
         color: var(--dddark-blue);
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #news-items-content {
@@ -230,6 +242,8 @@
         bottom: 5px; */
         font-size: 9px;
         text-align: center;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #who_page {
@@ -278,10 +292,14 @@
         color: var(--white);
         font-size: 9px;
         position: absolute;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #login_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #login_page > .container {
@@ -298,6 +316,8 @@
 
     #publications_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #publications_page > .container {
@@ -314,6 +334,8 @@
 
     #map_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #map_page > .container {
@@ -368,6 +390,8 @@
 
     #partners_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #partners_page .container {
@@ -413,6 +437,8 @@
         background-color: var(--white);
         font-size: 9px;
         padding: 0.5vh 0.5vw;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #people_page {
@@ -421,6 +447,8 @@
 
     #people_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #people_page > .container {
@@ -459,6 +487,8 @@
         color: var(--dddark-blue);
         background-color: var(--white);
         font-size: 9px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #objectives_page {
@@ -468,6 +498,8 @@
 
     #objectives_page h5 {
         font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     #objectives_page > .container {
@@ -720,6 +752,8 @@
     .contact-in-asia p {
         font-size: 9px;
         color: var(--dddark-blue);
+
+        font-family: 'Corbel';
     }
 
     .contact-in-asia button {
@@ -727,6 +761,8 @@
         color: var(--white);
         font-size: 8px;
         width: 100%;
+        
+        font-family: 'AvenirNextLTPro';
     }
 
     .contact-in-eu > div {
@@ -740,6 +776,8 @@
     .contact-in-eu p {
         font-size: 9px;
         color: var(--dddark-blue);
+
+        font-family: 'Corbel';
     }
 
     .contact-in-eu button {
@@ -747,6 +785,8 @@
         color: var(--white);
         font-size: 8px;
         width: 100%;
+
+        font-family: 'AvenirNextLTPro';
     }
 
     /* ------------ */
