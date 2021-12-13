@@ -105,7 +105,7 @@
   .homepage-content > .home-img > .img-item > p {
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--dddark-blue);
   }
 
@@ -283,16 +283,16 @@
       /* border-top: var(--grey) 1px solid;
       border-bottom: var(--grey) 1px solid; */
        /* height: 200px; */
-       height: 100px;
+       height: 125px;
        max-width: 100vw;
        margin: 0vh 0vw;
        overflow: hidden;
    }
 
   .logo-slideshow > div {
-      height: 24vh;
-      width: 3260px;
-      background: url(../images/LOGOS_PARTNER/slideshow.png);
+    height: 125px;
+    width: 7000px;
+    background: url(../images/LOGOS_PARTNER/125-slideshow.png);
       background-size: auto auto;
   }
 
