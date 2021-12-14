@@ -339,6 +339,106 @@
         max-height: 80vh;
     }
 
+    #events_page h5 {
+        font-size: 12px;
+
+        font-family: 'AvenirNextLTPro';
+    }
+
+    #events_page > .container {
+        min-height: 82vh;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+    }
+
+    #events_page > .container > .events-page {
+        background-color: var(--white);
+        min-height: 80vh;
+    }
+
+    .timeline {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    .timeline ul .li-time:nth-child(1) {
+        padding-top: 100px;
+    }
+
+    .timeline ul .li-time {
+        list-style-type: none;
+        position: relative;
+        width: 1px;
+        margin: 0 30vw;
+        padding-top: 50px;
+        background: var(--dddark-blue);
+    }
+
+    .timeline ul .li-content {
+        list-style-type: none;
+        position: relative;
+        width: 1px;
+        margin: 0 30vw;
+        background: var(--dddark-blue);
+    }
+
+    .timeline ul li > div {
+        width: 1000px;
+    }
+      
+    .timeline ul .li-time::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: inherit;
+    }
+      
+      .timeline ul .li-time .right {
+        left: -20px;
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        /* padding: 15px; */
+        background: transparent;
+        color: var(--dddark-blue);
+        font-size: 12px;
+        font-family: 'Corbel';
+      }
+
+      .timeline ul .li-time .right a {
+        color: var(--dddark-blue);
+        font-size: 12px;
+        font-family: 'Corbel';
+      }
+
+      .timeline ul .li-content .right {
+        right: -20px;
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        /* padding: 15px; */
+        background: transparent;
+        color: var(--dddark-blue);
+        font-size: 12px;
+        font-family: 'Corbel';
+      }
+
+      .timeline ul li .left {
+        left: -80px;
+        position: relative;
+        bottom: 0;
+        /* padding: 15px; */
+        background: transparent;
+        color: var(--dddark-blue);
+        font-size: 12px;
+        font-family: 'Corbel';
+      }
+
     #map_page h5 {
         font-size: 12px;
 

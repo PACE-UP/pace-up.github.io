@@ -63,7 +63,14 @@
               </div>
               <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_mappage()">MAP</a>
               <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_publicationspage()">PUBLICATIONS</a>
-              <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_newspage()">NEWS</a>
+              <!-- <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_newspage()">NEWS</a> -->
+              <div class="dropdown">
+                <a class="nav-item-text nav-link nav-parent" href="#" role="button">NEWS/EVENTS</a>
+                <div class="dropdown-menu p-0 my-custom-dropdown-menu">
+                    <a class="nav-item-text dropdown-item nav-item nav-link nav-child redirect-page-anchor" href="javascript:goto_newspage()">NEWS</a>
+                    <a class="nav-item-text dropdown-item nav-item nav-link nav-child redirect-page-anchor" href="javascript:goto_eventspage()">EVENTS</a>
+                </div>
+            </div>
               <a class="nav-item-text nav-item nav-link nav-parent redirect-page-anchor" href="javascript:goto_loginpage()">LOGIN</a>
           </div>
       </div>
@@ -1074,6 +1081,88 @@
           </div>
         </div>
       </div>
+  </div>
+
+  <div id="events_page" class="page d-none">
+    <div class="container">
+      <div class="events-page d-flex flex-column">
+        <div class="page-title">
+          <h5 class="text-center m-0">EVENTS</h5>
+        </div>
+        <div class="timeline">
+          <ul>
+            <li class="li-time">
+              <div class="d-flex flex-row">
+                <div class="left">06.12.2021</div>
+                <div class="right">
+                  <a href="#" onclick="openEvent(0)">
+                    Selection committee: African PhD students [Minutes]
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li id="li-0" class="li-content d-none">
+              <div class="d-flex flex-row">
+                <div class="right">
+                  <img class="img-fluid" src="images/eventholder.png">
+                </div>
+              </div>
+            </li>
+            <li class="li-time">
+              <div class="d-flex flex-row">
+                <div class="left">30.09.2021</div>
+                <div class="right">
+                  <a href="#" onclick="openEvent(1)">
+                    Selection committee: Vietnamese PhD students [Minutes]
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li id="li-1" class="li-content d-none">
+              <div class="d-flex flex-row">
+                <div class="right">
+                  <img class="img-fluid" src="images/eventholder.png">
+                </div>
+              </div>
+            </li>
+            <li class="li-time">
+              <div class="d-flex flex-row">
+                <div class="left">28.07.2021</div>
+                <div class="right">
+                  <a href="#" onclick="openEvent(2)">
+                    Kick-off meeting [Minutes]
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li id="li-2" class="li-content d-none">
+              <div class="d-flex flex-row">
+                <div class="right">
+                  <img class="img-fluid" src="images/eventholder.png">
+                </div>
+              </div>
+            </li>
+            <li class="li-time">
+              <div class="d-flex flex-row">
+                <div class="left">01.05.2021</div>
+                <div class="right">
+                  <a href="#" onclick="openEvent(3)">
+                    Project start
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li id="li-3" class="li-content d-none">
+              <div class="d-flex flex-row">
+                <div class="right">
+                  <img class="img-fluid" src="images/eventholder.png">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="contact_page" class="page d-none">

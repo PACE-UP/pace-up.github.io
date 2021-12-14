@@ -219,6 +219,14 @@ function goto_detailedpeoplepage(id) {
 	hideSideNavs();
 }
 
+function goto_eventspage() {
+	shrinkNavbar();
+	$('.page').addClass("d-none");
+	$('#events_page').removeClass("d-none");
+	displayAdditionalNavs();
+	$('.navbar-collapse').collapse('hide');
+}
+
 function clear_detailed_people_page() {
 	$('#detailed_contact_page_title').empty();
 	$('#detailed_contact_page_fst_paragraph').empty();
@@ -315,3 +323,11 @@ $(window).scroll(function() {
 		}
 	}
 });
+
+function openEvent(i) {
+	var id = "li-"+i;
+	let elem = document.getElementById(id);
+	if (elem !== undefined) {
+		elem.classList.remove('d-none');
+	}
+}
