@@ -130,6 +130,25 @@ body {
 					color: $dddark-blue;
 				}
 			}
+
+			.btn-more {
+				background: $iron;
+				color: $white;
+				font-size: 9px;
+				border-radius: 0;
+				font-family: 'AvenirNextLTPro';
+			}
+
+			.card-border {
+				border: 1px solid $santas-gray;
+			}
+
+			.hover-zoom:hover {
+				img {
+					transform: scale(1.2);
+					transition: all .2s linear;
+				}
+			}
 		}
 	}
 }
@@ -315,6 +334,7 @@ body {
 			background: $lynch;
 			box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
 			font-family: 'Corbel';
+			border-radius: 0;
 
 			.sticky-text {
 				font-size: 7px;
@@ -841,6 +861,68 @@ body {
 }
 
 // OBJECTIVES PAGE
+#objectives_page {
+	min-height: 82vh;
+	padding-bottom: 6vh;
+	> .container {
+        @include media(lg-desktop) {
+			padding: 0vh 4vw 2vh 4vw;
+		}
+		@include media(desktop) {
+			padding: 0vh 3vw 3vh 3vw;
+		}
+		@include media(tablet) {
+			padding: 0vh 6vw;
+		}
+		@include media(phone) {
+			padding: 0vh 4vw 3vh 4vw;
+		}
+		.objectives-page-content {
+			margin-bottom: 2vh;
+			.caption-img {
+				color: $white;
+				font-size: 9px;
+				position: absolute;
+				font-family: 'AvenirNextLTPro';
+				z-index: 2;
+				@include media(lg-desktop) {
+					margin-top: 10px;
+				}
+				@include media(desktop) {
+					margin-top: 6px;
+				}
+				@include media(tablet) {
+					margin-top: 0.2vh;
+        			margin-left: 3vw;
+				}
+				@include media(phone) {
+					margin-top: 5vh;
+        			margin-left: 6vw;
+				}
+			}
+			.img-shadow-tl {
+				@include media(lg-desktop) {
+					box-shadow: -30px -22px $dddark-blue, -26px -18px $santas-gray;
+				}
+				@include media(desktop) {
+					box-shadow: -20px -20px $dddark-blue, -24px -14px $santas-gray;
+				}
+				@include media(tablet) {
+					box-shadow: -13px -23px $dddark-blue, -16px -18px $santas-gray;
+				}
+				@include media(phone) {
+					margin-left: 4vw;
+					margin-top: 4vh;
+					box-shadow: -13px -23px $dddark-blue, -16px -18px $santas-gray;
+				}
+			}
+			.objectives-page-text {
+				font-size: 11px;
+				color: $dddark-blue;
+			}
+		}
+    }
+}
 
 // ABOUT THIS SITE PAGE
 #about_this_site_page {

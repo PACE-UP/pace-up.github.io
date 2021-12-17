@@ -1,48 +1,6 @@
-.border-radius-none {
-    border-radius: 0%;
-}
 
-.text-color-ddb {
-    font-family: 'Open Sans', sans-serif;
-    font-size: medium;
-    color: var(--dddark-blue);
-}
 
-.caption-img {
-    font-family: 'Open Sans', sans-serif;
-    font-size: medium;
-    color: white;
-}
 
-.z-index-2 {
-    z-index: 2;
-}
-
-.btn-more {
-    background: var(--iron);
-    color: white;
-    font-size: 9px;
-    border-radius: 0;
-
-    font-family: 'AvenirNextLTPro';
-}
-
-h6 {
-    /* font-family: 'Avenir Next LT Pro'; */
-    font-size: 12px;
-    color: var(--dddark-blue);
-
-    font-family: 'AvenirNextLTPro';
-}
-
-.card-border {
-    border: 2px solid var(--santas-gray);
-}
-
-.hover-zoom:hover img {
-    transform: scale(1.2);
-    transition: all .2s linear;
-}
 
 /* This is for making unorder list style to dash */
 ul {
@@ -62,48 +20,6 @@ ul.dashed > li:before {
 }
 
 @media (min-width: 1200px) {
-
-    .img-shadow-tl {
-        /* margin-left: 2vw; */
-        /* margin-top: 4vh; */
-        box-shadow: -30px -22px var(--dddark-blue), -26px -18px var(--santas-gray);
-    }
-
-    .caption-img {
-        margin-top: 10px;
-        /* margin-left: 2vw; */
-        color: var(--white);
-        font-size: 9px;
-        position: absolute;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #objectives_page {
-        min-height: 82vh;
-        padding: 1vh 0vw;
-    }
-
-    #objectives_page h5 {
-        font-size: 12px;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #objectives_page > .container {
-        background-color: var(--white);
-        padding: 0vh 4vw 2vh 4vw;
-        width: 1000px;
-    }
-
-    .objectives-page-content {
-        margin-bottom: 2vh;
-    }
-
-    .objectives-page-content .objectives-page-text {
-        font-size: 11px;
-        color: var(--dddark-blue);
-    }
 
     #capacitybuildings_page {
         min-height: 82vh;
@@ -297,37 +213,6 @@ ul.dashed > li:before {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   
-    .img-shadow-tl {
-      box-shadow: -20px -20px var(--dddark-blue), -24px -14px var(--santas-gray);
-    }
-  
-    .caption-img {
-      margin-top: 6px;
-      color: var(--white);
-      font-size: 9px;
-      position: absolute;
-    }
-  
-    #objectives_page {
-      padding-top: 6vh;
-      min-height: 82vh;
-    }
-  
-    #objectives_page>.container {
-      background-color: var(--white);
-      padding: 0vh 3vw 3vh 3vw;
-      width: 900px;
-    }
-  
-    .objectives-page-content {
-      margin-bottom: 2vh;
-    }
-  
-    .objectives-page-content .objectives-page-text {
-      font-size: 11px;
-      color: var(--dddark-blue);
-    }
-  
     #capacitybuildings_page {
       min-height: 82vh;
       padding-top: 6vh;
@@ -512,40 +397,6 @@ ul.dashed > li:before {
 
   @media (min-width: 768px) and (max-width: 991px) {
   
-    .img-shadow-tl {
-      box-shadow: -13px -23px var(--dddark-blue), -16px -18px var(--santas-gray);
-    }
-  
-    .caption-img {
-        margin-top: 0.2vh;
-        margin-left: 3vw;
-        color: var(--white);
-        font-size: 9px;
-        position: absolute;
-    }
-  
-    #objectives_page {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        min-height: 82vh;
-    }
-  
-    #objectives_page > .container {
-        width: 700px;
-        background-color: var(--white);
-        padding: 0vh 6vw;
-    }
-  
-    .objectives-page-content {
-        margin-bottom: 2vh;
-    }
-  
-    .objectives-page-content .objectives-page-text {
-      font-size: 11px;
-      color: var(--dddark-blue);
-      padding-top: 1vh;
-    }
-  
     #capacitybuildings_page {
         padding-top: 4vh;
         padding-bottom: 4vh;
@@ -724,41 +575,6 @@ ul.dashed > li:before {
   }
 
   @media (max-width: 767px) {
-  
-    .img-shadow-tl {
-        margin-left: 4vw;
-        margin-top: 4vh;
-        box-shadow: -13px -23px var(--dddark-blue), -16px -18px var(--santas-gray);
-    }
-  
-    .caption-img {
-        margin-top: 5vh;
-        margin-left: 6vw;
-        color: var(--white);
-        font-size: 9px;
-        position: absolute;
-    }
-  
-    #objectives_page {
-        padding: 5vh 6vw;
-        min-height: 82vh;
-    }
-  
-    #objectives_page > .container {
-        background-color: var(--white);
-        padding: 0vh 4vw 3vh 4vw;
-    }
-  
-    .objectives-page-content {
-        margin-bottom: 2vh;
-    }
-  
-    .objectives-page-content .objectives-page-text {
-      font-size: 11px;
-      color: var(--dddark-blue);
-      padding-top: 1vh;
-    }
-  
   
     #capacitybuildings_page {
         padding: 5vh 6vw;
