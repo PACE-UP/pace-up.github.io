@@ -1,5 +1,5 @@
 // DEVICE RESOLUTION VARIABLES
-$tablet-width: 768px; 
+$tablet-width: 768px;
 $desktop-width: 992px;
 $lg-desktop-width: 1200px;
 
@@ -29,26 +29,26 @@ $lg-desktop-width: 1200px;
 
 @mixin media($keys...) {
 	@each $key in $keys {
-	  	@if ($key == phone) {
+  	@if ($key == phone) {
 			@include phone {
 		  		@content
 			}
-	  	} 
+  	}
 		@else if ($key == tablet) {
 			@include tablet {
 		  		@content
 			}
-	  	} 
+  	}
 	  	@else if ($key == desktop) {
 			@include desktop {
 		  		@content
 			}
-	  	}
+  	}
 		@else if ($key == lg-desktop) {
 			@include lg-desktop {
 		  		@content
 			}
-	  	}
+  	}
 	}
 }
 
@@ -255,7 +255,7 @@ body {
 		> a {
 			> img {
 				@include media(lg-desktop, desktop) {
-					max-height: 8vh;
+					max-height: 6vh;
 				}
 
 				@include media(tablet, phone) {
@@ -304,7 +304,7 @@ body {
 			}
 		}
     }
-	
+
 }
 
 // NAVBAR BOTTOM
@@ -345,7 +345,7 @@ body {
 			> div {
 				padding: 1vh 0.5vw;
 			}
-			
+
 			img {
 				max-width: 100px;
 			}
@@ -419,22 +419,22 @@ body {
 
 			.carousel-item-left.active,
 			.carousel-item-prev {
-				transform: translateX(33.33%);
+				transform: translateX(-33.33%);
 			}
-	
+
 			.carousel-item-left,
 			.carousel-item-right {
 				transform: translateX(0);
 			}
 		}
 
-		> .carousel-control-prev, 
+		> .carousel-control-prev,
 		> .carousel-control-next {
 			background-color: $white;
 			opacity: 0.4;
 			width: 33.33%;
 		}
-	
+
 		> .carousel-control-prev:hover,
 		> .carousel-control-next:hover {
 			background-color: $white;
@@ -449,6 +449,9 @@ body {
 	> .container {
 		.homepage-title {
 			padding: 5vh 0vw;
+			h5 {
+				color: $dddark-blue;
+			}
 		}
 
 		.homepage-content {
@@ -708,7 +711,7 @@ body {
 				margin: auto auto 30px auto;
 				box-shadow: -30px 30px $dddark-blue, -35px 35px $santas-gray;
 			}
-		
+
 		}
     }
 
@@ -1048,7 +1051,7 @@ body {
 				}
 			}
 		}
-	}	
+	}
 }
 
 // ACTIVITIES PAGE
@@ -1220,11 +1223,11 @@ body {
 				}
 				#detailed_partner_page_title {
 					padding: 2vh 0vw;
-				}	
+				}
 				#detailed_partner_page_fst_paragraph {
 					padding-left: 2vw;
-				}		
+				}
 			}
-		}	
+		}
     }
 }

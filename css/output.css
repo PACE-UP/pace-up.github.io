@@ -269,12 +269,12 @@ body .page > .container .hover-zoom:hover img {
 }
 @media (min-width: 1200px) {
   #navbar-top > nav > a > img {
-    max-height: 8vh;
+    max-height: 6vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #navbar-top > nav > a > img {
-    max-height: 8vh;
+    max-height: 6vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -518,7 +518,7 @@ body .page > .container .hover-zoom:hover img {
 }
 #front_page #frontpageCarousel > .carousel-inner .carousel-item-left.active,
 #front_page #frontpageCarousel > .carousel-inner .carousel-item-prev {
-  transform: translateX(33.33%);
+  transform: translateX(-33.33%);
 }
 #front_page #frontpageCarousel > .carousel-inner .carousel-item-left,
 #front_page #frontpageCarousel > .carousel-inner .carousel-item-right {
@@ -539,6 +539,9 @@ body .page > .container .hover-zoom:hover img {
 
 #home_page > .container .homepage-title {
   padding: 5vh 0vw;
+}
+#home_page > .container .homepage-title h5 {
+  color: #516284;
 }
 #home_page > .container .homepage-content .homepage-intro {
   font-size: 12px;

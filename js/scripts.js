@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	goto_frontpage();
 	let homenav = document.getElementById('home_nav');
-	
+
 	$('#frontpageCarousel').carousel({
 		interval: 10000
 	})
@@ -189,7 +189,7 @@ function goto_about_this_site(){
 	shrinkNavbar();
 	$('.page').addClass("d-none");
 	$('#about_this_site_page').removeClass("d-none");
-	displayAdditionalNavs();	
+	displayAdditionalNavs();
 }
 
 function goto_detailedpartnerpage(id) {
