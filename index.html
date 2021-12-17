@@ -11,12 +11,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/1200px-styles.css">
-    <link rel="stylesheet" href="css/768px-styles.css">
-    <link rel="stylesheet" href="css/992px-styles.css">
-    <link rel="stylesheet" href="css/576px-styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/output.css"> 
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -77,11 +73,11 @@
     </nav>
   </div>
 
-  <div id="sticky-right-contact" class="position-fixed sticky-right sticky-right-contact d-none">
+  <div id="sticky-right-contact" class="sticky d-none">
     <div class="d-flex flex-row">
       <div>
-        <a class="button redirect-page-anchor btn d-block sticky-item border-radius-none" href="javascript:goto_contactpage_asia()">
-          <div class="sticky-right-text d-flex flex-row">
+        <a class="button btn d-block sticky-item border-radius-none" href="javascript:goto_contactpage_asia()">
+          <div class="sticky-text d-flex flex-row">
             <div class="pr-1">
               <br/><br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/>&nbsp<br/><br/>
             </div>
@@ -91,7 +87,7 @@
           </div>
         </a>
       </div>
-      <div class="contact-in-asia d-none">
+      <div id="contact-in-asia" class="sticky-contact d-none">
         <div class="card">
           <div class="text-center">
             <img src="images/contact_asia.jpg" class="card-img-top rounded-circle" >
@@ -121,7 +117,7 @@
     </div>
   </div>
 
-  <div id="sticky-right-link" class="position-fixed sticky-right sticky-right-link d-none">
+  <div id="sticky-right-link" class="sticky d-none">
     <a class="button btn d-block sticky-item border-radius-none" style="color: white;" href="index.html">
         <i class="fas fa-globe fa-lg"></i>
     </a>
@@ -131,9 +127,9 @@
     </a>
   </div>
 
-  <div id="sticky-left" class="position-fixed sticky-left d-none">
+  <div id="sticky-left-contact" class="sticky d-none">
     <div class="d-flex flex-row">
-      <div class="contact-in-eu d-none">
+      <div id="contact-in-eu" class="sticky-contact d-none">
         <div class="card">
           <div class="text-center">
             <img src="images/contact_europe.png" class="card-img-top rounded-circle" >
@@ -162,8 +158,8 @@
         </div>
       </div>
       <div>
-        <a class="button redirect-page-anchor btn d-block sticky-item border-radius-none" href="javascript:goto_contactpage_europe()">
-          <div class="sticky-left-text  d-flex flex-row">
+        <a class="button btn d-block sticky-item border-radius-none" href="javascript:goto_contactpage_europe()">
+          <div class="sticky-text d-flex flex-row">
             <div class="pr-1">
               <br/><br/>&nbsp<br/>C<br/>O<br/>N<br/>T<br/>A<br/>C<br/>T<br/>&nbsp<br/><br/>
             </div>
@@ -752,7 +748,7 @@
     </div>
   </div>
 
-  <div id="activities_page" class="page primary-page">
+  <div id="activities_page" class="page d-none">
     <div class="container">
         <div class="page-title">
           <h5 class="text-center m-0">ACTIVITIES</h5>
@@ -1063,7 +1059,7 @@
     </div>
   </div>
 
-  <div id="map_page" class="page primary-page d-none">
+  <div id="map_page" class="page d-none">
     <div class="container">
       <div class="map-page d-flex flex-column">
         <div class="page-title">
@@ -1210,39 +1206,39 @@
         </div>
 
       </div>
-			<div id="about_this_site_page" class="d-none page">
-				<div class="container d-flex flex-column">
-				<div class="about_this_site-page-content">
-					<div class="page-title">
-							<h5 class="text-center m-0">ABOUT THIS SITE</h5>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<p class="card-text text-left">
-									<b>VG-CARE</b><br />
-									Vietnamese-German Center for Medical Research<br />
-									<br />
-									N 1, Tran Hung Dao Street<br />
-									Hai Ba Trung District<br />
-									Ha Noi<br />
-									Vietnam<br />
-									Phone: +84(0)2462531109<br />
-									<a href="www.vgcare.org" target="_blank">www.vgcare.org</a><br />
-									<br />
-									Directors:<br />
-									Prof. Dr. Thirumalaisamy P Velavan<br />
-									Assoc. Prof. Dr. Le Huu Song<br />
-									<br />
-									<a href="https://www.google.com" target="_blank">Privacy Policy</a><br />
-									<a href="https://www.google.com" target="_blank">Data Protection</a><br />
+  <div id="about_this_site_page" class="d-none page">
+    <div class="container d-flex flex-column">
+    <div class="about_this_site-page-content">
+      <div class="page-title">
+          <h5 class="text-center m-0">ABOUT THIS SITE</h5>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text text-left">
+              <b>VG-CARE</b><br />
+              Vietnamese-German Center for Medical Research<br />
+              <br />
+              N 1, Tran Hung Dao Street<br />
+              Hai Ba Trung District<br />
+              Ha Noi<br />
+              Vietnam<br />
+              Phone: +84(0)2462531109<br />
+              <a href="www.vgcare.org" target="_blank">www.vgcare.org</a><br />
+              <br />
+              Directors:<br />
+              Prof. Dr. Thirumalaisamy P Velavan<br />
+              Assoc. Prof. Dr. Le Huu Song<br />
+              <br />
+              <a href="https://www.google.com" target="_blank">Privacy Policy</a><br />
+              <a href="https://www.google.com" target="_blank">Data Protection</a><br />
 
-								</p>
-							</div>
-						</div>
+            </p>
+          </div>
+        </div>
 
-					</div>
-					</div>
-				</div>
+      </div>
+      </div>
+    </div>
 
 
 			<div id="login_page" class="page d-none">

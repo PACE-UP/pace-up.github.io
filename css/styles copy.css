@@ -1,29 +1,3 @@
-:root {
-    --dddark-blue: #516284;
-    --lynch: #7b869d;
-    --santas-gray: #c0c4c5;
-    --iron: #d7dade;
-    --grey: #e4e2dd;
-}
-
-@font-face {
-    font-family: 'AvenirNextLTPro';
-    src: url(../fonts/avenir-next-lt-pro-regular_IF5h0/AvenirNextLTProRegular.otf);
-}
-
-@font-face {
-    font-family: 'Corbel';
-    src: url(../fonts/corbel/CORBEL.TTF);
-}
-
-@font-face {
-    font-family: 'LucidaBright';
-    src: url(../fonts/lucida-bright/LBRITE.TTF);
-}
-
-body {
-    height: 100%;
-}
 
 h5 {
     font-family: 'AvenirNextLTPro';
@@ -45,27 +19,8 @@ h5 {
     width: 33.33%;
 }
 
-.sticky-right {
-    position: fixed;
-    right: 0;
-}
-
-.sticky-right-contact {
-    top: 15vh;
-}
-
-.sticky-right-link {
-    bottom: 15vh;
-}
-
 .border-radius-none {
     border-radius: 0%;
-}
-
-.sticky-left {
-    position: fixed;
-    left: 0;
-    top: 15vh;
 }
 
 .text-color-ddb {
@@ -82,17 +37,6 @@ h5 {
 
 .z-index-2 {
     z-index: 2;
-}
-
-.sticky-item {
-    /* font-family: 'Calibri'; */
-    font-size: 10px;
-    color: white;
-    min-width: 36px;
-    background: var(--lynch);
-    box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
-
-    font-family: 'Corbel';
 }
 
 .btn-more {
@@ -165,17 +109,8 @@ https://stackoverflow.com/questions/61282035/fixing-a-bootstrap-4-multiple-item-
   outline: none;
 }
 
-#navbar-top .active-background, .nav-parent:hover{
-  background-color: var(--grey);
-}
-
 .dropdown:hover .dropdown-menu{
   display: block; transition: all 0.8s ease-in-out;
-}
-
-
-#sticky-right > .redirect-page-anchor {
-    margin-bottom: 20vh;
 }
 
 /* This is for making unorder list style to dash */
@@ -196,99 +131,6 @@ ul.dashed > li:before {
 }
 
 @media (min-width: 1200px) {
-
-    .page {
-        margin-top: 12vh;
-        margin-bottom: 6vh;
-        background-color: var(--grey);
-    }
-
-    #navbar-top > nav > a > img {
-        max-height: 8vh;
-        /* min-height: 8vh; */
-    }
-
-    #navbar-top {
-        background-color: var(--white);
-        max-height: 10vh;
-
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    #navbar-top > nav {
-        margin: 0 5vw;
-        align-items: end;
-        border-bottom: 1px solid var(--dddark-blue);
-    }
-
-    #navbar-top > nav .nav-item-text {
-        font-size: 11px;
-        color: var(--dddark-blue);
-        padding: 10px 20px;
-        width: 120px;
-        text-align: center;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #navbar-top > nav .dropdown {
-        width: 120px;
-    }
-
-    #navbar-top > nav .dropdown-menu > .nav-item:hover {
-        color: var(--white);
-        background-color: var(--iron);
-    }
-
-    #navbar-top > nav .my-custom-dropdown-menu {
-        margin: 0;
-        min-width: inherit;
-        border-left-width: 0;
-        border-right-width: 0;
-    }
-
-    #navbar-top > nav .nav-child {
-        text-align: left;
-        padding: 5px;
-        background-color: var(--grey);
-    }
-
-    #navbar-top .shrink {
-        background-color: var(--white);
-        transition: all ease-in-out;
-        padding-bottom: 1vh;
-        margin-bottom: 10px;
-    }
-
-    #navbar-top > .shrink  {
-        align-items: end;
-    }
-
-    #navbar-top .shrink > a > img {
-        max-height: 5vh;
-        transition: all ease-in-out;
-    }
-
-    #navbar-top > .shrink .nav-item-text {
-        font-size: 11px;
-        width: 120px;
-        color: var(--dddark-blue);
-        padding: 10px 20px;
-        transition: all ease-in-out;
-        text-align: center;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #navbar-top > .shrink .nav-child {
-        text-align: left;
-        padding: 5px;
-        background-color: var(--grey);
-    }
 
     #frontpage_carousel {
         /* min-height: 58vh; */
@@ -349,19 +191,6 @@ ul.dashed > li:before {
         margin-bottom: 1vh;
         font-size: 12px;
         color: var(--dddark-blue);
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #navbar-bottom {
-        height: 6vh;
-        background-color: var(--iron);
-    }
-
-    #navbar-bottom .nav-link-bottom {
-        font-size: 10px;
-        color: var(--white);
-        padding: 0vh 3.5vw;
 
         font-family: 'AvenirNextLTPro';
     }
@@ -1036,74 +865,6 @@ ul.dashed > li:before {
         padding-left: 2vw;
     }
 
-    .contact-in-asia > div {
-        padding: 1vh 0.5vw;
-    }
-
-    .contact-in-asia img {
-        max-width: 100px;
-    }
-
-    .contact-in-asia p {
-        font-size: 9px;
-        color: var(--dddark-blue);
-
-        font-family: 'Corbel';
-    }
-
-    .contact-in-asia button {
-        background-color: var(--dddark-blue);
-        color: var(--white);
-        font-size: 8px;
-        width: 100%;
-        
-        font-family: 'AvenirNextLTPro';
-    }
-
-    .contact-in-eu > div {
-        padding: 1vh 0.5vw;
-    }
-
-    .contact-in-eu img {
-        max-width: 100px;
-    }
-
-    .contact-in-eu p {
-        font-size: 9px;
-        color: var(--dddark-blue);
-
-        font-family: 'Corbel';
-    }
-
-    .contact-in-eu button {
-        background-color: var(--dddark-blue);
-        color: var(--white);
-        font-size: 8px;
-        width: 100%;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    /* ------------ */
-
-    .sticky-right {
-        display: block;
-        z-index: 1026;
-    }
-
-    .sticky-right .sticky-right-text {
-        font-size: 7px;
-    }
-
-    .sticky-left {
-        display: block;
-        z-index: 1026;
-    }
-
-    .sticky-left .sticky-left-text {
-        font-size: 7px;
-    }
-
     #recipeCarousel > .carousel-inner .carousel-item-right.active,
     #recipeCarousel > .carousel-inner .carousel-item-next {
         transform: translateX(33.33%);
@@ -1116,94 +877,6 @@ ul.dashed > li:before {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
-    .page {
-      margin-top: 12vh;
-      margin-bottom: 6vh;
-      background-color: var(--grey);
-    }
-  
-    #navbar-top>nav>a>img {
-      max-height: 8vh;
-    }
-  
-    #navbar-top {
-      background-color: var(--white);
-      max-height: 10vh;
-  
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-    }
-  
-    #navbar-top>nav {
-      margin: 0 2vw;
-      align-items: end;
-      border-bottom: 1px solid var(--dddark-blue);
-    }
-  
-    #navbar-top>nav .nav-item-text {
-      font-size: 11px;
-      color: var(--dddark-blue);
-      padding: 10px 20px;
-      width: 120px;
-      text-align: center;
-    }
-  
-    #navbar-top > nav .dropdown {
-      width: 120px;
-    }
-  
-    #navbar-top>nav .dropdown-menu>.nav-item:hover {
-      color: var(--white);
-      background-color: var(--iron);
-    }
-  
-    #navbar-top > nav .my-custom-dropdown-menu {
-      margin: 0;
-      min-width: inherit;
-      border-left-width: 0;
-      border-right-width: 0;
-    }
-  
-    #navbar-top > nav .nav-child {
-      text-align: left;
-      padding: 5px;
-      background-color: var(--grey);
-  }
-  
-    #navbar-top .shrink {
-      background-color: var(--white);
-      transition: all ease-in-out;
-      padding-bottom: 1vh;
-      margin-bottom: 10px;
-    }
-  
-    #navbar-top > .shrink  {
-      align-items: end;
-    }
-  
-    #navbar-top .shrink>a>img {
-      max-height: 5vh;
-      transition: all ease-in-out;
-    }
-  
-    #navbar-top>.shrink .nav-item-text {
-      font-size: 11px;
-      color: var(--dddark-blue);
-      padding: 10px 20px;
-      width: 120px;
-      text-align: center;
-      transition: all ease-in-out;
-    }
-  
-    #navbar-top > .shrink .nav-child {
-      text-align: left;
-      padding: 5px;
-      background-color: var(--grey);
-    }
   
     #frontpage_carousel {
       padding-top: 5vh;
@@ -1255,17 +928,6 @@ ul.dashed > li:before {
       margin-bottom: 1vh;
       font-size: 12px;
       color: var(--dddark-blue);
-    }
-  
-    #navbar-bottom {
-      height: 6vh;
-      background-color: var(--iron);
-    }
-  
-    #navbar-bottom .nav-link-bottom {
-      font-size: 10px;
-      color: var(--white);
-      padding: 0vh 3.5vw;
     }
   
     #news_page {
@@ -1876,57 +1538,6 @@ ul.dashed > li:before {
       padding: 1vh 2vw;
     }
   
-    .contact-in-asia > div {
-        padding: 1vh 0.5vw;
-    }
-  
-    .contact-in-asia img {
-      max-width: 100px;
-    }
-  
-    .contact-in-asia p {
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-asia button {
-      background-color: var(--dddark-blue);
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
-    .contact-in-eu > div {
-      padding: 1vh 0.5vw;
-    }
-  
-    .contact-in-eu img {
-      max-width: 100px;
-    }
-  
-    .contact-in-eu p {
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-eu button {
-      background-color: var(--dddark-blue);
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
-    /* ------------ */
-    .sticky-right {
-      display: block;
-      z-index: 1026;
-    }
-  
-    .sticky-left {
-      display: block;
-      z-index: 1026;
-    }
-  
     #recipeCarousel>.carousel-inner .carousel-item-right.active,
     #recipeCarousel>.carousel-inner .carousel-item-next {
       transform: translateX(33.33%);
@@ -1939,93 +1550,6 @@ ul.dashed > li:before {
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    .page {
-        margin-top: 10vh;
-        margin-bottom: 4vh;
-        background-color: var(--grey);
-    }
-  
-    #navbar-top > nav > a > img {
-      max-height: 4vh;
-    }
-  
-    #navbar-top {
-        background-color: var(--white);
-        max-height: 10vh;
-  
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-  
-    #navbar-top > nav {
-        margin: 0 1vw;
-        align-items: end;
-        border-bottom: 1px solid var(--dddark-blue);
-    }
-  
-    #navbar-top > nav .nav-item-text {
-        font-size: 11px;
-        color: var(--dddark-blue);
-        padding: 10px 20px;
-        max-width: 120px;
-        text-align: center;
-    }
-  
-    #navbar-top > nav .dropdown {
-      width: 120px;
-    }
-  
-    #navbar-top > nav .dropdown-menu > .nav-item:hover {
-        color: var(--white);
-        background-color: var(--iron);
-    }
-  
-    #navbar-top > nav .my-custom-dropdown-menu {
-      margin: 0;
-      min-width: 120px;
-      border-left-width: 0;
-      border-right-width: 0;
-    }
-  
-    #navbar-top > nav .nav-child {
-        text-align: left;
-        padding: 5px;
-        background-color: var(--grey);
-    }
-  
-    #navbar-top .shrink {
-        background-color: var(--white);
-        transition: all 0.4s ease-in-out;
-        padding-bottom: 1vh;
-        margin-bottom: 10px;
-    }
-  
-    #navbar-top > .shrink  {
-      align-items: end;
-  }
-  
-    #navbar-top .shrink > a > img {
-        max-height: 4vh;
-        transition: all 0.4s ease-in-out;
-    }
-  
-    #navbar-top > .shrink .nav-item-text {
-        font-size: 11px;
-        max-width: 120px;
-        color: var(--dddark-blue);
-        padding: 10px 20px;
-          transition: all ease-in-out;
-          text-align: center;
-    }
-  
-    #navbar-top > .shrink .nav-child {
-      text-align: left;
-      padding: 5px;
-      background-color: var(--grey);
-  }
   
     #frontpage_carousel {
         padding-top: 4vh;
@@ -2077,19 +1601,6 @@ ul.dashed > li:before {
       font-size: 12px;
   
       color: var(--dddark-blue);
-    }
-  
-    #navbar-bottom {
-        min-height: 4vh;
-        max-height: 4vh;
-        background-color: var(--iron);
-    }
-  
-    #navbar-bottom .nav-link-bottom {
-        font-size: 10px;
-  
-        color: var(--white);
-        padding: 0vh 3.5vw;
     }
   
     #news_page {
@@ -2592,46 +2103,6 @@ ul.dashed > li:before {
       padding: 1vh 2vw;
     }
   
-    .contact-in-asia > div {
-        padding: 1vh 0.5vw;
-    }
-  
-    .contact-in-asia img {
-      max-width: 10vw;
-    }
-  
-    .contact-in-asia p {
-  
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-asia button {
-      background-color: var(--dddark-blue);
-  
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
-    .contact-in-eu img {
-      max-width: 10vw;
-    }
-  
-    .contact-in-eu p {
-  
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-eu button {
-      background-color: var(--dddark-blue);
-  
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
     #events_page h5 {
       font-size: 12px;
       font-family: 'AvenirNextLTPro';
@@ -2733,13 +2204,6 @@ ul.dashed > li:before {
   
     /* ------------ */
   
-    .sticky-right {
-        display: none;
-    }
-    .sticky-left {
-        display: none;
-    }
-  
     #recipeCarousel > .carousel-inner .carousel-item-right.active,
     #recipeCarousel > .carousel-inner .carousel-item-next {
         transform: translateX(33.33%);
@@ -2752,44 +2216,6 @@ ul.dashed > li:before {
   }
 
   @media (max-width: 767px) {
-    .page {
-        /* margin-top: 12vh; */
-        margin-top: 2vh;
-        margin-bottom: 6vh;
-        background-color: var(--grey);
-    }
-  
-    #navbar-top > nav > a > img {
-        max-height: 4vh;
-    }
-  
-    #navbar-top {
-        background-color: var(--white);
-        /* max-height: 10vh; */
-    }
-  
-    #navbar-top > nav {
-        margin: 0 2.5vw 0 2.5vw;
-        border-bottom: 1px solid var(--dddark-blue);
-    }
-  
-    #navbar-top .navbar-nav {
-        width: 200px;
-    }
-  
-    #navbar-top > nav .nav-item-text {
-        text-align: right;
-        font-size: 11px;
-        font-family: 'Nunito', sans-serif;
-        color: var(--dddark-blue);
-        padding: 1vh 1vw 1vh 1vw;
-    }
-  
-    #navbar-top > nav .dropdown-menu > .nav-item:hover {
-        font-weight: bold;
-        color: var(--white);
-        background-color: var(--iron);
-    }
   
     #frontpage_carousel {
         padding-top: 4vh;
@@ -2851,17 +2277,6 @@ ul.dashed > li:before {
       margin-bottom: 0.5vh;
       font-size: 12px;
       color: var(--dddark-blue);
-    }
-  
-    #navbar-bottom {
-      height: 6vh;
-      background-color: var(--iron);
-    }
-  
-    #navbar-bottom .nav-link-bottom {
-      font-size: 10px;
-      color: var(--white);
-      padding: 0vh 3.5vw;
     }
   
     #news_page {
@@ -3394,42 +2809,6 @@ ul.dashed > li:before {
       padding: 1vh 2vw;
     }
   
-    .contact-in-asia > div {
-        padding: 1vh 0.5vw;
-    }
-  
-    .contact-in-asia img {
-      max-width: 10vw;
-    }
-  
-    .contact-in-asia p {
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-asia button {
-      background-color: var(--dddark-blue);
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
-    .contact-in-eu img {
-      max-width: 10vw;
-    }
-  
-    .contact-in-eu p {
-      font-size: 9px;
-      color: var(--dddark-blue);
-    }
-  
-    .contact-in-eu button {
-      background-color: var(--dddark-blue);
-      color: var(--white);
-      font-size: 8px;
-      width: 100%;
-    }
-  
     .timeline {
       padding-top: 40px;
       padding-bottom: 40px;
@@ -3511,15 +2890,6 @@ ul.dashed > li:before {
       color: var(--dddark-blue);
       font-size: 12px;
       font-family: 'Corbel';
-    }
-  
-    /* ------------ */
-  
-    .sticky-right {
-        display: none;
-    }
-    .sticky-left {
-        display: none;
     }
   
     #recipeCarousel > .carousel-inner .carousel-item-right.active,

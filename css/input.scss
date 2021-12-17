@@ -1,0 +1,328 @@
+// DEVICE RESOLUTION VARIABLES
+$tablet-width: 768px; 
+$desktop-width: 992px;
+$lg-desktop-width: 1200px;
+
+@mixin lg-desktop {
+	@media (min-width: $lg-desktop-width) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) and (max-width: #{$lg-desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin media($keys...) {
+	@each $key in $keys {
+	  	@if ($key == phone) {
+			@include phone {
+		  		@content
+			}
+	  	} 
+		@else if ($key == tablet) {
+			@include tablet {
+		  		@content
+			}
+	  	} 
+	  	@else if ($key == desktop) {
+			@include desktop {
+		  		@content
+			}
+	  	}
+		@else if ($key == lg-desktop) {
+			@include lg-desktop {
+		  		@content
+			}
+	  	}
+	}
+}
+
+// COLOR VARIABLES
+$dddark-blue: #516284;
+$lynch: #7b869d;
+$santas-gray: #c0c4c5;
+$iron: #d7dade;
+$grey: #e4e2dd;
+$white: #ffffff;
+
+
+// FONT-FACES
+@font-face {
+	font-family: 'AvenirNextLTPro';
+  	src: url(../fonts/avenir-next-lt-pro-regular_IF5h0/AvenirNextLTProRegular.otf);
+}
+
+@font-face {
+  	font-family: 'Corbel';
+  	src: url(../fonts/corbel/CORBEL.TTF);
+}
+
+@font-face {
+  	font-family: 'LucidaBright';
+  	src: url(../fonts/lucida-bright/LBRITE.TTF);
+}
+
+// GENERAL SETTINGS
+body {
+  	height: 100%;
+
+	.page {
+		background-color: var(--grey);
+
+		@include media(lg-desktop, desktop) {
+			margin-top: 12vh;
+        	margin-bottom: 6vh;
+		}
+
+		@include media(tablet) {
+			margin-top: 10vh;
+        	margin-bottom: 4vh;
+		}
+
+		@include media(phone) {
+			margin-top: 2vh;
+			margin-bottom: 6vh;
+		}
+	}
+}
+
+// NAVBAR TOP
+#navbar-top {
+	background-color: $white;
+
+	@include media(lg-desktop, desktop, tablet) {
+		max-height: 10vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+	@include media(phone) {
+		.navbar-nav {
+			width: 200px;
+		}
+	}
+
+  	.active-background {
+    	.nav-parent:hover {
+			background-color: $grey;
+    	}
+  	}
+
+	> nav {
+		border-bottom: 1px solid $dddark-blue;
+		@include media(lg-desktop, desktop, tablet) {
+			align-items: end;
+		}
+
+		@include media(lg-desktop) {
+			margin: 0 5vw;
+		}
+
+		@include media(desktop) {
+			margin: 0 2vw;
+		}
+
+		@include media(tablet) {
+			margin: 0 1vw;
+		}
+
+		@include media(phone) {
+			margin: 0 2.5vw;
+		}
+
+		.nav-item-text {
+			font-size: 11px;
+			color: $dddark-blue;
+			font-family: 'AvenirNextLTPro';
+			padding: 10px 20px;
+
+			@include media(lg-desktop, desktop, tablet) {
+				width: 120px;
+				text-align: center;
+			}
+
+			@include media(phone) {
+				text-align: right;
+			}
+		}
+
+		.dropdown {
+			@include media(lg-desktop, desktop, tablet) {
+				width: 120px;
+			}
+		}
+
+		.nav-child {
+			@include media(lg-desktop, desktop, tablet) {
+				text-align: left;
+				padding: 5px;
+				background-color: $grey;
+			}
+		}
+
+		.my-custom-dropdown-menu {
+			@include media(lg-desktop, desktop, tablet) {
+				margin: 0;
+				min-width: 120px;
+				border-left-width: 0;
+				border-right-width: 0;
+			}
+
+			> .nav-item:hover {
+				font-weight: bold;
+   				letter-spacing: 0px; // this is to prevent the container to expand due to the font-weight increased
+				color: $white;
+				background-color: $iron;
+			}
+		}
+
+		> a {
+			> img {
+				@include media(lg-desktop, desktop) {
+					max-height: 8vh;
+				}
+
+				@include media(tablet, phone) {
+					max-height: 4vh;
+				}
+			}
+		}
+    }
+
+	> .shrink {
+		@include media(lg-desktop, desktop, tablet) {
+			align-items: end;
+			background-color: $white;
+			padding-bottom: 1vh;
+			margin-bottom: 10px;
+		}
+
+		> a {
+			> img {
+				@include media(lg-desktop, desktop) {
+					max-height: 5vh;
+				}
+				@include media(tablet) {
+					max-height: 4vh;
+				}
+			}
+		}
+
+		.nav-item-text {
+			@include media(lg-desktop, desktop, tablet) {
+				font-size: 11px;
+				width: 120px;
+				color: $dddark-blue;
+				padding: 10px 20px;
+				transition: all ease-in-out;
+				text-align: center;
+				font-family: 'AvenirNextLTPro';
+			}
+		}
+
+		.nav-child {
+			@include media(lg-desktop, desktop, tablet) {
+				text-align: left;
+				padding: 5px;
+				background-color: $grey;
+			}
+		}
+    }
+	
+}
+
+// NAVBAR BOTTOM
+#navbar-bottom {
+	background-color: $iron;
+	height: 6vh;
+
+	.nav-link-bottom {
+        font-size: 10px;
+        color: $white;
+        padding: 0vh 3.5vw;
+        font-family: 'AvenirNextLTPro';
+    }
+}
+
+// STICKY CONTACT
+.sticky {
+	@include media(lg-desktop,desktop) {
+		display: block;
+		z-index: 1026;
+		position: fixed;
+
+		.sticky-item {
+			font-size: 10px;
+			color: white;
+			min-width: 36px;
+			background: $lynch;
+			box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
+			font-family: 'Corbel';
+
+			.sticky-text {
+				font-size: 7px;
+			}
+		}
+
+		.sticky-contact {
+			> div {
+				padding: 1vh 0.5vw;
+			}
+			
+			img {
+				max-width: 100px;
+			}
+
+			p {
+				font-size: 9px;
+				color: $dddark-blue;
+				font-family: 'Corbel';
+			}
+
+			button {
+				background-color: $dddark-blue;
+				color: $white;
+				font-size: 8px;
+				width: 100%;
+				font-family: 'AvenirNextLTPro';
+			}
+		}
+	}
+
+	@include media(tablet, phone) {
+		display: none;
+	}
+}
+
+#sticky-right-contact {
+	top: 15vh;
+	right: 0;
+}
+
+#sticky-right-link {
+	bottom: 15vh;
+    right: 0;
+}
+
+#sticky-left-contact {
+	left: 0;
+	top: 15vh;
+}
