@@ -62,22 +62,37 @@ $white: #ffffff;
 // FONT-FACES
 @font-face {
 	font-family: 'AvenirNextLTPro';
-  	src: url(../fonts/avenir-next-lt-pro-regular_IF5h0/AvenirNextLTProRegular.otf);
+  	src: url(../fonts/avenir-next-lt-pro-regular_IF5h0/AvenirNextLTProRegular.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'AvenirNextLTProBold';
-  	src: url(../fonts/avenir-next-lt-pro-bold/AvenirNextLTProBold.otf);
+	font-family: 'AvenirNextLTPro';
+  	src: url(../fonts/avenir-next-lt-pro-bold/AvenirNextLTProBold.otf) format('opentype');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
   	font-family: 'Corbel';
-  	src: url(../fonts/corbel/CORBEL.TTF);
+  	src: url(../fonts/corbel/CORBEL.TTF) format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
   	font-family: 'LucidaBright';
-  	src: url(../fonts/lucida-bright/LBRITE.TTF);
+  	src: url(../fonts/lucida-bright/LBRITE.TTF) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LucidaBright';
+	src: url(../fonts/lucida-bright/lucidabrightdemibold.ttf) format('truetype');
+  	font-weight: bold;
+  	font-style: normal;
 }
 
 // KEY FRAMES
@@ -236,7 +251,7 @@ body {
 		.active-background,
 		.nav-parent:hover {
 			background-color: rgb(239,238,235);
-			font-family: 'AvenirNextLTProBold';
+			font-family: 'AvenirNextLTPro';
 		}
 
 		.my-custom-dropdown-menu {
@@ -248,7 +263,7 @@ body {
 			}
 
 			> .nav-item:hover {
-				font-family: 'AvenirNextLTProBold';
+				font-family: 'AvenirNextLTPro';
 				color: $white;
 				background-color: rgb(192,196,197);
 			}
@@ -301,7 +316,7 @@ body {
 		.active-background,
 		.nav-parent:hover {
 			background-color: rgb(239,238,235);
-			font-family: 'AvenirNextLTProBold';
+			font-family: 'AvenirNextLTPro';
 		}
 
 		.nav-child {
