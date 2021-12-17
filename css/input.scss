@@ -949,3 +949,282 @@ body {
 		}
 	}
 }
+
+// CAPACITY BUILDING PAGE
+#capacitybuildings_page {
+	min-height: 82vh;
+	padding-bottom: 6vh;
+	> .container {
+        background-color: $white;
+		@include media(lg-desktop) {
+			padding: 0vh 3vw 2vh 3vw;
+		}
+        @include media(desktop, tablet, phone) {
+			padding: 0vh 3vw 3vh 3vw;
+			.title {
+				height: 8vh;
+			}
+		}
+		.row {
+			display: flex;
+			flex-direction: row;
+			@include media(desktop, tablet, phone) {
+				justify-content: space-between;
+			}
+			.card-item {
+				background-color: $grey;
+				background-clip: content-box;
+				@include media(lg-desktop) {
+					padding: 0vh 1vw;
+					margin-bottom: 2vh;
+				}
+				@include media(desktop,tablet) {
+					padding: 0vh 3vw;
+					margin-top: 2vh;
+					margin-bottom: 2vh;
+				}
+				@include media(phone) {
+					padding: 2vh 4vw;
+				}
+			}
+			.capacity-card {
+				background-color: $grey;
+				border: none;
+				.card-body {
+					padding: 10px 15px 20px 15px;
+					> a {
+						color: $dddark-blue;
+						> .card-title {
+							display: flex;
+							margin: 5px 0px;
+							background-color: $white;
+							@include media(lg-desktop,desktop,tablet) {
+								height: 40px;
+							}
+							@include media(phone) {
+								height: 30px;
+							}
+							> div {
+								font-size: 9px;
+								text-align: center;
+								margin: auto;
+							}
+						}
+					}
+					> p {
+						font-size: 10px;
+						color: $dddark-blue;
+						margin-bottom: 0vh;
+						@include media(lg-desktop,desktop,tablet) {
+							padding-top: 1vh;
+						}
+					}
+					> ul {
+						font-size: 10px;
+						color: $dddark-blue;
+						margin: 0;
+						@include media(lg-desktop) {
+							padding: 1vh 0vw;
+						}
+						@include media(desktop,tablet) {
+							padding: 1vh 2vw;
+						}
+						@include media(phone) {
+							padding: 0vh 2vw;
+						}
+					}
+					ul.dashed {
+						list-style-type: none;
+						> li {
+							text-indent: -7px;
+							padding-right: 10px;
+						}
+						> li:before {
+							content: "-";
+							text-indent: -7px;
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+// ACTIVITIES PAGE
+#activities_page {
+	min-height: 82vh;
+	padding-bottom: 6vh;
+	> .container {
+        background-color: $white;
+		@include media(lg-desktop) {
+			padding: 0vh 3vw 2vh 3vw;
+		}
+        @include media(desktop, tablet, phone) {
+			padding: 0vh 3vw 3vh 3vw;
+		}
+		.row {
+			display: flex;
+			flex-direction: row;
+			> .card-item {
+				background-color: $grey;
+				background-clip: content-box;
+				@include media(lg-desktop) {
+					padding: 0vh 1vw;
+					margin-bottom: 2vh;
+				}
+				@include media(desktop,tablet) {
+					padding-left: 1vw;
+        			padding-right: 1vw;
+					margin-top: 2vh;
+					margin-bottom: 2vh;
+				}
+				@include media(phone) {
+					padding: 2vh 4vw;
+				}
+			}
+			.activity-card {
+				background-color: $grey;
+				border: none;
+				> .card-body {
+					padding: 10px 15px 20px 15px;
+					> a {
+						color: $dddark-blue;
+						> .card-title {
+							display: flex;
+							height: 40px;
+							margin: 5px 0px;
+							background-color: $white;
+							> div {
+								font-size: 9px;
+								text-align: center;
+								margin: auto;
+							}
+						}
+					}
+					> p {
+						font-size: 10px;
+						color: $dddark-blue;
+						padding-top: 1vh;
+						margin-bottom: 0vh;
+					}
+					> ul {
+						font-size: 10px;
+						color: $dddark-blue;
+						margin: 0;
+						@include media(lg-desktop) {
+							padding: 1vh 0vw;
+						}
+						@include media(desktop, tablet) {
+							padding: 1vh 2vw;
+						}
+						@include media(phone) {
+							padding: 0vh 2vw;
+						}
+					}
+					ul.dashed {
+						list-style-type: none;
+						> li {
+							text-indent: -7px;
+							padding-right: 10px;
+						}
+						> li:before {
+							content: "-";
+							text-indent: -7px;
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+		}
+    }
+}
+
+//  DETAILED CONTACT PAGE
+#detailed_contact_page {
+	min-height: 82vh;
+	padding-bottom: 6vh;
+	> .container {
+        width: 700px;
+        min-height: 82vh;
+        background-color: $grey;
+		> .content {
+			background-color: $white;
+			@include media(lg-desktop) {
+				margin: 2vh 0vw;
+			}
+			@include media(desktop,tablet,phone) {
+				margin: 3vh 0vw;
+			}
+			> .row {
+				margin: 3vh 2vw;
+				background-color: $grey;
+				@include media(lg-desktop) {
+					padding: 5vh 2vw;
+				}
+				@include media(desktop,tablet,phone) {
+					padding: 3vh 2vw;
+				}
+				p {
+					font-size: 10px;
+					color: $dddark-blue;
+					@include media(lg-desktop) {
+						padding: 1vh 4vw;
+					}
+					@include media(desktop,tablet,phone) {
+						padding: 1vh 2vw;
+					}
+				}
+			}
+		}
+    }
+}
+
+// DETAILED PARTNER PAGE
+#detailed_partner_page {
+	min-height: 82vh;
+	padding-bottom: 6vh;
+	> .container {
+        width: 700px;
+        min-height: 82vh;
+        background-color: $grey;
+		> .content {
+			background-color: $white;
+			@include media(lg-desktop) {
+				margin: 2vh 0vw;
+			}
+			@include media(desktop,tablet,phone) {
+				margin: 3vh 0vw;
+			}
+			> .row {
+				margin: 3vh 4vw;
+				background-color: $grey;
+				@include media(lg-desktop) {
+					padding: 5vh 2vw;
+				}
+				@include media(desktop,tablet,phone) {
+					padding: 3vh 2vw;
+				}
+				> .img {
+					max-height: 30vh;
+				}
+				p {
+					font-size: 10px;
+					color: $dddark-blue;
+					@include media(lg-desktop) {
+						padding: 1vh 4vw;
+					}
+					@include media(desktop,tablet,phone) {
+						padding: 1vh 2vw;
+					}
+				}
+				#detailed_partner_page_title {
+					padding: 2vh 0vw;
+				}	
+				#detailed_partner_page_fst_paragraph {
+					padding-left: 2vw;
+				}		
+			}
+		}	
+    }
+}
