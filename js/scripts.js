@@ -165,15 +165,6 @@ function goto_loginpage() {
 	$('.navbar-collapse').collapse('hide');
 }
 
-function goto_contactpage_both() {
-	shrinkNavbar();
-	$('.page').addClass("d-none");
-	$('#contact_page').removeClass("d-none");
-	$('#contact_page_europe').removeClass("d-none");
-	$('#contact_page_asia').removeClass("d-none");
-	displayAdditionalNavs();
-}
-
 function goto_contactpage_asia() {
 	var contactAsia = document.getElementById("contact-in-asia");
 	if(contactAsia.classList.contains("d-none")) {

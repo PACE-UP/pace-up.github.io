@@ -44,28 +44,6 @@ h6 {
     transition: all .2s linear;
 }
 
-
-.search-btn{
-  color: grey;
-  float: right;
-  width: 40px;
-  height: 40px;
-  display: flex;
-}
-.search-box:hover > .search-text{
-  width: 200px;
-}
-.search-text{
-  border: none;
-  outline: none;
-  font-size: 16px;
-  width: 0px;
-  transition: 0.8s linear;
-}
-.search-text: focus{
-  outline: none;
-}
-
 /* This is for making unorder list style to dash */
 ul {
     margin: 0;
@@ -100,106 +78,6 @@ ul.dashed > li:before {
 
         font-family: 'AvenirNextLTPro';
     }
-
-    #events_page h5 {
-        font-size: 12px;
-
-        font-family: 'AvenirNextLTPro';
-    }
-
-    #events_page > .container {
-        min-height: 82vh;
-        padding-top: 6vh;
-        padding-bottom: 6vh;
-    }
-
-    #events_page > .container > .events-page {
-        background-color: var(--white);
-        min-height: 80vh;
-    }
-
-    .timeline {
-        padding-top: 40px;
-        padding-bottom: 100px;
-    }
-
-    .timeline ul .li-time:nth-child(1) {
-        padding-top: 100px;
-    }
-
-    .timeline ul .li-time {
-        list-style-type: none;
-        position: relative;
-        width: 1px;
-        margin: 0 30vw;
-        padding-top: 50px;
-        background: var(--dddark-blue);
-    }
-
-    .timeline ul .li-content {
-        list-style-type: none;
-        position: relative;
-        width: 1px;
-        margin: 0 30vw;
-        background: var(--dddark-blue);
-    }
-
-    .timeline ul li > div {
-        width: 1000px;
-    }
-      
-    .timeline ul .li-time::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: inherit;
-    }
-      
-      .timeline ul .li-time .right {
-        left: -20px;
-        position: relative;
-        bottom: 0;
-        width: 400px;
-        /* padding: 15px; */
-        background: transparent;
-        color: var(--dddark-blue);
-        font-size: 12px;
-        font-family: 'Corbel';
-      }
-
-      .timeline ul .li-time .right a {
-        color: var(--dddark-blue);
-        font-size: 12px;
-        font-family: 'Corbel';
-      }
-
-      .timeline ul .li-content .right {
-        right: -20px;
-        position: relative;
-        bottom: 0;
-        width: 400px;
-        /* padding: 15px; */
-        background: transparent;
-        color: var(--dddark-blue);
-        font-size: 12px;
-        font-family: 'Corbel';
-      }
-
-      .timeline ul li .left {
-        left: -80px;
-        position: relative;
-        bottom: 0;
-        /* padding: 15px; */
-        background: transparent;
-        color: var(--dddark-blue);
-        font-size: 12px;
-        font-family: 'Corbel';
-      }
 
     #objectives_page {
         min-height: 82vh;
@@ -359,41 +237,6 @@ ul.dashed > li:before {
         padding: 1vh 0vw;
     }
 
-    #about_this_site_page h5 {
-        font-size: 12px;
-    }
-
-    #about_this_site_page .container {
-    	min-height: 82vh;
-        width: 800px;
-    	background-color: var(--grey);
-    }
-
-    #about_this_site_page  .card-body {
-     	background-color: var(--grey);
-
-    }
-    #about_this_site_page  .page-title {
-     	background-color: var(--grey);
-
-    }
-
-    #about_this_site_page p {
-     	font-size: 10px;
-      	color: var(--dddark-blue);
-    }
-
-    .about_this_site-page-content {
-    	background-color: var(--white);
-    	margin: 3vh 5vw;
-        padding: 3vh 3vw;
-    }
-
-    #contact_page p {
-        font-size: 1.7vh;
-        color: var(--dddark-blue);
-    }
-
     #detailed_contact_page > .container {
         width: 700px;
         min-height: 82vh;
@@ -464,105 +307,6 @@ ul.dashed > li:before {
       font-size: 9px;
       position: absolute;
     }
-  
-  
-    #events_page h5 {
-      font-size: 12px;
-  
-  }
-  
-  #events_page > .container {
-      min-height: 82vh;
-      padding-top: 6vh;
-  }
-  
-  #events_page > .container > .events-page {
-      background-color: var(--white);
-      min-height: 80vh;
-  }
-  
-  .timeline {
-    padding-top: 40px;
-    padding-bottom: 100px;
-  }
-  
-  .timeline ul .li-time:nth-child(1) {
-    padding-top: 100px;
-  }
-  
-  .timeline ul .li-time {
-    list-style-type: none;
-    position: relative;
-    width: 1px;
-    margin: 0 30vw;
-    padding-top: 50px;
-    background: var(--dddark-blue);
-  }
-  
-  .timeline ul .li-content {
-    list-style-type: none;
-    position: relative;
-    width: 1px;
-    margin: 0 30vw;
-    background: var(--dddark-blue);
-  }
-  
-  .timeline ul li > div {
-    width: 1000px;
-  }
-  
-  .timeline ul .li-time::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: inherit;
-  }
-  
-  .timeline ul .li-time .right {
-    left: -20px;
-    position: relative;
-    bottom: 0;
-    width: 400px;
-    /* padding: 15px; */
-    background: transparent;
-    color: var(--dddark-blue);
-    font-size: 12px;
-    font-family: 'Corbel';
-  }
-  
-  .timeline ul .li-time .right a {
-    color: var(--dddark-blue);
-    font-size: 12px;
-    font-family: 'Corbel';
-  }
-  
-  .timeline ul .li-content .right {
-    right: -20px;
-    position: relative;
-    bottom: 0;
-    width: 400px;
-    /* padding: 15px; */
-    background: transparent;
-    color: var(--dddark-blue);
-    font-size: 12px;
-    font-family: 'Corbel';
-  }
-  
-  .timeline ul li .left {
-    left: -80px;
-    position: relative;
-    bottom: 0;
-    /* padding: 15px; */
-    background: transparent;
-    color: var(--dddark-blue);
-    font-size: 12px;
-    font-family: 'Corbel';
-  }
   
     #objectives_page {
       padding-top: 6vh;
@@ -715,40 +459,6 @@ ul.dashed > li:before {
       font-size: 10px;
       color: var(--dddark-blue);
       padding: 1vh 2vw;
-    }
-  
-    #about_this_site_page h5 {
-        font-size: 12px;
-    }
-  
-    #about_this_site_page .container {
-      min-height: 82vh;
-      width: 60vw;
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .card-body {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .page-title {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page p {
-      font-size: 10px;
-      color: var(--dddark-blue);
-    }
-  
-    .about_this_site-page-content {
-      background-color: var(--white);
-      margin: 3vh 5vw;
-      padding: 3vh 3vw;
-    }
-  
-    #contact_page p {
-      font-size: 1.7vh;
-      color: var(--dddark-blue);
     }
   
     #detailed_contact_page>.container {
@@ -966,41 +676,6 @@ ul.dashed > li:before {
         padding: 1vh 2vw;
     }
   
-    #about_this_site_page h5 {
-        font-size: 12px;
-    }
-  
-    #about_this_site_page .container {
-      min-height: 86vh;
-      width: 700px;
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .card-body {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .page-title {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page p {
-      font-size: 10px;
-      color: var(--dddark-blue);
-    }
-  
-    .about_this_site-page-content {
-      background-color: var(--white);
-      margin: 3vh 5vw;
-      padding: 3vh 3vw;
-    }
-  
-    #contact_page p {
-  
-        font-size: 1.7vh;
-        color: var(--dddark-blue);
-    }
-  
     #detailed_contact_page>.container {
       width: 600px;
       min-height: 86vh;
@@ -1046,105 +721,6 @@ ul.dashed > li:before {
       color: var(--dddark-blue);
       padding: 1vh 2vw;
     }
-  
-    #events_page h5 {
-      font-size: 12px;
-      font-family: 'AvenirNextLTPro';
-  }
-  
-  #events_page > .container {
-      min-height: 82vh;
-      padding-top: 6vh;
-      padding-bottom: 6vh;
-  }
-  
-  #events_page > .container > .events-page {
-      background-color: var(--white);
-      min-height: 80vh;
-  }
-  
-    .timeline {
-      padding-top: 40px;
-      padding-bottom: 100px;
-  }
-  
-  .timeline ul .li-time:nth-child(1) {
-      padding-top: 100px;
-  }
-  
-  .timeline ul .li-time {
-      list-style-type: none;
-      position: relative;
-      width: 1px;
-      margin: 0 30vw;
-      padding-top: 50px;
-      background: var(--dddark-blue);
-  }
-  
-  .timeline ul .li-content {
-      list-style-type: none;
-      position: relative;
-      width: 1px;
-      margin: 0 30vw;
-      background: var(--dddark-blue);
-  }
-  
-  .timeline ul li > div {
-      width: 1000px;
-  }
-    
-  .timeline ul .li-time::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: inherit;
-  }
-    
-    .timeline ul .li-time .right {
-      left: -20px;
-      position: relative;
-      bottom: 0;
-      width: 400px;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul .li-time .right a {
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul .li-content .right {
-      right: -20px;
-      position: relative;
-      bottom: 0;
-      width: 400px;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul li .left {
-      left: -80px;
-      position: relative;
-      bottom: 0;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
   }
 
   @media (max-width: 767px) {
@@ -1162,20 +738,6 @@ ul.dashed > li:before {
         font-size: 9px;
         position: absolute;
     }
-  
-    #events_page h5 {
-      font-size: 12px;
-  }
-  
-  #events_page > .container {
-      min-height: 100vh;
-      padding-top: 2vh;
-  }
-  
-  #events_page > .container > .events-page {
-      background-color: var(--white);
-      min-height: 80vh;
-  }
   
     #objectives_page {
         padding: 5vh 6vw;
@@ -1325,41 +887,6 @@ ul.dashed > li:before {
         padding: 0vh 2vw;
     }
   
-    #about_this_site_page h5 {
-        font-size: 12px;
-    }
-  
-    #about_this_site_page .container {
-      min-height: 82vh;
-      width: 60vw;
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .card-body {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page .page-title {
-      background-color: var(--grey);
-    }
-  
-    #about_this_site_page p {
-      font-size: 10px;
-      color: var(--dddark-blue);
-    }
-  
-    .about_this_site-page-content {
-      background-color: var(--white);
-      margin: 3vh 5vw;
-      padding: 3vh 3vw;
-    }
-  
-    #contact_page p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.7vh;
-        color: var(--dddark-blue);
-    }
-  
     #detailed_contact_page>.container {
       min-height: 82vh;
       background-color: var(--grey);
@@ -1402,89 +929,6 @@ ul.dashed > li:before {
       font-size: 10px;
       color: var(--dddark-blue);
       padding: 1vh 2vw;
-    }
-  
-    .timeline {
-      padding-top: 40px;
-      padding-bottom: 40px;
-  }
-  
-  .timeline ul .li-time:nth-child(1) {
-      padding-top: 100px;
-  }
-  
-  .timeline ul .li-time {
-      list-style-type: none;
-      position: relative;
-      width: 1px;
-      margin: 0 10vw;
-      padding-top: 50px;
-      background: var(--dddark-blue);
-  }
-  
-  .timeline ul .li-content {
-      list-style-type: none;
-      position: relative;
-      width: 1px;
-      margin: 0 10vw;
-      background: var(--dddark-blue);
-  }
-  
-  .timeline ul li > div {
-      width: 100vw;
-  }
-    
-  .timeline ul .li-time::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: inherit;
-  }
-    
-    .timeline ul .li-time .right {
-      left: -30px;
-      position: relative;
-      bottom: 0;
-      width: 70vw;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul .li-time .right a {
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul .li-content .right {
-      right: -10px;
-      position: relative;
-      bottom: 0;
-      width: 200px;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
-    }
-  
-    .timeline ul li .left {
-      left: -70px;
-      position: relative;
-      bottom: 0;
-      /* padding: 15px; */
-      background: transparent;
-      color: var(--dddark-blue);
-      font-size: 12px;
-      font-family: 'Corbel';
     }
   }
   
