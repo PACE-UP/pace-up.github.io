@@ -216,6 +216,14 @@ function goto_eventspage() {
 	$('#events_page').removeClass("d-none");
 	displayAdditionalNavs();
 	$('.navbar-collapse').collapse('hide');
+
+	var elem = document.getElementsByClassName("li-content");
+	var length = elem.length;
+	for (var i = 0 ; i < length ; i++) {
+		if ( !elem[i].classList.contains("d-none") ) {
+			elem[i].classList.add("d-none");
+		}
+	}
 }
 
 function clear_detailed_people_page() {
@@ -318,7 +326,10 @@ $(window).scroll(function() {
 function openEvent(i) {
 	var id = "li-"+i;
 	let elem = document.getElementById(id);
-	if (elem !== undefined) {
+	if (elem.classList.contains('d-none')) {		//if class contains d-none == trye
 		elem.classList.remove('d-none');
+	}
+	else if (!elem.classList.contains('d-none')) {	//if class contains d-none == false
+		elem.classList.add('d-none');
 	}
 }
