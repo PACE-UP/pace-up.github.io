@@ -186,11 +186,13 @@ body .page > .container .hover-zoom:hover img {
 @media (min-width: 1200px) {
   #navbar-top > nav .nav-item-text {
     width: 120px;
+    text-align: center;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #navbar-top > nav .nav-item-text {
     width: 120px;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -203,6 +205,16 @@ body .page > .container .hover-zoom:hover img {
   #navbar-top > nav .nav-item-text {
     padding-right: 10px;
     text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  #navbar-top > nav .nav-item-parent {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #navbar-top > nav .nav-item-parent {
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
@@ -222,11 +234,13 @@ body .page > .container .hover-zoom:hover img {
 @media (min-width: 1200px) {
   #navbar-top > nav .nav-child {
     background-color: #efeeeb;
+    text-align: left;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #navbar-top > nav .nav-child {
     background-color: #efeeeb;
+    text-align: left;
   }
 }
 #navbar-top > nav .active-background,
@@ -276,6 +290,18 @@ body .page > .container .hover-zoom:hover img {
   }
 }
 @media (min-width: 1200px) {
+  #navbar-top > nav #nav_map,
+#navbar-top > nav #nav_login {
+    width: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #navbar-top > nav #nav_map,
+#navbar-top > nav #nav_login {
+    width: 60px;
+  }
+}
+@media (min-width: 1200px) {
   #navbar-top > .shrink {
     align-items: end;
     background-color: #ffffff;
@@ -325,6 +351,16 @@ body .page > .container .hover-zoom:hover img {
     color: #516284;
     transition: all ease-in-out;
     font-family: "AvenirNextLTPro";
+  }
+}
+@media (min-width: 1200px) {
+  #navbar-top > .shrink .nav-item-parent {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #navbar-top > .shrink .nav-item-parent {
+    text-align: left;
   }
 }
 #navbar-top > .shrink .active-background,
@@ -576,29 +612,30 @@ body .page > .container .hover-zoom:hover img {
 }
 
 #events_page > .container .events-page {
-  background-color: #ffffff;
+  background-color: #fcfcfc;
 }
 #events_page > .container .events-page > .timeline {
   padding-top: 40px;
+  background-color: #ffffff;
 }
 @media (min-width: 1200px) {
   #events_page > .container .events-page > .timeline {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #events_page > .container .events-page > .timeline {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #events_page > .container .events-page > .timeline {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
   #events_page > .container .events-page > .timeline {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 #events_page > .container .events-page > .timeline ul .li-time {
@@ -607,26 +644,7 @@ body .page > .container .hover-zoom:hover img {
   width: 1px;
   padding-top: 50px;
   background: #516284;
-}
-@media (min-width: 1200px) {
-  #events_page > .container .events-page > .timeline ul .li-time {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #events_page > .container .events-page > .timeline ul .li-time {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #events_page > .container .events-page > .timeline ul .li-time {
-    margin: 0 400px;
-  }
-}
-@media (max-width: 767px) {
-  #events_page > .container .events-page > .timeline ul .li-time {
-    margin: 0 200px;
-  }
+  margin-left: 20vw;
 }
 #events_page > .container .events-page > .timeline ul .li-time .right {
   position: relative;
@@ -671,26 +689,7 @@ body .page > .container .hover-zoom:hover img {
   width: 1px;
   padding-top: 50px;
   background: #516284;
-}
-@media (min-width: 1200px) {
-  #events_page > .container .events-page > .timeline ul .li-time-clicked {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #events_page > .container .events-page > .timeline ul .li-time-clicked {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #events_page > .container .events-page > .timeline ul .li-time-clicked {
-    margin: 0 400px;
-  }
-}
-@media (max-width: 767px) {
-  #events_page > .container .events-page > .timeline ul .li-time-clicked {
-    margin: 0 200px;
-  }
+  margin-left: 20vw;
 }
 #events_page > .container .events-page > .timeline ul .li-time-clicked .right {
   position: relative;
@@ -740,26 +739,7 @@ body .page > .container .hover-zoom:hover img {
   position: relative;
   width: 1px;
   background: #516284;
-}
-@media (min-width: 1200px) {
-  #events_page > .container .events-page > .timeline ul .li-content {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #events_page > .container .events-page > .timeline ul .li-content {
-    margin: 0 400px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #events_page > .container .events-page > .timeline ul .li-content {
-    margin: 0 400px;
-  }
-}
-@media (max-width: 767px) {
-  #events_page > .container .events-page > .timeline ul .li-content {
-    margin: 0 200px;
-  }
+  margin-left: 20vw;
 }
 #events_page > .container .events-page > .timeline ul .li-content .right {
   position: relative;
@@ -814,6 +794,7 @@ body .page > .container .hover-zoom:hover img {
   height: 40px;
   border-radius: 50%;
   background: inherit;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   #events_page > .container .events-page > .timeline ul li > div {
@@ -929,7 +910,7 @@ body .page > .container .hover-zoom:hover img {
 #who_page > .container .who-page-content .img-shadow-bl {
   width: 90%;
   margin: auto auto 30px auto;
-  box-shadow: -30px 30px 5px #516284, -35px 35px 5px #c0c4c5;
+  box-shadow: -30px 30px 5px #516284, -25px 35px 5px #c0c4c5;
 }
 #who_page > .logo-slideshow-container {
   background-color: #ffffff;
