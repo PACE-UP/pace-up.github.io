@@ -110,18 +110,18 @@ body {
 		background-color: rgb(252,252,252);
 
 		@include media(lg-desktop, desktop) {
-			margin-top: 12vh;
-        	margin-bottom: 6vh;
+			margin-top: 60px;
+        	margin-bottom: 40px;
 		}
 
 		@include media(tablet) {
-			margin-top: 10vh;
-        	margin-bottom: 4vh;
+			margin-top: 10px;
+        	margin-bottom: 40px;
 		}
 
 		@include media(phone) {
-			margin-top: 2vh;
-			margin-bottom: 6vh;
+			margin-top: 10px;
+        	margin-bottom: 40px;
 		}
 
 		> .container {
@@ -135,12 +135,11 @@ body {
 				width: 700px;
 			}
 			@include media(phone) {
-				padding-left: 10vw;
-				padding-right: 10vw;
+				padding: auto 30px;
 			}
 
 			.page-title {
-				padding: 2vh 0vw;
+				padding: 30px 0px;
 
 				> h5 {
 					font-family: 'AvenirNextLTPro';
@@ -175,8 +174,8 @@ body {
 #navbar-top {
 	background-color: $white;
 
-	@include media(lg-desktop, desktop, tablet) {
-		max-height: 10vh;
+	@include media(lg-desktop, desktop) {
+		max-height: 50px;
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -184,7 +183,7 @@ body {
 		z-index: 1030;
 	}
 
-	@include media(phone) {
+	@include media(tablet, phone) {
 		.navbar-nav {
 			width: 200px;
 		}
@@ -197,39 +196,39 @@ body {
 		}
 
 		@include media(lg-desktop) {
-			margin: 0 5vw;
+			margin: 0 70px;
 		}
 
 		@include media(desktop) {
-			margin: 0 2vw;
+			margin: 0 10px;
 		}
 
 		@include media(tablet) {
-			margin: 0 1vw;
+			margin: 0 10px;
 		}
 
 		@include media(phone) {
-			margin: 0 2.5vw;
+			margin: 0 10px;
 		}
 
 		.nav-item-text {
 			font-size: 11px;
 			color: $dddark-blue;
 			font-family: 'AvenirNextLTPro';
-			padding: 10px 20px;
 
-			@include media(lg-desktop, desktop, tablet) {
+			@include media(lg-desktop, desktop) {
 				width: 120px;
-				text-align: center;
+				// text-align: center;
 			}
 
-			@include media(phone) {
+			@include media(tablet, phone) {
+				padding-right: 10px;
 				text-align: right;
 			}
 		}
 
 		.dropdown {
-			@include media(lg-desktop, desktop, tablet) {
+			@include media(lg-desktop, desktop) {
 				width: 120px;
 			}
 		}
@@ -241,9 +240,7 @@ body {
 		}
 
 		.nav-child {
-			@include media(lg-desktop, desktop, tablet) {
-				text-align: left;
-				padding: 5px;
+			@include media(lg-desktop, desktop) {
 				background-color: rgb(239,238,235);
 			}
 		}
@@ -255,7 +252,7 @@ body {
 		}
 
 		.my-custom-dropdown-menu {
-			@include media(lg-desktop, desktop, tablet) {
+			@include media(lg-desktop, desktop) {
 				margin: 0;
 				min-width: 120px;
 				border-left-width: 0;
@@ -272,43 +269,40 @@ body {
 		> a {
 			> img {
 				@include media(lg-desktop, desktop) {
-					max-height: 6vh;
+					max-height: 40px;
 				}
 
 				@include media(tablet, phone) {
-					max-height: 4vh;
+					max-height: 25px;
 				}
 			}
 		}
     }
 
 	> .shrink {
-		@include media(lg-desktop, desktop, tablet) {
+		@include media(lg-desktop, desktop) {
 			align-items: end;
 			background-color: $white;
-			padding-bottom: 1vh;
 			margin-bottom: 10px;
 		}
 
 		> a {
 			> img {
 				@include media(lg-desktop, desktop) {
-					max-height: 5vh;
+					max-height: 30px;
 				}
-				@include media(tablet) {
-					max-height: 4vh;
+				@include media(tablet, phone) {
+					max-height: 25px;
 				}
 			}
 		}
 
 		.nav-item-text {
-			@include media(lg-desktop, desktop, tablet) {
+			@include media(lg-desktop, desktop) {
 				font-size: 11px;
 				width: 120px;
 				color: $dddark-blue;
-				padding: 10px 20px;
 				transition: all ease-in-out;
-				text-align: center;
 				font-family: 'AvenirNextLTPro';
 			}
 		}
@@ -320,9 +314,8 @@ body {
 		}
 
 		.nav-child {
-			@include media(lg-desktop, desktop, tablet) {
+			@include media(lg-desktop, desktop) {
 				text-align: left;
-				padding: 5px;
 				background-color: rgb(239,238,235);
 			}
 		}
@@ -333,12 +326,12 @@ body {
 // NAVBAR BOTTOM
 #navbar-bottom {
 	background-color: rgb(192,196,197);
-	height: 6vh;
+	height: 40px;
 
 	.nav-link-bottom {
         font-size: 10px;
         color: $white;
-        padding: 0vh 3.5vw;
+        padding: 0 30px;
         font-family: 'AvenirNextLTPro';
     }
 }
@@ -355,7 +348,7 @@ body {
 			color: white;
 			min-width: 36px;
 			background: $lynch;
-			box-shadow: -0.5vh 0.5vh rgba(0, 0, 0, 0.3);
+			box-shadow: -5px 5px 3px rgb(0 0 0 / 30%);
 			font-family: 'Corbel';
 			border-radius: 0;
 
@@ -366,7 +359,7 @@ body {
 
 		.sticky-contact {
 			> div {
-				padding: 1vh 0.5vw;
+				padding: 7px;
 			}
 
 			img {
@@ -395,31 +388,31 @@ body {
 }
 
 #sticky-right-contact {
-	top: 15vh;
+	top: 100px;
 	right: 0;
 }
 
 #sticky-right-link {
-	bottom: 15vh;
+	bottom: 100px;
     right: 0;
 }
 
 #sticky-left-contact {
 	left: 0;
-	top: 15vh;
+	top: 100px;
 }
 
 // FRONT PAGE
 #front_page {
-	margin-bottom: 10vh;
+	margin-bottom: 70px;
 
 	#frontpage_carousel {
-		padding-top: 6vh;
+		padding-top: 40px;
         background-color: $dddark-blue;
 
 		> p {
-			padding-top: 2vh;
-			padding-bottom: 3vh;
+			padding-top: 15px;
+			padding-bottom: 15px;
 			font-size: 22px;
 			color: $white;
 			margin-bottom: 0;
@@ -471,7 +464,7 @@ body {
 #home_page {
 	> .container {
 		.homepage-title {
-			padding: 5vh 0vw;
+			padding: 35px 0px;
 			h5 {
 				color: $dddark-blue;
 			}
@@ -481,23 +474,22 @@ body {
 			.homepage-intro {
 				font-size: 12px;
 				color: $dddark-blue;
-				padding-bottom: 5vh;
+				padding-bottom: 35px;
 			}
 			.home-img {
 				> .img-item {
 					@include media(phone) {
-						margin-top: 1vh;
-      					margin-bottom: 1vh;
+						margin-top: 5px;
+      					margin-bottom: 5px;
 					}
-
 					> img {
 						width: 70%;
-						margin-bottom: 1vh;
+						margin-bottom: 5px;
 					}
 
 					> p {
-						margin-top: 1vh;
-						margin-bottom: 1vh;
+						margin-top: 5px;
+						margin-bottom: 5px;
 						font-size: 12px;
 						color: $dddark-blue;
 						font-family: 'AvenirNextLTPro';
@@ -510,12 +502,10 @@ body {
 
 // NEWS PAGE
 #news_page {
-	min-height: 82vh;
-
 	> .container {
 		#newspage-title {
-			padding-top: 10vh;
-			margin-bottom: 5vh;
+			padding-top: 70px;
+			margin-bottom: 30px;
 			border-bottom: 1px solid $dddark-blue;
 
 			> h6 {
@@ -527,27 +517,27 @@ body {
 
 		#news-items-content {
 			background-color: $white;
-	        padding: 3vh 1vw;
+	        padding: 20px 10px;
 
 			> .news-item {
 				> .card {
-					margin-left: 1.5vw;
-					margin-right: 1.5vw;
+					margin-left: 20px;
+					margin-right: 20px;
 					background-color: $dddark-blue;
 					color: $white;
 					border: none;
 					border-radius: 0;
-					box-shadow: 1vh 1vh 5px $santas-gray;
+					box-shadow: 6px 6px 5px $santas-gray;
 
 					> .card-body {
 						-ms-flex: 1 1 auto;
 						flex: 1 1 auto;
-						padding: 2vh 1vw;
+						padding: 10px 15px;
 						font-size: 11px;
 						/* margin-bottom: 4vh; */
 
 						> .card-title {
-							margin-bottom: 2vh;
+							margin-bottom: 10px;
 						}
 
 						> .card-subtitle {
@@ -571,12 +561,9 @@ body {
 
 // EVENTS PAGE
 #events_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
 		.events-page {
 			background-color: $white;
-			min-height: 82vh;
 			> .timeline {
 				padding-top: 40px;
 				@include media(lg-desktop,desktop,tablet) {
@@ -593,10 +580,44 @@ body {
 						padding-top: 50px;
 						background: $dddark-blue;
 						@include media(lg-desktop,desktop,tablet) {
-							margin: 0 30vw;
+							margin: 0 400px;
 						}
 						@include media(phone) {
-							margin: 0 10vw;
+							margin: 0 200px;
+						}
+						.right {
+							position: relative;
+							bottom: 0;
+							background: transparent;
+							color: $dddark-blue;
+							font-size: 12px;
+							font-family: 'Corbel';
+							@include media(lg-desktop,desktop,tablet) {
+								left: -20px;
+								width: 400px;
+							}
+							@include media(phone) {
+								left: -30px;
+								width: 200px;
+							}
+							a {
+								color: $dddark-blue;
+								font-size: 12px;
+								font-family: 'Corbel';
+							  }
+						}
+					}
+					.li-time-clicked {
+						list-style-type: none;
+						position: relative;
+						width: 1px;
+						padding-top: 50px;
+						background: $dddark-blue;
+						@include media(lg-desktop,desktop,tablet) {
+							margin: 0 400px;
+						}
+						@include media(phone) {
+							margin: 0 200px;
 						}
 						.right {
 							position: relative;
@@ -623,16 +644,19 @@ body {
 					.li-time:nth-child(1) {
 						padding-top: 100px;
 					}
+					.li-time-clicked:nth-child(1) {
+						padding-top: 100px;
+					}
 					.li-content {
 						list-style-type: none;
 						position: relative;
 						width: 1px;
 						background: $dddark-blue;
 						@include media(lg-desktop,desktop,tablet) {
-							margin: 0 30vw;
+							margin: 0 400px;
 						}
 						@include media(phone) {
-							margin: 0 10vw;
+							margin: 0 200px;
 						}
 						.right {
 							position: relative;
@@ -662,13 +686,24 @@ body {
 						border-radius: 50%;
 						background: inherit;
 					}
+					.li-time-clicked::after {
+						content: '';
+						position: absolute;
+						left: 50%;
+						bottom: -10px;
+						transform: translateX(-50%);
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background: inherit;
+					}
 					li {
 						> div {
 							@include media(lg-desktop,desktop,tablet) {
-								width: 1000px;
+								width: 400px;
 							}
 							@include media(phone) {
-								width: 100vw;
+								width: 200px;
 							}
 						}
 						.left {
@@ -695,32 +730,38 @@ body {
 
 // WHO PAGE
 #who_page {
-	min-height: 82vh;
-
-	@include media(desktop,tablet,phone) {
-		padding-bottom: 6vh;
-	}
-
 	> .container {
-        width: 90vw;
+		@include media(lg-desktop) {
+			width: 1100px;
+		}
+		@include media(desktop) {
+			width: 900px;
+		}	
+		@include media(tablet) {
+			width: 650px;
+		}
+		@include media(phone) {
+			padding-left: 20px;
+			padding-rìght: 20px;
+		}
 
 		.who-page-content {
-			margin-top: 2vh;
-			margin-bottom: 2vh;
+			margin-top: 12px;
+			margin-bottom: 12px;
 
 			p {
 				font-size: 14px;
 				color: $dddark-blue;
 
-				@include media(desktop,tablet) {
+				@include media(desktop,tablet,phone) {
 					padding-top: 20px;
       				padding-bottom: 20px;
 				}
 			}
 
 			.overview-button {
-				margin-top: 5vh;
-				margin-bottom: 5vh;
+				margin-top: 30px;
+				margin-bottom: 30px;
 			}
 
 			a {
@@ -732,7 +773,7 @@ body {
 			.img-shadow-bl {
 				width: 90%;
 				margin: auto auto 30px auto;
-				box-shadow: -30px 30px $dddark-blue, -35px 35px $santas-gray;
+				box-shadow: -30px 30px 5px #516284, -35px 35px 5px #c0c4c5;
 			}
 
 		}
@@ -740,11 +781,11 @@ body {
 
 	> .logo-slideshow-container {
         background-color: $white;
-        padding: 2vh 0vw;
+        padding: 8px 0px;
 		> .logo-slideshow {
 			height: 125px;
 			max-width: 100vw;
-			margin: 0vh 0vw;
+			margin: 0;
 			overflow: hidden;
 			border-top: rgb(252,252,252) 1px solid;
 			border-bottom: rgb(252,252,252) 1px solid;
@@ -762,12 +803,7 @@ body {
 // LOGIN PAGE
 #login_page {
 	> .container {
-		min-height: 82vh;
-		padding-top: 6vh;
-		padding-bottom: 6vh;
-
 		> .login-page {
-			min-height: 82vh;
 			background-color: $white;
 		}
 	}
@@ -776,12 +812,7 @@ body {
 // PUBLICATION PAGE
 #publications_page {
 	> .container {
-		min-height: 82vh;
-		padding-top: 6vh;
-		padding-bottom: 6vh;
-
 		> .publications-page {
-			min-height: 82vh;
 			background-color: $white;
 		}
 	}
@@ -790,12 +821,7 @@ body {
 // MAP PAGE
 #map_page {
 	> .container {
-		min-height: 82vh;
-		padding-top: 6vh;
-		padding-bottom: 6vh;
-
 		> .map-page {
-			min-height: 82vh;
 			background-color: $white;
 		}
 	}
@@ -803,30 +829,27 @@ body {
 
 // PARTNERS PAGE
 #partners_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
-
 	> .container {
 		.partners-page-content {
 			background-color: $white;
-        	padding: 1vh 3vw;
+        	padding: 7px 40px;
 			> .partners-item {
-				margin: 1vh 0vw;
+				margin: 7px 0px;
 				> .card {
 					background-color: rgb(244,243,241);
 					border: none;
 					border-radius: 0;
 					min-height: 100%;
-					margin: 0vh 1vw;
+					margin: 0px 13px;
 					.card-img-top {
-						padding: 0vh 0vw;
+						padding: 0;
 						border-radius: 0;
 						height: 100%;
 					}
 					.card-body {
 						-ms-flex: 1 1 auto;
 						flex: 1 1 auto;
-						padding: 2vh 0.5vw;
+						padding: 13px 7px;
 						.card-title {
 							color: $dddark-blue;
 							background-color: $white;
@@ -843,36 +866,33 @@ body {
 
 // PEOPLE PAGE
 #people_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
-
 	> .container {
 		.people-page-content {
 			background-color: $white;
-			padding: 1vh 3vw;
+			padding: 7px 40px;
 			> .people-item {
-				margin: 1vh 0vw;
+				margin: 7px 0px;
 				.card {
 					background-color: rgb(244,243,241);
 					border: none;
 					border-radius: 0;
 					min-height: 100%;
-					margin: 0vh 1vw;
+					margin: 0px 13px;
 					.card-img-top {
 						@include media(lg-desktop,desktop) {
-							padding: 2vh 2vw;
+							padding: 13px 27px;
 						}
 						@include media(tablet) {
-							padding: 2vh 6vw;
+							padding: 20px 45px;
 						}
 						@include media(phone) {
-							padding: 2vh 10vw;
+							padding: 13px 35px;
 						}
 					}
 					.card-body {
 						-ms-flex: 1 1 auto;
 						flex: 1 1 auto;
-						padding: 0vh 0.5vw 2vh 0.5vw;
+						padding: 0px 3px 7px 3px;
 						.card-title {
 							color: $dddark-blue;
 							background-color: $white;
@@ -888,23 +908,9 @@ body {
 
 // OBJECTIVES PAGE
 #objectives_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
-        @include media(lg-desktop) {
-			padding: 0vh 4vw 2vh 4vw;
-		}
-		@include media(desktop) {
-			padding: 0vh 3vw 3vh 3vw;
-		}
-		@include media(tablet) {
-			padding: 0vh 6vw;
-		}
-		@include media(phone) {
-			padding: 0vh 4vw 3vh 4vw;
-		}
 		.objectives-page-content {
-			margin-bottom: 2vh;
+			margin-bottom: 25px;
 			.caption-img {
 				color: $white;
 				font-size: 9px;
@@ -918,33 +924,35 @@ body {
 					margin-top: 6px;
 				}
 				@include media(tablet) {
-					margin-top: 0.2vh;
-        			margin-left: 3vw;
+					margin-top: 5px;
 				}
 				@include media(phone) {
-					margin-top: 5vh;
-        			margin-left: 6vw;
+					margin-top: 36px;
+        			margin-left: 24px;
 				}
 			}
 			.img-shadow-tl {
 				@include media(lg-desktop) {
-					box-shadow: -30px -22px $dddark-blue, -26px -18px $santas-gray;
+					box-shadow: -30px -22px 5px $dddark-blue, -26px -18px 5px $santas-gray;
 				}
 				@include media(desktop) {
-					box-shadow: -20px -20px $dddark-blue, -24px -14px $santas-gray;
+					box-shadow: -20px -20px 5px $dddark-blue, -24px -14px 5px $santas-gray;
 				}
 				@include media(tablet) {
-					box-shadow: -13px -23px $dddark-blue, -16px -18px $santas-gray;
+					box-shadow: -13px -23px 5px $dddark-blue, -16px -18px 5px $santas-gray;
 				}
 				@include media(phone) {
-					margin-left: 4vw;
-					margin-top: 4vh;
-					box-shadow: -13px -23px $dddark-blue, -16px -18px $santas-gray;
+					margin-left: 17px;
+					margin-top: 30px;
+					box-shadow: -13px -23px 5px $dddark-blue, -16px -18px 5px $santas-gray;
 				}
 			}
 			.objectives-page-text {
 				font-size: 11px;
 				color: $dddark-blue;
+			}
+			.objectives-page-button {
+				margin: auto;
 			}
 		}
     }
@@ -952,22 +960,22 @@ body {
 
 // ABOUT THIS SITE PAGE
 #about_this_site_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
-		width: 800px;
     	background-color: rgb(252,252,252);
 		.about_this_site-page-content {
 			background-color: $white;
 			margin: 3vh 5vw;
 			padding: 3vh 3vw;
-			.card-body {
-				background-color: rgb(244,243,241);
-				p {
-					font-size: 10px;
-					color: $dddark-blue;
-					font-family: Calibri;
-			   }
+			.card {
+				border: 0;
+				.card-body {
+					background-color: rgb(244,243,241);
+					p {
+						font-size: 10px;
+						color: $dddark-blue;
+						font-family: Calibri;
+				   }
+				}
 			}
 			.page-title {
 				background-color: rgb(244,243,241);
@@ -978,19 +986,8 @@ body {
 
 // CAPACITY BUILDING PAGE
 #capacitybuildings_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
         background-color: $white;
-		@include media(lg-desktop) {
-			padding: 0vh 3vw 2vh 3vw;
-		}
-        @include media(desktop, tablet, phone) {
-			padding: 0vh 3vw 3vh 3vw;
-			.title {
-				height: 8vh;
-			}
-		}
 		.row {
 			display: flex;
 			flex-direction: row;
@@ -1000,17 +997,16 @@ body {
 			.card-item {
 				background-color: rgb(244,243,241);
 				background-clip: content-box;
-				@include media(lg-desktop) {
-					padding: 0vh 1vw;
-					margin-bottom: 2vh;
+				@include media(lg-desktop,desktop) {
+					margin-bottom: 15px;
 				}
-				@include media(desktop,tablet) {
-					padding: 0vh 3vw;
-					margin-top: 2vh;
-					margin-bottom: 2vh;
+				@include media(tablet) {
+					padding: 0vh 20vw;
+					margin-bottom: 15px;
 				}
 				@include media(phone) {
-					padding: 2vh 4vw;
+					padding: 0vh 10vw;
+					margin-bottom: 15px;
 				}
 			}
 			.capacity-card {
@@ -1024,12 +1020,7 @@ body {
 							display: flex;
 							margin: 5px 0px;
 							background-color: $white;
-							@include media(lg-desktop,desktop,tablet) {
-								height: 40px;
-							}
-							@include media(phone) {
-								height: 30px;
-							}
+							height: 40px;
 							> div {
 								font-size: 9px;
 								text-align: center;
@@ -1040,24 +1031,14 @@ body {
 					> p {
 						font-size: 10px;
 						color: $dddark-blue;
-						margin-bottom: 0vh;
-						@include media(lg-desktop,desktop,tablet) {
-							padding-top: 1vh;
-						}
+						margin-bottom: 0;
+						padding-top: 7px;
 					}
 					> ul {
 						font-size: 10px;
 						color: $dddark-blue;
 						margin: 0;
-						@include media(lg-desktop) {
-							padding: 1vh 0vw;
-						}
-						@include media(desktop,tablet) {
-							padding: 1vh 2vw;
-						}
-						@include media(phone) {
-							padding: 0vh 2vw;
-						}
+						padding: 5px 13px;
 					}
 					ul.dashed {
 						list-style-type: none;
@@ -1079,34 +1060,24 @@ body {
 
 // ACTIVITIES PAGE
 #activities_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
         background-color: $white;
-		@include media(lg-desktop) {
-			padding: 0vh 3vw 2vh 3vw;
-		}
-        @include media(desktop, tablet, phone) {
-			padding: 0vh 3vw 3vh 3vw;
-		}
 		.row {
 			display: flex;
 			flex-direction: row;
 			> .card-item {
 				background-color: rgb(244,243,241);
 				background-clip: content-box;
-				@include media(lg-desktop) {
-					padding: 0vh 1vw;
-					margin-bottom: 2vh;
+				@include media(lg-desktop,desktop) {
+					margin-bottom: 15px;
 				}
-				@include media(desktop,tablet) {
-					padding-left: 1vw;
-        			padding-right: 1vw;
-					margin-top: 2vh;
-					margin-bottom: 2vh;
+				@include media(tablet) {
+					padding: 0vh 20vw;
+					margin-bottom: 15px;
 				}
 				@include media(phone) {
-					padding: 2vh 4vw;
+					padding: 0vh 10vw;
+					margin-bottom: 15px;
 				}
 			}
 			.activity-card {
@@ -1131,22 +1102,14 @@ body {
 					> p {
 						font-size: 10px;
 						color: $dddark-blue;
-						padding-top: 1vh;
-						margin-bottom: 0vh;
+						margin-bottom: 0;
+						padding-top: 7px;
 					}
 					> ul {
 						font-size: 10px;
 						color: $dddark-blue;
 						margin: 0;
-						@include media(lg-desktop) {
-							padding: 1vh 0vw;
-						}
-						@include media(desktop, tablet) {
-							padding: 1vh 2vw;
-						}
-						@include media(phone) {
-							padding: 0vh 2vw;
-						}
+						padding: 5px 13px;
 					}
 					ul.dashed {
 						list-style-type: none;
@@ -1168,29 +1131,16 @@ body {
 
 //  DETAILED CONTACT PAGE
 #detailed_contact_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
         width: 700px;
-        min-height: 82vh;
         background-color: rgb(252,252,252);
 		> .content {
 			background-color: $white;
-			@include media(lg-desktop) {
-				margin: 2vh 0vw;
-			}
-			@include media(desktop,tablet,phone) {
-				margin: 3vh 0vw;
-			}
+			margin: 15px 0px;
 			> .row {
-				margin: 3vh 2vw;
+				margin: 20px 30px;
 				background-color: rgb(244,243,241);
-				@include media(lg-desktop) {
-					padding: 5vh 2vw;
-				}
-				@include media(desktop,tablet,phone) {
-					padding: 3vh 2vw;
-				}
+				padding: 32px 27px;
 				p {
 					font-size: 10px;
 					color: $dddark-blue;
@@ -1208,29 +1158,16 @@ body {
 
 // DETAILED PARTNER PAGE
 #detailed_partner_page {
-	min-height: 82vh;
-	padding-bottom: 6vh;
 	> .container {
         width: 700px;
-        min-height: 82vh;
         background-color: rgb(252,252,252);
 		> .content {
 			background-color: $white;
-			@include media(lg-desktop) {
-				margin: 2vh 0vw;
-			}
-			@include media(desktop,tablet,phone) {
-				margin: 3vh 0vw;
-			}
+			margin: 15px 0px;
 			> .row {
-				margin: 3vh 4vw;
+				margin: 20px 30px;
 				background-color: rgb(244,243,241);
-				@include media(lg-desktop) {
-					padding: 5vh 2vw;
-				}
-				@include media(desktop,tablet,phone) {
-					padding: 3vh 2vw;
-				}
+				padding: 32px 27px;
 				> .img {
 					max-height: 30vh;
 				}

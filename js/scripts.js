@@ -80,7 +80,6 @@ function goto_whopage() {
 	$('#who_page').removeClass("d-none");
 	// $('#partners_page').removeClass("d-none");
 	// $('#partners_page').addClass("mt-0");
-	// $('#partners_page').removeClass("margin-nav-bottom");
 	// $('#people_page').removeClass("d-none");
 	// $('#people_page').addClass("mt-0");
 	displayAdditionalNavs();
@@ -92,7 +91,6 @@ function goto_partnerspage() {
 	$('.page').addClass("d-none");
 	$('#partners_page').removeClass("d-none");
 	$('#partners_page').removeClass("mt-0");
-	$('#partners_page').addClass("margin-nav-bottom");
 	displayAdditionalNavs();
 	$('.navbar-collapse').collapse('hide');
 }
@@ -331,5 +329,15 @@ function openEvent(i) {
 	}
 	else if (!elem.classList.contains('d-none')) {	//if class contains d-none == false
 		elem.classList.add('d-none');
+	}
+	var rootid = "li-root-"+i;
+	let root = document.getElementById(rootid);
+	if (root.classList.contains('li-time')) {		//if class contains d-none == trye
+		root.classList.remove('li-time');
+		root.classList.add('li-time-clicked');
+	}
+	else if (!root.classList.contains('li-time')) {	//if class contains d-none == false
+		root.classList.remove('li-time-clicked');
+		root.classList.add('li-time');
 	}
 }
