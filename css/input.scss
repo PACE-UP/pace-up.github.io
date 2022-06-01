@@ -212,6 +212,7 @@ body {
 		}
 
 		.nav-item-text {
+			font-weight: bold;
 			font-size: 11px;
 			color: $dddark-blue;
 			font-family: 'AvenirNextLTPro';
@@ -280,7 +281,7 @@ body {
 				}
 
 				@include media(tablet, phone) {
-					max-height: 25px;
+					max-height: 30px;
 				}
 			}
 		}
@@ -424,10 +425,9 @@ body {
 
 // FRONT PAGE
 #front_page {
-	margin-bottom: 70px;
-
+	// margin-bottom: 70px;
 	#frontpage_carousel {
-		padding-top: 40px;
+		padding-bottom: 40px;
         background-color: $dddark-blue;
 
 		> p {
@@ -484,8 +484,12 @@ body {
 #home_page {
 	> .container {
 		.homepage-title {
-			padding: 35px 0px;
-			h5 {
+			padding: 0px 0px 30px 0px;
+			// h5 {
+			// 	color: $dddark-blue;
+			// }
+			a {
+				padding: 0px 10px;
 				color: $dddark-blue;
 			}
 		}
@@ -514,6 +518,68 @@ body {
 						color: $dddark-blue;
 						font-family: 'AvenirNextLTPro';
 					}
+				}
+			}
+			.objectives-page-content {
+				margin-bottom: 25px;
+				.caption-img {
+					color: $white;
+					font-size: 9px;
+					position: absolute;
+					font-family: 'AvenirNextLTPro';
+					z-index: 2;
+					@include media(lg-desktop) {
+						margin-top: 10px;
+					}
+					@include media(desktop) {
+						margin-top: 6px;
+					}
+					@include media(tablet) {
+						margin-top: 5px;
+					}
+					@include media(phone) {
+						margin-top: 36px;
+						margin-left: 24px;
+					}
+				}
+				.img-shadow-tl {
+					@include media(lg-desktop) {
+						box-shadow: -30px -22px 5px $dddark-blue, -26px -18px 5px $santas-gray;
+					}
+					@include media(desktop) {
+						box-shadow: -20px -20px 5px $dddark-blue, -24px -14px 5px $santas-gray;
+					}
+					@include media(tablet) {
+						box-shadow: -13px -23px 5px $dddark-blue, -16px -18px 5px $santas-gray;
+					}
+					@include media(phone) {
+						margin-left: 17px;
+						margin-top: 30px;
+						box-shadow: -13px -23px 5px $dddark-blue, -16px -18px 5px $santas-gray;
+					}
+				}
+				.objectives-page-text {
+					font-size: 11px;
+					color: $dddark-blue;
+				}
+				.objectives-page-button {
+					margin: auto;
+				}
+			}
+			.youtube-vid {
+				margin-bottom: 20px;
+				iframe {
+					margin: 0 auto;
+					
+					@include media(lg-desktop, desktop, tablet) {
+						width: 560px;
+						height: 315px;
+						display: block;
+					}
+				}
+
+				@include media(phone) {
+					display: none;
 				}
 			}
 		}

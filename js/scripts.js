@@ -58,8 +58,8 @@ function goto_frontpage() {
 	$('.page').addClass("d-none");
 	$('#front_page').removeClass("d-none");
 	$('#home_page').removeClass("d-none");
-	$('#news_page').removeClass("d-none");
-	$('#news_page').addClass("mt-0");
+	// $('#news_page').removeClass("d-none");
+	// $('#news_page').addClass("mt-0");
 	$('.navbar-collapse').collapse('hide');
 }
 
@@ -69,8 +69,8 @@ function goto_homepage() {
 	$('.page').addClass("d-none");
 	$('#front_page').removeClass("d-none");
 	$('#home_page').removeClass("d-none");
-	$('#news_page').removeClass("d-none");
-	$('#news_page').addClass("mt-0");
+	// $('#news_page').removeClass("d-none");
+	// $('#news_page').addClass("mt-0");
 	$('.navbar-collapse').collapse('hide');
 }
 
